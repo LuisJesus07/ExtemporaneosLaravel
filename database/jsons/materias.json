@@ -1,0 +1,3269 @@
+[
+   {
+      "id":"1",
+      "nombre":"Historia de la ciencia",
+      "semester_id":"1",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:57",
+      "updated_at":"2020-06-22 04:48:57"
+   },
+   {
+      "id":"2",
+      "nombre":"Introducción  a la antropología social",
+      "semester_id":"1",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:57",
+      "updated_at":"2020-06-22 04:48:57"
+   },
+   {
+      "id":"3",
+      "nombre":"Teoría de la comunicación I",
+      "semester_id":"1",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:57",
+      "updated_at":"2020-06-22 04:48:57"
+   },
+   {
+      "id":"4",
+      "nombre":"Taller de lectura y redacción",
+      "semester_id":"1",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:57",
+      "updated_at":"2020-06-22 04:48:57"
+   },
+   {
+      "id":"5",
+      "nombre":"Matemáticas",
+      "semester_id":"1",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:57",
+      "updated_at":"2020-06-22 04:48:57"
+   },
+   {
+      "id":"6",
+      "nombre":"Historia universal del siglo XX",
+      "semester_id":"1",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:57",
+      "updated_at":"2020-06-22 04:48:57"
+   },
+   {
+      "id":"7",
+      "nombre":"Sociología del conocimiento",
+      "semester_id":"2",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:57",
+      "updated_at":"2020-06-22 04:48:57"
+   },
+   {
+      "id":"8",
+      "nombre":"Introducción a la sociología",
+      "semester_id":"2",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:57",
+      "updated_at":"2020-06-22 04:48:57"
+   },
+   {
+      "id":"9",
+      "nombre":"Teoría de la comunicación II",
+      "semester_id":"2",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:57",
+      "updated_at":"2020-06-22 04:48:57"
+   },
+   {
+      "id":"10",
+      "nombre":"Expresión y composición escrita I",
+      "semester_id":"2",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:57",
+      "updated_at":"2020-06-22 04:48:57"
+   },
+   {
+      "id":"11",
+      "nombre":"Estadística",
+      "semester_id":"2",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:57",
+      "updated_at":"2020-06-22 04:48:57"
+   },
+   {
+      "id":"12",
+      "nombre":"Introducción a la Ciencia Política",
+      "semester_id":"2",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:57",
+      "updated_at":"2020-06-22 04:48:57"
+   },
+   {
+      "id":"13",
+      "nombre":"Lenguaje gráfico",
+      "semester_id":"3",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:57",
+      "updated_at":"2020-06-22 04:48:57"
+   },
+   {
+      "id":"14",
+      "nombre":"Legislación para medios",
+      "semester_id":"3",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:57",
+      "updated_at":"2020-06-22 04:48:57"
+   },
+   {
+      "id":"15",
+      "nombre":"Teoría de la comunicación III",
+      "semester_id":"3",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:57",
+      "updated_at":"2020-06-22 04:48:57"
+   },
+   {
+      "id":"16",
+      "nombre":"Expresión y composición escrita II",
+      "semester_id":"3",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:57",
+      "updated_at":"2020-06-22 04:48:57"
+   },
+   {
+      "id":"17",
+      "nombre":"Herramientas Informáticas I",
+      "semester_id":"3",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:57",
+      "updated_at":"2020-06-22 04:48:57"
+   },
+   {
+      "id":"18",
+      "nombre":"Sistema político mexicano",
+      "semester_id":"3",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"19",
+      "nombre":"Lenguaje periodístico",
+      "semester_id":"4",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"20",
+      "nombre":"Sociología de la comunicación",
+      "semester_id":"4",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"21",
+      "nombre":"Teoría de la comunicación IV",
+      "semester_id":"4",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"22",
+      "nombre":"Literatura I",
+      "semester_id":"4",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"23",
+      "nombre":"Herramientas Informáticas II",
+      "semester_id":"4",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"24",
+      "nombre":"Taller de mercadotecnia, publicidad y propaganda",
+      "semester_id":"4",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"25",
+      "nombre":"Lenguaje radiofónico",
+      "semester_id":"5",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"26",
+      "nombre":"Semiótica",
+      "semester_id":"5",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"27",
+      "nombre":"Literatura II",
+      "semester_id":"5",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"28",
+      "nombre":"Metodología de la investigación",
+      "semester_id":"5",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"29",
+      "nombre":"Psicología",
+      "semester_id":"5",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"30",
+      "nombre":"Taller de producción de medios impresos",
+      "semester_id":"5",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"31",
+      "nombre":"Lenguaje cinematográfico",
+      "semester_id":"6",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"32",
+      "nombre":"Filosofía del pensamiento contemporáneo",
+      "semester_id":"6",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"33",
+      "nombre":"Análisis del discurso",
+      "semester_id":"6",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"34",
+      "nombre":"Fotografía",
+      "semester_id":"6",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"35",
+      "nombre":"Historia del arte",
+      "semester_id":"6",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"36",
+      "nombre":"Taller de producción radiofónica",
+      "semester_id":"6",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"37",
+      "nombre":"Lenguaje televisivo",
+      "semester_id":"7",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"38",
+      "nombre":"Ética y comunicación",
+      "semester_id":"7",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"39",
+      "nombre":"Guionismo para medios",
+      "semester_id":"7",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"40",
+      "nombre":"Producción para medios",
+      "semester_id":"7",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"41",
+      "nombre":"Estética",
+      "semester_id":"7",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"42",
+      "nombre":"Taller de crítica cinematográfica",
+      "semester_id":"7",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"43",
+      "nombre":"Dirección técnica para televisión",
+      "semester_id":"8",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"44",
+      "nombre":"Musicología",
+      "semester_id":"8",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:58",
+      "updated_at":"2020-06-22 04:48:58"
+   },
+   {
+      "id":"45",
+      "nombre":"Comunicación y tecnología",
+      "semester_id":"8",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"46",
+      "nombre":"Seminario de tesis",
+      "semester_id":"8",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"47",
+      "nombre":"Didáctica",
+      "semester_id":"8",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"48",
+      "nombre":"Taller de producción televisiva y video",
+      "semester_id":"8",
+      "study_plan_id":"1",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"49",
+      "nombre":"Ciencias Sociales",
+      "semester_id":"1",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"50",
+      "nombre":"Lectura y Redacción: Géneros Literarios I",
+      "semester_id":"1",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"51",
+      "nombre":"Estadísticas Geoculturales",
+      "semester_id":"1",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"52",
+      "nombre":"Ética de la Comunicación",
+      "semester_id":"1",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"53",
+      "nombre":"Gestión de la Imagen",
+      "semester_id":"1",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"54",
+      "nombre":"Software para Imagen",
+      "semester_id":"1",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"55",
+      "nombre":"Inglés I",
+      "semester_id":"1",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"56",
+      "nombre":"Sociología y Problemas Sociales Contemporáneos",
+      "semester_id":"2",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"57",
+      "nombre":"Lectura y Redacción: Géneros Literarios II",
+      "semester_id":"2",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"58",
+      "nombre":"Antropología Cultural",
+      "semester_id":"2",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"59",
+      "nombre":"Apreciación Musical",
+      "semester_id":"2",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"60",
+      "nombre":"Análisis Cinematográfico",
+      "semester_id":"2",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"61",
+      "nombre":"Taller de Fotografía",
+      "semester_id":"2",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"62",
+      "nombre":"Inglés II",
+      "semester_id":"2",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"63",
+      "nombre":"Sociología de la Comunicación",
+      "semester_id":"3",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"64",
+      "nombre":"Lectura y Redacción: Géneros Periodísticos",
+      "semester_id":"3",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"65",
+      "nombre":"Teoría de la Comunicación I",
+      "semester_id":"3",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"66",
+      "nombre":"Apreciación Pictórica",
+      "semester_id":"3",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"67",
+      "nombre":"Análisis Radiofónico",
+      "semester_id":"3",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"68",
+      "nombre":"Software para Audio",
+      "semester_id":"3",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"69",
+      "nombre":"Inglés III",
+      "semester_id":"3",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"70",
+      "nombre":"Sistema Político Mexicano",
+      "semester_id":"4",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"71",
+      "nombre":"Teatro",
+      "semester_id":"4",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"72",
+      "nombre":"Teoría de la Comunicación II",
+      "semester_id":"4",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"73",
+      "nombre":"Herramientas Administrativas",
+      "semester_id":"4",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"74",
+      "nombre":"Análisis Televisivo",
+      "semester_id":"4",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"75",
+      "nombre":"Software para Video y Televisión",
+      "semester_id":"4",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:59",
+      "updated_at":"2020-06-22 04:48:59"
+   },
+   {
+      "id":"76",
+      "nombre":"Inglés IV",
+      "semester_id":"4",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"77",
+      "nombre":"Taller de Elaboración de Proyectos",
+      "semester_id":"5",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"78",
+      "nombre":"Taller de Expresión Oral",
+      "semester_id":"5",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"79",
+      "nombre":"Semiótica",
+      "semester_id":"5",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"80",
+      "nombre":"Desarrollo de Habilidades Empresariales",
+      "semester_id":"5",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"81",
+      "nombre":"Análisis Periodístico",
+      "semester_id":"5",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"82",
+      "nombre":"Software para Animación",
+      "semester_id":"5",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"83",
+      "nombre":"Conversación en Inglés I",
+      "semester_id":"5",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"84",
+      "nombre":"Seminario de Titulación I",
+      "semester_id":"6",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"85",
+      "nombre":"Optativa 1",
+      "semester_id":"6",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"86",
+      "nombre":"Semiótica Aplicada",
+      "semester_id":"6",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"87",
+      "nombre":"Legislación y Medios en México",
+      "semester_id":"6",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"88",
+      "nombre":"Optativa 2",
+      "semester_id":"6",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"89",
+      "nombre":"Software para Páginas de Internet",
+      "semester_id":"6",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"90",
+      "nombre":"Conversación en Inglés II",
+      "semester_id":"6",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"91",
+      "nombre":"Seminario de Titulación II",
+      "semester_id":"7",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"92",
+      "nombre":"Optativa 3",
+      "semester_id":"7",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"93",
+      "nombre":"Psicología de la Comunicación",
+      "semester_id":"7",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"94",
+      "nombre":"Optativa 4",
+      "semester_id":"7",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"95",
+      "nombre":"Análisis de la NTIC",
+      "semester_id":"7",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"96",
+      "nombre":"Redacción en Inglés para Medios I",
+      "semester_id":"7",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"97",
+      "nombre":"Seminario de Titulación III",
+      "semester_id":"8",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"98",
+      "nombre":"Optativa 5",
+      "semester_id":"8",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"99",
+      "nombre":"Optativa 6",
+      "semester_id":"8",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"100",
+      "nombre":"Optativa 7",
+      "semester_id":"8",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"101",
+      "nombre":"Redacción en Inglés para Medios II",
+      "semester_id":"8",
+      "study_plan_id":"2",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:00",
+      "updated_at":"2020-06-22 04:49:00"
+   },
+   {
+      "id":"102",
+      "nombre":"Introducción al Estudio del Derecho",
+      "semester_id":"1",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"103",
+      "nombre":"Sociología del Derecho",
+      "semester_id":"1",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"104",
+      "nombre":"Derecho Romano I",
+      "semester_id":"1",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"105",
+      "nombre":"Economía I",
+      "semester_id":"1",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"106",
+      "nombre":"Historia del Derecho",
+      "semester_id":"1",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"107",
+      "nombre":"Tecnicas de Expresión Oral y Escrita",
+      "semester_id":"1",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"108",
+      "nombre":"Derecho Romano II",
+      "semester_id":"2",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"109",
+      "nombre":"Derecho Civil I",
+      "semester_id":"2",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"110",
+      "nombre":"Economía II",
+      "semester_id":"2",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"111",
+      "nombre":"Ciencia Política",
+      "semester_id":"2",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"112",
+      "nombre":"Historia del Derecho Mexicano",
+      "semester_id":"2",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"113",
+      "nombre":"Metodología de la Investigación I",
+      "semester_id":"2",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"114",
+      "nombre":"Teoría General del Proceso",
+      "semester_id":"3",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"115",
+      "nombre":"Derecho Civil II",
+      "semester_id":"3",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"116",
+      "nombre":"Teoría General del Estado",
+      "semester_id":"3",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"117",
+      "nombre":"Matemáticas Financieras",
+      "semester_id":"3",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"118",
+      "nombre":"Política y Gobierno en México",
+      "semester_id":"3",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"119",
+      "nombre":"Metodología de la Investigación II",
+      "semester_id":"3",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"120",
+      "nombre":"Derecho Civil III",
+      "semester_id":"4",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"121",
+      "nombre":"Derecho Procesal Civil I",
+      "semester_id":"4",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"122",
+      "nombre":"Derecho Mercantil I",
+      "semester_id":"4",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"123",
+      "nombre":"Derecho Constitucional",
+      "semester_id":"4",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"124",
+      "nombre":"Derecho Penal I",
+      "semester_id":"4",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"125",
+      "nombre":"Principios de Contabiliadad",
+      "semester_id":"4",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"126",
+      "nombre":"Derecho Civil IV",
+      "semester_id":"5",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"127",
+      "nombre":"Derecho Procesal Civil II",
+      "semester_id":"5",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"128",
+      "nombre":"Derecho Mercantil II",
+      "semester_id":"5",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"129",
+      "nombre":"Garantias Individuales",
+      "semester_id":"5",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"130",
+      "nombre":"Derecho Penal II",
+      "semester_id":"5",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"131",
+      "nombre":"Derecho del Trabajo I",
+      "semester_id":"5",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"132",
+      "nombre":"Clínica del Derecho Procesal Civil",
+      "semester_id":"6",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"133",
+      "nombre":"Regimen Jurídico del FIDECOMISO AMPARO",
+      "semester_id":"6",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"134",
+      "nombre":"Derecho Administrativo I",
+      "semester_id":"6",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"135",
+      "nombre":"Derecho Procesal Penal",
+      "semester_id":"6",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"136",
+      "nombre":"Derecho del Trabajo II",
+      "semester_id":"6",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:01",
+      "updated_at":"2020-06-22 04:49:01"
+   },
+   {
+      "id":"137",
+      "nombre":"Clínica de Amparo",
+      "semester_id":"7",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"138",
+      "nombre":"Derecho Fiscal I",
+      "semester_id":"7",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"139",
+      "nombre":"Regimen JurídicoEstatal y Municipal",
+      "semester_id":"7",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"140",
+      "nombre":"Derecho Administrativo II",
+      "semester_id":"7",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"141",
+      "nombre":"Clínica del Derecho Procesal Penal",
+      "semester_id":"7",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"142",
+      "nombre":"Derecho Procesal del Trabajo",
+      "semester_id":"7",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"143",
+      "nombre":"Derecho Internacional Público",
+      "semester_id":"8",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"144",
+      "nombre":"Regimen Jurídico del Comercio Exterior",
+      "semester_id":"8",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"145",
+      "nombre":"Derecho Fiscal II",
+      "semester_id":"8",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"146",
+      "nombre":"Derecho Electoral Mexicano",
+      "semester_id":"8",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"147",
+      "nombre":"Derecho Procesal Administrativo",
+      "semester_id":"8",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"148",
+      "nombre":"Clínica del Derecho Procesal del Trabajo",
+      "semester_id":"8",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"149",
+      "nombre":"Filosofía del Derecho",
+      "semester_id":"9",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"150",
+      "nombre":"Derecho Internacional Privado",
+      "semester_id":"9",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"151",
+      "nombre":"Derecho Corporativo",
+      "semester_id":"9",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"152",
+      "nombre":"Derecho Aduanero",
+      "semester_id":"9",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"153",
+      "nombre":"Clínica de Derecho Procesal Administrativo",
+      "semester_id":"9",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"154",
+      "nombre":"Sistemas Jurídicos Comparados",
+      "semester_id":"10",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"155",
+      "nombre":"Legislación Turística",
+      "semester_id":"10",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"156",
+      "nombre":"Derecho Marítimo ",
+      "semester_id":"10",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"157",
+      "nombre":"Legislación Ambiental",
+      "semester_id":"10",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"158",
+      "nombre":"Derecho Agrario ",
+      "semester_id":"10",
+      "study_plan_id":"3",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"159",
+      "nombre":"Introducción al Estudio del Derecho",
+      "semester_id":"1",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"160",
+      "nombre":"Sociología del Derecho",
+      "semester_id":"1",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"161",
+      "nombre":"Derecho Romano",
+      "semester_id":"1",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"162",
+      "nombre":"Ética Jurídica",
+      "semester_id":"1",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"163",
+      "nombre":"Personas y Familia",
+      "semester_id":"1",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"164",
+      "nombre":"Teoría del Estado",
+      "semester_id":"2",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"165",
+      "nombre":"Instituciones del Derecho Romano",
+      "semester_id":"2",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:02",
+      "updated_at":"2020-06-22 04:49:02"
+   },
+   {
+      "id":"166",
+      "nombre":"Bienes y Sucesiones",
+      "semester_id":"2",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"167",
+      "nombre":"Teoría General del Proceso",
+      "semester_id":"2",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"168",
+      "nombre":"Derecho Económico",
+      "semester_id":"2",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"169",
+      "nombre":"Teoría del Delito",
+      "semester_id":"3",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"170",
+      "nombre":"Obligaciones y Contratos",
+      "semester_id":"3",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"171",
+      "nombre":"Derecho Constitucional",
+      "semester_id":"3",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"172",
+      "nombre":"Derecho Mercantil",
+      "semester_id":"3",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"173",
+      "nombre":"Delitos en Particular",
+      "semester_id":"4",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"174",
+      "nombre":"Garantías Individuales",
+      "semester_id":"4",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"175",
+      "nombre":"Derecho Fiscal",
+      "semester_id":"4",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"176",
+      "nombre":"Derecho Electoral",
+      "semester_id":"4",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"177",
+      "nombre":"Derecho Internacional",
+      "semester_id":"4",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"178",
+      "nombre":"Medios de Control Constitucional",
+      "semester_id":"5",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"179",
+      "nombre":"Procesal Penal",
+      "semester_id":"5",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"180",
+      "nombre":"Estrategia Procesal y Teoría del Caso Litigioso",
+      "semester_id":"5",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"181",
+      "nombre":"Derecho Marítimo",
+      "semester_id":"5",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"182",
+      "nombre":"Taller de Redacción de Propuestas y Argumentación Jurídica",
+      "semester_id":"5",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"183",
+      "nombre":"Derecho Individual del Trabajo",
+      "semester_id":"6",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"184",
+      "nombre":"Derecho Comparado",
+      "semester_id":"6",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"185",
+      "nombre":"Derecho Administrativo",
+      "semester_id":"6",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"186",
+      "nombre":"Clínica de Derecho Procesal Civil",
+      "semester_id":"6",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"187",
+      "nombre":"Clínica de Medios de Control Constitucional",
+      "semester_id":"6",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"188",
+      "nombre":"Diagnóstico de la Problemática de Justicia en el Contexto Social",
+      "semester_id":"6",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"189",
+      "nombre":"Derecho Colectivo del Trabajo",
+      "semester_id":"7",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"190",
+      "nombre":"Clínica de Derecho Procesal Penal ",
+      "semester_id":"7",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"191",
+      "nombre":"Seminario Interdisciplinario de Prevención del Delito",
+      "semester_id":"7",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"192",
+      "nombre":"Procedimiento Administrativo",
+      "semester_id":"7",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"193",
+      "nombre":"Órganos Públicos y Sociales de Vigilancia y Fiscalización de la Actividad del Estado",
+      "semester_id":"7",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"194",
+      "nombre":"Reporte de Diagnóstico de Campo y\/o Servicio Social",
+      "semester_id":"7",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"195",
+      "nombre":"Filosofía del Derecho",
+      "semester_id":"8",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"196",
+      "nombre":"Legislación Turística",
+      "semester_id":"8",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"197",
+      "nombre":"Derecho Corporativo",
+      "semester_id":"8",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"198",
+      "nombre":"Clínica Procesal de Derecho Administrativo",
+      "semester_id":"8",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"199",
+      "nombre":"Taller de Derechos Humanos",
+      "semester_id":"8",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:03",
+      "updated_at":"2020-06-22 04:49:03"
+   },
+   {
+      "id":"200",
+      "nombre":"Propuesta de Reforma del Sistema de Justicia",
+      "semester_id":"8",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"201",
+      "nombre":"Derecho Ambiental",
+      "semester_id":"9",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"202",
+      "nombre":"Propuesta de Consenso y Divulgación de Reforma del Sistema de Justicia",
+      "semester_id":"9",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"203",
+      "nombre":"Taller de Divulgación Jurídica",
+      "semester_id":"9",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"204",
+      "nombre":"OP: Derecho Aduanero y Comercio Exterior",
+      "semester_id":"9",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"205",
+      "nombre":"OP: Derecho Informático",
+      "semester_id":"9",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"206",
+      "nombre":"OP: Derecho Notarial y Registral",
+      "semester_id":"9",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"207",
+      "nombre":"Criminalística",
+      "semester_id":"9",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"208",
+      "nombre":"OP: Medicina Forense",
+      "semester_id":"9",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"209",
+      "nombre":"OP: Tratamiento de Justicia para Adolescentes",
+      "semester_id":"9",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"210",
+      "nombre":"OP: Procedimientos Electorales",
+      "semester_id":"9",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"211",
+      "nombre":"OP: Derecho Burocrático",
+      "semester_id":"9",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"212",
+      "nombre":"OP: Derecho Agrario",
+      "semester_id":"9",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"213",
+      "nombre":"OP: Medios Alternativos de Solución de Conflictos",
+      "semester_id":"9",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"214",
+      "nombre":"OP: Historia del Derecho",
+      "semester_id":"9",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"215",
+      "nombre":"OP: Responsabilidades de los servidores públicos",
+      "semester_id":"9",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"216",
+      "nombre":"OP: Administración de Recursos Humanos, Materiales y Financieros",
+      "semester_id":"9",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"217",
+      "nombre":"OP: Taller de Didáctica",
+      "semester_id":"9",
+      "study_plan_id":"4",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"218",
+      "nombre":"Competencia comunicativa en criminología",
+      "semester_id":"1",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"219",
+      "nombre":"Introducción al derecho",
+      "semester_id":"1",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"220",
+      "nombre":"Introducción a la criminología",
+      "semester_id":"1",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"221",
+      "nombre":"Administración ",
+      "semester_id":"1",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"222",
+      "nombre":"Herramientas tecnológicas de la información",
+      "semester_id":"1",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"223",
+      "nombre":"Inglés básico",
+      "semester_id":"1",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"224",
+      "nombre":"Teorías de la Criminalidad: Clínico y Social",
+      "semester_id":"2",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"225",
+      "nombre":"Derecho Constitucional",
+      "semester_id":"2",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"226",
+      "nombre":"Sociología Criminológica",
+      "semester_id":"2",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"227",
+      "nombre":"Metodología de la investigación",
+      "semester_id":"2",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"228",
+      "nombre":"Responsabilidad Social y Desarrollo Sustentable",
+      "semester_id":"2",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"229",
+      "nombre":"Inglés Intermedio",
+      "semester_id":"2",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"230",
+      "nombre":"Cultura de paz",
+      "semester_id":"3",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"231",
+      "nombre":"Metodología de la investigación avanzada",
+      "semester_id":"3",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"232",
+      "nombre":"Teoría de criminalidad: crítica y actual",
+      "semester_id":"3",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"233",
+      "nombre":"Antropología criminológica",
+      "semester_id":"3",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"234",
+      "nombre":"Inglés avanzado",
+      "semester_id":"3",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"235",
+      "nombre":"Derecho penal: parte general",
+      "semester_id":"3",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"236",
+      "nombre":"Criminalística ",
+      "semester_id":"4",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"237",
+      "nombre":"Fotografía Forense",
+      "semester_id":"4",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"238",
+      "nombre":"Derecho Penal: Parte Especial",
+      "semester_id":"4",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:04",
+      "updated_at":"2020-06-22 04:49:04"
+   },
+   {
+      "id":"239",
+      "nombre":"Técnicas de Entrevistas",
+      "semester_id":"4",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"240",
+      "nombre":"Derechos Humanos",
+      "semester_id":"4",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"241",
+      "nombre":"Inglés Terminología Criminología",
+      "semester_id":"4",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"242",
+      "nombre":"Psicología Criminológica",
+      "semester_id":"5",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"243",
+      "nombre":"Proceso Penal Acusatorio",
+      "semester_id":"5",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"244",
+      "nombre":"Análisis y Mapeo Delictivo",
+      "semester_id":"5",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"245",
+      "nombre":"Criminalística de Campo Aplicada",
+      "semester_id":"5",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"246",
+      "nombre":"Medicina Forense: Anatomía y Fisiología",
+      "semester_id":"5",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"247",
+      "nombre":"Sistema de Identificación",
+      "semester_id":"5",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"248",
+      "nombre":"Tendencia de la Criminalidad",
+      "semester_id":"6",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"249",
+      "nombre":"Delitos Especiales",
+      "semester_id":"6",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"250",
+      "nombre":"Psicología Forense",
+      "semester_id":"6",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"251",
+      "nombre":"Dactiloscopia",
+      "semester_id":"6",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"252",
+      "nombre":"Medicina Forense: Lesiones",
+      "semester_id":"6",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"253",
+      "nombre":"Seguridad Pública",
+      "semester_id":"6",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"254",
+      "nombre":"Administración y Organización Policial",
+      "semester_id":"7",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"255",
+      "nombre":"Victimiología",
+      "semester_id":"7",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"256",
+      "nombre":"Seguridad Privada: Protección Patrimonial",
+      "semester_id":"7",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"257",
+      "nombre":"Polícia Criminal y Policías Públicas",
+      "semester_id":"7",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"258",
+      "nombre":"Grafoscopía y Documentoscopía",
+      "semester_id":"7",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"259",
+      "nombre":"Liderazgo, Emprendimiento e Innovación",
+      "semester_id":"7",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"260",
+      "nombre":"Servicio Social",
+      "semester_id":"8",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"261",
+      "nombre":"Ético y Cultura de la Legalidad",
+      "semester_id":"8",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"262",
+      "nombre":"Seguridad en las Tecnologías de la Información ",
+      "semester_id":"8",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"263",
+      "nombre":"Química Forense",
+      "semester_id":"8",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"264",
+      "nombre":"Op. I: Área Curricular de Formación Profesional-Fundamental",
+      "semester_id":"8",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"265",
+      "nombre":"Op. II: Área Curricular de Formación Profesional-Fundamental",
+      "semester_id":"8",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"266",
+      "nombre":"Balística Forense",
+      "semester_id":"9",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"267",
+      "nombre":"Seguridad y Salud Ocupacional",
+      "semester_id":"9",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"268",
+      "nombre":"Prevención del Delito",
+      "semester_id":"9",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"269",
+      "nombre":"Seminario de Práctica Criminológica",
+      "semester_id":"9",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"270",
+      "nombre":"Op. III: Área Curricular de Formación Profesional-Fundamental",
+      "semester_id":"9",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"271",
+      "nombre":"Op. IV: Área Curricular de Formación Profesional-Fundamental",
+      "semester_id":"9",
+      "study_plan_id":"5",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"272",
+      "nombre":"INTRODUCCIÓN A LA ADMINISTRACIÓN",
+      "semester_id":"1",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"273",
+      "nombre":"INTRODUCCIÓN A LA ECONOMÍA",
+      "semester_id":"1",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"274",
+      "nombre":"TEORÍA SOCIAL I",
+      "semester_id":"1",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"275",
+      "nombre":"FORMACIÓN SOCIAL MEXICANA I",
+      "semester_id":"1",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"276",
+      "nombre":"METODOLOGÍA DE LA INVESTIGACIÓN I",
+      "semester_id":"1",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"277",
+      "nombre":"MATEMÁTICAS I",
+      "semester_id":"1",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"278",
+      "nombre":"TEORÍA MICROECONÓMICA",
+      "semester_id":"2",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:05",
+      "updated_at":"2020-06-22 04:49:05"
+   },
+   {
+      "id":"279",
+      "nombre":"TEORÍA SOCIAL II",
+      "semester_id":"2",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"280",
+      "nombre":"FORMACIÓN SOCIAL MEXICANA II",
+      "semester_id":"2",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"281",
+      "nombre":"METODOLOGÍA DE LA INVESTIGACIÓN II",
+      "semester_id":"2",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"282",
+      "nombre":"MATEMÁTICAS II",
+      "semester_id":"2",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"283",
+      "nombre":"CONTABILIDAD GENERAL",
+      "semester_id":"2",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"284",
+      "nombre":"INTRODUCCIÓN A LA CIENCIA POLÍTICA",
+      "semester_id":"3",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"285",
+      "nombre":"TEORÍA MACROECONÓMICA",
+      "semester_id":"3",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"286",
+      "nombre":"ECONOMÍA POLÍTICA I",
+      "semester_id":"3",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"287",
+      "nombre":"ESTRUCTURA SOCIOECONÓMICA DE MÉXICO CONTEMPORÁNEO",
+      "semester_id":"3",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"288",
+      "nombre":"ESTADÍSTICA I",
+      "semester_id":"3",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"289",
+      "nombre":"CONTABILIDAD DE COSTOS",
+      "semester_id":"3",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"290",
+      "nombre":"TEORÍA POLÍTICA I",
+      "semester_id":"4",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"291",
+      "nombre":"HISTORIA DEL PENSAMIENTO ADMINISTRATIVO",
+      "semester_id":"4",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"292",
+      "nombre":"ECONOMÍA POLÍTICA II",
+      "semester_id":"4",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"293",
+      "nombre":"INTERPRETACIÓN DE LA HISTORIA",
+      "semester_id":"4",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"294",
+      "nombre":"ESTADÍSTICA II",
+      "semester_id":"4",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"295",
+      "nombre":"ANÁLISIS E INTERPRETACIÓN DE ESTADOS FINANCIEROS",
+      "semester_id":"4",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"296",
+      "nombre":"TEORÍA POLÍTICA II",
+      "semester_id":"5",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"297",
+      "nombre":"TEORÍA DE LA ADMINISTRACIÓN PÚBLICA I",
+      "semester_id":"5",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"298",
+      "nombre":"ECONOMÍA POLÍTICA III",
+      "semester_id":"5",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"299",
+      "nombre":"CONTABILIDAD NACIONAL",
+      "semester_id":"5",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"300",
+      "nombre":"SISTEMA JURÍDICO DEL ESTADO MEXICANO",
+      "semester_id":"5",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"301",
+      "nombre":"INVESTIGACIÓN DE OPERACIONES",
+      "semester_id":"5",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"302",
+      "nombre":"SISTEMA JURÍDICO NACIONAL",
+      "semester_id":"5",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"303",
+      "nombre":"TEORÍA POLÍTICA III",
+      "semester_id":"6",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"304",
+      "nombre":"ORGANIZACIÓN POLÍTICA",
+      "semester_id":"6",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"305",
+      "nombre":"POLÍTICA ECONÓMICA",
+      "semester_id":"6",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"306",
+      "nombre":"SISTEMA POLÍTICO MEXICANO",
+      "semester_id":"6",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"307",
+      "nombre":"TEORÍA GENERAL DE SISTEMAS",
+      "semester_id":"6",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"308",
+      "nombre":"TEORÍA DE LA ADMINISTRACIÓN PÚBLICA II",
+      "semester_id":"6",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"309",
+      "nombre":"ORGANIZACIÓN Y MÉTODOS",
+      "semester_id":"6",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"310",
+      "nombre":"SOCIEDAD POLÍTICA CONTEMPORÁNEA",
+      "semester_id":"7",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"311",
+      "nombre":"PSICOLOGÍA GENERAL",
+      "semester_id":"7",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:06",
+      "updated_at":"2020-06-22 04:49:06"
+   },
+   {
+      "id":"312",
+      "nombre":"GOBIERNO Y ADMINISTRACIÓN ESTATAL Y MUNICIPAL DE BAJA CALIFORNIA SUR",
+      "semester_id":"7",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"313",
+      "nombre":"DISEÑO DE INVESTIGACIÓN",
+      "semester_id":"7",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"314",
+      "nombre":"EVALUACIÓN Y ADMINISTRACIÓN DE PROYECTOS",
+      "semester_id":"7",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"315",
+      "nombre":"ADMINISTRACIÓN PÚBLICA PARAESTATAL",
+      "semester_id":"7",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"316",
+      "nombre":"ADMINISTRACIÓN DE RECURSOS HUMANOS",
+      "semester_id":"7",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"317",
+      "nombre":"CIENCIA POLÍTICA CONTEMPORÁNEA",
+      "semester_id":"8",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"318",
+      "nombre":"PSICOLOGÍA SOCIAL",
+      "semester_id":"8",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"319",
+      "nombre":"PLANIFICACIÓN Y PROGRAMACIÓN ECONÓMICA Y SOCIAL",
+      "semester_id":"8",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"320",
+      "nombre":"SEMINARIO DE TESIS I",
+      "semester_id":"8",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"321",
+      "nombre":"ADMINISTRACIÓN DE LA PRODUCCIÓN",
+      "semester_id":"8",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"322",
+      "nombre":"COMERCIALIZACIÓN",
+      "semester_id":"8",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"323",
+      "nombre":"INVESTIGACIÓN POLÍTICA",
+      "semester_id":"9",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"324",
+      "nombre":"SEMINARIO DE TESIS II",
+      "semester_id":"9",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"325",
+      "nombre":"FINANZAS PÚBLICAS",
+      "semester_id":"9",
+      "study_plan_id":"6",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"326",
+      "nombre":"INTRODUCCIÓN A LA CIENCIA POLÍTICA Y ADMINISTRACIÓN PÚBLICA",
+      "semester_id":"1",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"327",
+      "nombre":"HISTORIA POLÍTICA",
+      "semester_id":"1",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"328",
+      "nombre":"HISTORIA DE MÉXICO I",
+      "semester_id":"1",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"329",
+      "nombre":"INTRODUCCIÓN AL ANÁLISIS ECONÓMICO",
+      "semester_id":"1",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"330",
+      "nombre":"MATEMÁTICAS",
+      "semester_id":"1",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"331",
+      "nombre":"TEORÍA DE LA ADMINISTRACIÓN PÚBLICA",
+      "semester_id":"2",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"332",
+      "nombre":"TEORÍA POLÍTICA I",
+      "semester_id":"2",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"333",
+      "nombre":"HISTORIA DE MÉXICO II",
+      "semester_id":"2",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"334",
+      "nombre":"MICROECONOMÍA",
+      "semester_id":"2",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"335",
+      "nombre":"MATEMÁTICAS FINANCIERAS",
+      "semester_id":"2",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"336",
+      "nombre":"TEORÍA DE LA ORGANIZACIÓN",
+      "semester_id":"3",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"337",
+      "nombre":"TEORÍA POLÍTICA II",
+      "semester_id":"3",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"338",
+      "nombre":"HISTORIA DE BAJA CALIFORNIA SUR",
+      "semester_id":"3",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"339",
+      "nombre":"MACROECONOMÍA",
+      "semester_id":"3",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"340",
+      "nombre":"CONTABILIDAD GENERAL Y DE COSTOS",
+      "semester_id":"3",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"341",
+      "nombre":"ADMINISTRACIÓN Y DESARROLLO DE PERSONAL PÚBLICO",
+      "semester_id":"4",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"342",
+      "nombre":"TEORÍA POLÍTICA III",
+      "semester_id":"4",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"343",
+      "nombre":"SISTEMA POLÍTICO MEXICANO",
+      "semester_id":"4",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"344",
+      "nombre":"ANÁLISIS E INTERPRETACIÓN DE ESTADOS FINANCIEROS",
+      "semester_id":"4",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:07",
+      "updated_at":"2020-06-22 04:49:07"
+   },
+   {
+      "id":"345",
+      "nombre":"DERECHO CONSTITUCIONAL",
+      "semester_id":"4",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:08",
+      "updated_at":"2020-06-22 04:49:08"
+   },
+   {
+      "id":"346",
+      "nombre":"FORMULACIÓN DE POLÍTICAS PÚBLICAS",
+      "semester_id":"5",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:08",
+      "updated_at":"2020-06-22 04:49:08"
+   },
+   {
+      "id":"347",
+      "nombre":"TEORÍA POLÍTICA IV",
+      "semester_id":"5",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:08",
+      "updated_at":"2020-06-22 04:49:08"
+   },
+   {
+      "id":"348",
+      "nombre":"POLÍTICA ECONÓMICA I",
+      "semester_id":"5",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:08",
+      "updated_at":"2020-06-22 04:49:08"
+   },
+   {
+      "id":"349",
+      "nombre":"ESTADÍSTICA I",
+      "semester_id":"5",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:08",
+      "updated_at":"2020-06-22 04:49:08"
+   },
+   {
+      "id":"350",
+      "nombre":"DERECHO ADMINISTRATIVO",
+      "semester_id":"5",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:08",
+      "updated_at":"2020-06-22 04:49:08"
+   },
+   {
+      "id":"351",
+      "nombre":"ANÁLISIS DE POLÍTICAS PÚBLICAS",
+      "semester_id":"6",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:08",
+      "updated_at":"2020-06-22 04:49:08"
+   },
+   {
+      "id":"352",
+      "nombre":"CIENCIA POLÍTICA CONTEMPORÁNEA",
+      "semester_id":"6",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:08",
+      "updated_at":"2020-06-22 04:49:08"
+   },
+   {
+      "id":"353",
+      "nombre":"POLÍTICA ECONÓMICA II",
+      "semester_id":"6",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:08",
+      "updated_at":"2020-06-22 04:49:08"
+   },
+   {
+      "id":"354",
+      "nombre":"ESTADÍSTICA II",
+      "semester_id":"6",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:08",
+      "updated_at":"2020-06-22 04:49:08"
+   },
+   {
+      "id":"355",
+      "nombre":"METODOLOGÍA DE LA INVESTIGACIÓN SOCIAL",
+      "semester_id":"6",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:08",
+      "updated_at":"2020-06-22 04:49:08"
+   },
+   {
+      "id":"356",
+      "nombre":"PLANEACIÓN ESTRATÉGICA Y CONTROL DE GESTIÓN",
+      "semester_id":"7",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:08",
+      "updated_at":"2020-06-22 04:49:08"
+   },
+   {
+      "id":"357",
+      "nombre":"SISTEMAS ELECTORALES",
+      "semester_id":"7",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:08",
+      "updated_at":"2020-06-22 04:49:08"
+   },
+   {
+      "id":"358",
+      "nombre":"GOBIERNO Y ADMINISTRACIÓN FEDERAL, ESTATAL Y MUNICIPAL",
+      "semester_id":"7",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:08",
+      "updated_at":"2020-06-22 04:49:08"
+   },
+   {
+      "id":"359",
+      "nombre":"TALLER DE INVESTIGACIÓN I",
+      "semester_id":"7",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:08",
+      "updated_at":"2020-06-22 04:49:08"
+   },
+   {
+      "id":"360",
+      "nombre":"PROPAGANDA Y OPINIÓN PÚBLICA",
+      "semester_id":"8",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:08",
+      "updated_at":"2020-06-22 04:49:08"
+   },
+   {
+      "id":"361",
+      "nombre":"SOCIEDAD POLÍTICA CONTEMPORÁNEA",
+      "semester_id":"8",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:08",
+      "updated_at":"2020-06-22 04:49:08"
+   },
+   {
+      "id":"362",
+      "nombre":"FORMULACIÓN Y EVALUACIÓN DE PROYECTOS",
+      "semester_id":"8",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:08",
+      "updated_at":"2020-06-22 04:49:08"
+   },
+   {
+      "id":"363",
+      "nombre":"TALLER DE INVESTIGACIÓN II",
+      "semester_id":"8",
+      "study_plan_id":"7",
+      "status":"1",
+      "created_at":"2020-06-22 04:49:08",
+      "updated_at":"2020-06-22 04:49:08"
+   }
+]

@@ -1,0 +1,30 @@
+[
+   {
+      "id":"1",
+      "nombre":"Licenciatura en Comunicación",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:55",
+      "updated_at":"2020-06-22 04:48:55"
+   },
+   {
+      "id":"2",
+      "nombre":"Licenciatura en Derecho",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:55",
+      "updated_at":"2020-06-22 04:48:55"
+   },
+   {
+      "id":"3",
+      "nombre":"Licenciatura en Criminología",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:55",
+      "updated_at":"2020-06-22 04:48:55"
+   },
+   {
+      "id":"4",
+      "nombre":"Licenciatura en Ciencias Políticas y Administración Pública",
+      "status":"1",
+      "created_at":"2020-06-22 04:48:56",
+      "updated_at":"2020-06-22 04:48:56"
+   }
+]
