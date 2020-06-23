@@ -18,11 +18,13 @@ class Period extends Model
 
 	public function users()
 	{
-		return $this->belongsToMany(User::class, 'period_subject_user');
+		return $this->belongsToMany(User::class, 'period_subject_user')
+					->withPivot('user_id','status');
 	}
 
 	public function subjects()
 	{
-		return $this->belongsToMany(Subject::class, 'period_subject_user');
+		return $this->belongsToMany(Subject::class, 'period_subject_user')
+					->withPivot('suebject_id','status');
 	}
 }

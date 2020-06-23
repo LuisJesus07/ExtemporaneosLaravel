@@ -47,11 +47,18 @@ class User extends Authenticatable
 
     public function subjects()
     {
-        return $this->belongsToMany(Subject::class, 'period_subject_user');
+        return $this->belongsToMany(Subject::class, 'period_subject_user')
+                    ->withPivot('subject_id','status');
     }
 
     public function periods()
     {
-        return $this->belongsToMany(Period::class, 'period_subject_user');
+        return $this->belongsToMany(Period::class, 'period_subject_user')
+                    ->withPivot('period_id','status');
+    }
+
+    public function scopeWithAndWhereHas($query, $relation, $constraint){
+        return $query->whereHas($relation, $constraint)
+                     ->with([$relation => $constraint]);
     }
 }

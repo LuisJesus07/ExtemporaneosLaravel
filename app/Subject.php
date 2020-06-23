@@ -27,11 +27,13 @@ class Subject extends Model
 
     public function users()
     {
-        return $this->belongsToMany(User::class, 'period_subject_user');
+        return $this->belongsToMany(User::class, 'period_subject_user')
+                    ->withPivot('user_id','status');
     }
 
     public function periods()
     {
-        return $this->belongsToMany(Period::class, 'period_subject_user');
+        return $this->belongsToMany(Period::class, 'period_subject_user')
+                    ->withPivot('period_id','status');
     }
 }
