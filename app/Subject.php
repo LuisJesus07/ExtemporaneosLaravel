@@ -25,15 +25,10 @@ class Subject extends Model
         return $this->belongsTo(StudyPlan::class);
     }
 
-    public function users()
+    public function exam_requests()
     {
-        return $this->belongsToMany(User::class, 'period_subject_user')
-                    ->withPivot('user_id','status');
+        return $this->hasMany(ExamRequest::class);
     }
 
-    public function periods()
-    {
-        return $this->belongsToMany(Period::class, 'period_subject_user')
-                    ->withPivot('period_id','status');
-    }
+    
 }

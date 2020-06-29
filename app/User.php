@@ -45,20 +45,10 @@ class User extends Authenticatable
         return $this->belongsTo(StudyPlan::class);
     }
 
-    public function subjects()
+    public function exam_requests()
     {
-        return $this->belongsToMany(Subject::class, 'period_subject_user')
-                    ->withPivot('subject_id','status');
+        return $this->hasMany(ExamRequest::class);
     }
 
-    public function periods()
-    {
-        return $this->belongsToMany(Period::class, 'period_subject_user')
-                    ->withPivot('period_id','status');
-    }
 
-    public function scopeWithAndWhereHas($query, $relation, $constraint){
-        return $query->whereHas($relation, $constraint)
-                     ->with([$relation => $constraint]);
-    }
 }

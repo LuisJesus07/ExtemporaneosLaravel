@@ -16,15 +16,11 @@ class Period extends Model
 	];
 
 
-	public function users()
+	public function exam_requests()
 	{
-		return $this->belongsToMany(User::class, 'period_subject_user')
-					->withPivot('user_id','status');
+		return $this->hasMany(ExamRequest::class);
 	}
 
-	public function subjects()
-	{
-		return $this->belongsToMany(Subject::class, 'period_subject_user')
-					->withPivot('suebject_id','status');
-	}
+
+	
 }

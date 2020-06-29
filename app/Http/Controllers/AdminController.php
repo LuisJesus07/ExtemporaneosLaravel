@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Degree;
 use App\Subject;
+use App\Period;
 use Auth;
 
 class AdminController extends Controller
@@ -43,6 +44,7 @@ class AdminController extends Controller
         $solicitudes =  User::where('status',true)
         ->withAndWhereHas('subjects', function($q) use ($degree_id){
                 $q->where('period_subject_user.status',true);
+                $q->with('periods');
                 $q->whereHas('study_plan', function($q) use($degree_id){
                     $q->where('degree_id',$degree_id);
                 });
