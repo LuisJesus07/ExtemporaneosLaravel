@@ -18,6 +18,7 @@ class DegreesTableSeeder extends Seeder
         	
         	$degree = new Degree();
         	$degree->nombre = $value['nombre'];
+            $degree->slug = $value['slug'];
         	$degree->save();
         }
     }

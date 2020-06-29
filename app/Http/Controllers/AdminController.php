@@ -38,19 +38,16 @@ class AdminController extends Controller
         }
     }
 
-    public function solicitudes_by_carrera($degree_id)
+    public function solicitudes_by_carrera($degree)
     {
 
-        $solicitudes =  User::where('status',true)
-        ->withAndWhereHas('subjects', function($q) use ($degree_id){
-                $q->where('period_subject_user.status',true);
-                $q->with('periods');
-                $q->whereHas('study_plan', function($q) use($degree_id){
-                    $q->where('degree_id',$degree_id);
+        $solicitudes = Period::where('status',true)
+           ->with(['exam_requests' => function($q) use($degree){
+                $q->where('status',true);
+                $q->withAndWhereHas('user.study_plan.degree', function($q)use($degree){
+                    $q->where('slug',$degree);
                 });
-        })
-        ->with('study_plan.degree')
-        ->get();
+           }])->get();
 
 
         return $solicitudes;
@@ -60,14 +57,11 @@ class AdminController extends Controller
 
     public function solicitudes_by_plan($study_plan_id)
     {
-        $solicitudes =  User::where('status',true)
-        ->withAndWhereHas('subjects', function($q) use ($study_plan_id){
-                $q->where('period_subject_user.status',true);
-                $q->where('study_plan_id', $study_plan_id);
-        })
-        ->with('study_plan.degree')
-        ->get();
 
+        $solicitudes = Period::where('status',true)
+       ->withAndWhereHas('user', function($q) use($study_plan_id){
+            $q->where('study_plan_id',$study_plan_id);
+       })->get();
 
         return $solicitudes;
 
@@ -75,13 +69,6 @@ class AdminController extends Controller
 
     public function solicitudes_by_materia($subject_id)
     {
-        $solicitudes =  User::where('status',true)
-        ->withAndWhereHas('subjects', function($q) use ($subject_id){
-                $q->where('period_subject_user.status',true);
-                $q->where('subject_id', $subject_id);
-        })
-        ->with('study_plan.degree')
-        ->get();
 
         return $solicitudes;
     }

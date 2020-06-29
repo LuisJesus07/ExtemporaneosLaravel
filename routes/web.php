@@ -28,8 +28,8 @@ Route::group(['middleware' => ['role:Administrador']], function () {
 	Route::get('/menu_admin', 'AdminController@index');
 
 	//filtrado
-	Route::get('/solicitudes_carrera/{degree_id}','AdminController@solicitudes_by_carrera');
-	Route::get('/solicitudes_plan/{study_plan_id}','AdminController@solicitudes_by_plan');
-	Route::get('/solicitudes_materia/{subject_id}','AdminController@solicitudes_by_materia');
+	Route::get('/solicitudes/carrera/{degree}','AdminController@solicitudes_by_carrera');
+	Route::get('/solicitudes/plan/{study_plan}','AdminController@solicitudes_by_plan');
+	Route::get('/solicitudes/materia/{subject}','AdminController@solicitudes_by_materia');
 
 });
