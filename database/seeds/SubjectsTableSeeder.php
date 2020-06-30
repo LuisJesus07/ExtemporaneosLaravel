@@ -18,9 +18,10 @@ class SubjectsTableSeeder extends Seeder
         	
         	$subject = new Subject();
         	$subject->nombre = $value['nombre'];
+            $subject->slug = $value['slug'];
         	$subject->semester_id = $value['semester_id'];
         	$subject->study_plan_id = $value['study_plan_id'];
         	$subject->save();
-        }
+        }  
     }
 }

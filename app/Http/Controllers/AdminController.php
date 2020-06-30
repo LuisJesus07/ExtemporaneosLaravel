@@ -20,18 +20,7 @@ class AdminController extends Controller
     {
         if(Auth::user()->hasPermissionTo('Visualizar')){
 
-            $users = User::where('status',true)
-                ->where('role_id',2)
-                ->with(['subjects' => function($q){
-                    $q->with('study_plan');
-                    $q->with('semester');
-                    $q->wherePivot('status',true);
-                }])
-                ->get();
-
-            return $users;
-
-            //return view('admin.menu');
+    
 
         }else{
             //return reditect()->back()->with('error','no tiene permisos');
@@ -44,6 +33,7 @@ class AdminController extends Controller
         $solicitudes = Period::where('status',true)
            ->with(['exam_requests' => function($q) use($degree){
                 $q->where('status',true);
+                $q->with('subject');
                 $q->withAndWhereHas('user.study_plan.degree', function($q)use($degree){
                     $q->where('slug',$degree);
                 });
@@ -55,20 +45,35 @@ class AdminController extends Controller
     }
 
 
-    public function solicitudes_by_plan($study_plan_id)
+    public function solicitudes_by_plan($plan)
     {
 
         $solicitudes = Period::where('status',true)
-       ->withAndWhereHas('user', function($q) use($study_plan_id){
-            $q->where('study_plan_id',$study_plan_id);
-       })->get();
+           ->with(['exam_requests' => function($q) use($plan){
+                $q->where('status',true);
+                $q->with('subject');
+                $q->withAndWhereHas('user.study_plan', function($q) use($plan){
+                    $q->where('slug',$plan);
+                    $q->with('degree');
+                });
+           }])->get();
+
 
         return $solicitudes;
 
     }
 
-    public function solicitudes_by_materia($subject_id)
+    public function solicitudes_by_materia($subject)
     {
+
+        $solicitudes = Period::where('status',true)
+                ->with(['exam_requests' => function($q) use($subject){
+                    $q->where('status',true);
+                    $q->withAndWhereHas('subject', function($q) use($subject){
+                        $q->where('slug',$subject);
+                    });
+                    $q->with('user.study_plan.degree');
+                }])->get();
 
         return $solicitudes;
     }

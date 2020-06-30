@@ -16,6 +16,7 @@ class CreateStudyPlansTable extends Migration
         Schema::create('study_plans', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nombre');
+            $table->string('slug')->unique();
 
             $table->unsignedBigInteger('degree_id'); 
             $table->foreign('degree_id')->references('id')->on('degrees')->onDelete('cascade');

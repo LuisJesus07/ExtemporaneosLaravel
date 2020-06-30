@@ -18,6 +18,7 @@ class StudyPlansTableSeeder extends Seeder
         	
         	$study_plan = new StudyPlan();
         	$study_plan->nombre = $value['nombre'];
+            $study_plan->slug = $value['slug'];
         	$study_plan->degree_id = $value['degree_id'];
         	$study_plan->save();
         }

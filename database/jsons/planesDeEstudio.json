@@ -2,6 +2,7 @@
      {
         "id":"1",
         "nombre":"Comunicación 2000",
+        "slug":"comunicacion_2000",
         "degree_id":"1",
         "status":"1",
         "created_at":"2020-06-22 04:48:56",
@@ -10,6 +11,7 @@
      {
         "id":"2",
         "nombre":"Comunicación 2010",
+        "slug":"comunicacion_2010",
         "degree_id":"1",
         "status":"1",
         "created_at":"2020-06-22 04:48:56",
@@ -18,6 +20,7 @@
      {
         "id":"3",
         "nombre":"Derecho 1993",
+        "slug":"derecho_1993",
         "degree_id":"2",
         "status":"1",
         "created_at":"2020-06-22 04:48:56",
@@ -26,6 +29,7 @@
      {
         "id":"4",
         "nombre":"Derecho 2012",
+        "slug":"derecho_2012",
         "degree_id":"2",
         "status":"1",
         "created_at":"2020-06-22 04:48:56",
@@ -34,6 +38,7 @@
      {
         "id":"5",
         "nombre":"Criminología 2018",
+        "slug":"criminologia_2018",
         "degree_id":"3",
         "status":"1",
         "created_at":"2020-06-22 04:48:56",
@@ -42,6 +47,7 @@
      {
         "id":"6",
         "nombre":"CP y AP 1978",
+        "slug":"CP_y_AP_1978",
         "degree_id":"4",
         "status":"1",
         "created_at":"2020-06-22 04:48:56",
@@ -50,6 +56,7 @@
      {
         "id":"7",
         "nombre":"CP y AP 1995",
+        "slug":"CP_y_AP_1995",
         "degree_id":"4",
         "status":"1",
         "created_at":"2020-06-22 04:48:56",
