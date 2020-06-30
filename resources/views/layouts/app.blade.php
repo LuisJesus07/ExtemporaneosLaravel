@@ -58,7 +58,7 @@
             <section class="content">
               
               <div class="card card-solid">
-                <div class="card-body pb-0">
+                <div class="card-body pb-0" id="app">
                   @yield('content')
                 </div> 
               </div>
