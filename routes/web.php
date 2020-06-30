@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+Route::get('/registro', function(){
+	return view('auth.register');
+});
+
+Route::post('/registroUsuarios', 'UserController@store')->name('registroUsuarios');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

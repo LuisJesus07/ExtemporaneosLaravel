@@ -15,7 +15,11 @@
           <img src="{{asset('app_assets/dist/img/userIcon.jpg')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="/user" class="d-block">{{ Auth::user()->nombre }}</a>
+          <a href="/user" class="d-block">
+          @auth
+            {{ Auth::user()->nombre }}
+          @endauth
+          </a>
         </div>
       </div>
 

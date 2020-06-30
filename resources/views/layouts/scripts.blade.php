@@ -5,4 +5,3 @@
 <!-- AdminLTE App -->
 <script src="{{asset('app_assets/dist/js/adminlte.min.js')}}"></script>
 
-<script src="{{asset('js/app.js')}}"></script>
