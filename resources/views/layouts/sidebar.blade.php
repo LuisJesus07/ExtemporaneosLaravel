@@ -4,7 +4,7 @@
     <a href="/home" class="brand-link">
       <img src="{{asset('app_assets/dist/img/logoUabcsDasc.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">B.C.S MAPA</span>
+      <span class="brand-text font-weight-light">Extemporáneos</span>
     </a>
 
     <!-- Sidebar -->
@@ -25,10 +25,18 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
             <li class="nav-item">
-              <a href="/cities" class="nav-link {{ (request()->is('cities*')) ? 'active' : '' }}">
-                <i class="nav-icon fa fa-map-marker fa-2x"></i>
+              <a href="/#" class="nav-link {{ (request()->is('cities*')) ? 'active' : '' }}">
+                <i class="fa fa-clipboard fa-fw"></i>
                 <p>
-                  Municipios
+                  Solicitar Examen
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/#" class="nav-link {{ (request()->is('cities*')) ? 'active' : '' }}">
+                <i class="fa fa-clipboard fa-fw"></i>
+                <p>
+                  Mis Exámenes
                 </p>
               </a>
             </li>

@@ -29,5 +29,16 @@ class UsersTableSeeder extends Seeder
         $user->role_id = 2;
         $user->study_plan_id = 1;
         $user->save();
+
+        $user = new User();
+        $user->num_control = "2016082296";
+        $user->nombre = "Loir Ricardo";
+        $user->apellido_paterno = "Sandoval";
+        $user->apellido_materno = "Martinez";
+        $user->email = "loir@gmail.com";
+        $user->password = bcrypt("123");
+        $user->role_id = 2;
+        $user->study_plan_id = 1;
+        $user->save();
     }
 }
