@@ -27,6 +27,17 @@ class UserController extends Controller
         return $users;
     }
 
+
+    public function mis_solicitudes()
+    {
+        $solicitudes = User::where('id', Auth::user()->id)
+                       ->with(['exam_requests' => function($q){
+                            $q->with('subject', 'period');
+                       }])->get();
+
+        return $solicitudes;
+    }
+
     public function create_solicitud($subject_id)
     {
         $user = User::where('id',Auth::user()->id)->first();
@@ -80,8 +91,6 @@ class UserController extends Controller
         $user->role_id = 2;
         $user->study_plan_id = $request->study_plan_id;
 
-        $user->save();
-        return $user;
     }
 
     /**

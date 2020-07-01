@@ -7,6 +7,7 @@ use App\User;
 use App\Degree;
 use App\Subject;
 use App\Period;
+use App\ExamRequest;
 use Auth;
 
 class AdminController extends Controller
@@ -78,69 +79,47 @@ class AdminController extends Controller
         return $solicitudes;
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+
+    public function solicitudes_no_aceptadas()
     {
-        //
+        $solicitudes = Period::where('status',true)
+                ->with(['exam_requests' => function($q){
+                    $q->where('status',false);
+                    $q->with('subject');
+                    $q->with('user.study_plan.degree');
+                }])->get();
+
+        return $solicitudes;
+
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
+
+    public function aceptar_examen($id)
     {
-        //
+        $solicitud_examen = ExamRequest::where('status',false)
+                            ->where('id',$id)->first();
+
+        //aceptar examen
+        $solicitud_examen->status = true;
+
+        if($solicitud_examen->save()){
+
+            return response()->json([
+                'message' => "Examen aceptado correctamente",
+                'code' => 2,
+                'data' => null
+            ], 200);  
+
+        }
+
+        return response()->json([
+            'message' => "No se ha podido aceptar",
+            'code' => 2,
+            'data' => null
+        ], 200); 
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
+   
 }
