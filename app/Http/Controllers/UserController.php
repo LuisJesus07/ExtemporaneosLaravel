@@ -81,15 +81,17 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $user = new User();
-        $user->num_control = $request->numControl;
-        $user->nombre = $request->nombre;
-        $user->apellido_paterno = $request->apellido_p;
-        $user->apellido_materno = $request->apellido_m;
-        $user->email = $request->email;
-        $user->password = bcrypt($request['password']);
-        $user->role_id = 2;
-        $user->study_plan_id = $request->study_plan_id;
+        $request['password'] = bcrypt($request['password']);
+
+        if($user = User::create($request->all())){
+
+            $user->assignRole(2);
+
+            return "usuario creado";
+
+        }
+
+        return "error en el servidor";
 
     }
 
