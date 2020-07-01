@@ -71,10 +71,10 @@ class UserController extends Controller
     public function store(Request $request)
     {
         $user = new User();
-        $user->num_control = $request->num_control;
+        $user->num_control = $request->numControl;
         $user->nombre = $request->nombre;
-        $user->apellido_paterno = $request->apellido_paterno;
-        $user->apellido_materno = $request->apellido_materno;
+        $user->apellido_paterno = $request->apellido_p;
+        $user->apellido_materno = $request->apellido_m;
         $user->email = $request->email;
         $user->password = bcrypt($request['password']);
         $user->role_id = 2;
