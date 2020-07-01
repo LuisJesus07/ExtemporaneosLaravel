@@ -41,3 +41,11 @@ Route::group(['middleware' => ['role:Administrador']], function () {
 	Route::get('/solicitudes/aceptar/{id}','AdminController@aceptar_examen');
 
 });
+
+Route::group(['middleware' => ['role:Alumno']], function () {
+    
+	//rutas modulo propiedades
+	Route::get('/solicitudes', 'UserController@mis_solicitudes');
+
+});
+
