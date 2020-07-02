@@ -56,7 +56,6 @@
             </div>
 
             <section class="content">
-            <h1 class="h1 mb-3 text-center">Exámenes Extemporáneos</h1>
 
               <div class="card card-solid">
                 <div class="card-body pb-0">
@@ -71,7 +70,7 @@
         
     </div>
     
-  @yield('modals')
+  
   @include('layouts.scripts')
   @yield('scripts')
 </body>

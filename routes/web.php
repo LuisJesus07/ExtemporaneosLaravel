@@ -23,12 +23,15 @@ Route::post('/registroUsuarios', 'UserController@store')->name('registroUsuarios
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
 
 Route::get('/users', 'UserController@index');
 Route::get('/create_solicitud/{subject_id}', 'UserController@create_solicitud');
 
 Route::group(['middleware' => ['role:Administrador']], function () {
+
+	//Ruta del menu del admin
+	Route::get('/home', 'HomeController@index')->name('home');
     
 	//rutas modulo propiedades
 	Route::get('/menu_admin', 'AdminController@index');
@@ -43,7 +46,13 @@ Route::group(['middleware' => ['role:Administrador']], function () {
 });
 
 Route::group(['middleware' => ['role:Alumno']], function () {
-    
+
+    Route::get('/menu_alumno', function(){
+		return view('alumno.menu_alumno');
+	});
+	Route::get('/solicitar_examen', function(){
+		return view('alumno.solicitar_examen');
+	});
 	//rutas modulo propiedades
 	Route::get('/solicitudes', 'UserController@mis_solicitudes');
 	//get materias
