@@ -2023,10 +2023,10 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       alumno: {
-        numControl: '',
+        num_control: '',
         nombre: '',
-        apellido_p: '',
-        apellido_m: '',
+        apellido_paterno: '',
+        apellido_materno: '',
         email: '',
         password: '',
         study_plan_id: ''
@@ -2035,7 +2035,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     agregar: function agregar() {
-      if (this.alumno.numControl === '' || this.alumno.nombre === '' || this.alumno.apellido_p === '' || this.alumno.apellido_m === '' || this.alumno.email === '' || this.alumno.password === '' || this.alumno.study_plan_id === '') {
+      if (this.alumno.num_control === '' || this.alumno.nombre === '' || this.alumno.apellido_paterno === '' || this.alumno.apellido_materno === '' || this.alumno.email === '' || this.alumno.password === '' || this.alumno.study_plan_id === '') {
         alert("¡Completa todos los campos!");
         return;
       }
@@ -2044,16 +2044,32 @@ __webpack_require__.r(__webpack_exports__);
 
       this.alumno = {
         //Se limpian los inputs
-        numControl: '',
+        num_control: '',
         nombre: '',
-        apellido_p: '',
-        apellido_m: '',
+        apellido_paterno: '',
+        apellido_materno: '',
         email: '',
         password: '',
         study_plan_id: ''
       };
       axios.post('/registroUsuarios', alumnoNuevo).then(function (res) {
-        console.log(res.data);
+        if (res.data === 'usuario creado') {
+          Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Registro realizado con éxito!',
+            showConfirmButton: false,
+            timer: 3000
+          });
+        } else {
+          Swal.fire({
+            position: 'top-end',
+            icon: 'error',
+            title: 'Ocurrio un error!',
+            showConfirmButton: false,
+            timer: 3000
+          });
+        }
       });
     }
   }
@@ -37653,7 +37669,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "card" }, [
     _c("div", { staticClass: "card-body register-card-body" }, [
-      _c("p", { staticClass: "login-box-msg" }, [_vm._v("Registrarme")]),
+      _c("h4", { staticClass: "login-box-msg" }, [_vm._v("Registrarme")]),
       _vm._v(" "),
       _c(
         "form",
@@ -37672,8 +37688,8 @@ var render = function() {
                 {
                   name: "model",
                   rawName: "v-model",
-                  value: _vm.alumno.numControl,
-                  expression: "alumno.numControl"
+                  value: _vm.alumno.num_control,
+                  expression: "alumno.num_control"
                 }
               ],
               staticClass: "form-control",
@@ -37683,13 +37699,13 @@ var render = function() {
                 maxlength: "10",
                 autofocus: ""
               },
-              domProps: { value: _vm.alumno.numControl },
+              domProps: { value: _vm.alumno.num_control },
               on: {
                 input: function($event) {
                   if ($event.target.composing) {
                     return
                   }
-                  _vm.$set(_vm.alumno, "numControl", $event.target.value)
+                  _vm.$set(_vm.alumno, "num_control", $event.target.value)
                 }
               }
             }),
@@ -37733,8 +37749,8 @@ var render = function() {
                 {
                   name: "model",
                   rawName: "v-model",
-                  value: _vm.alumno.apellido_p,
-                  expression: "alumno.apellido_p"
+                  value: _vm.alumno.apellido_paterno,
+                  expression: "alumno.apellido_paterno"
                 }
               ],
               staticClass: "form-control",
@@ -37743,13 +37759,13 @@ var render = function() {
                 placeholder: "Apellido Paterno",
                 maxlength: "50"
               },
-              domProps: { value: _vm.alumno.apellido_p },
+              domProps: { value: _vm.alumno.apellido_paterno },
               on: {
                 input: function($event) {
                   if ($event.target.composing) {
                     return
                   }
-                  _vm.$set(_vm.alumno, "apellido_p", $event.target.value)
+                  _vm.$set(_vm.alumno, "apellido_paterno", $event.target.value)
                 }
               }
             }),
@@ -37763,8 +37779,8 @@ var render = function() {
                 {
                   name: "model",
                   rawName: "v-model",
-                  value: _vm.alumno.apellido_m,
-                  expression: "alumno.apellido_m"
+                  value: _vm.alumno.apellido_materno,
+                  expression: "alumno.apellido_materno"
                 }
               ],
               staticClass: "form-control",
@@ -37773,13 +37789,13 @@ var render = function() {
                 placeholder: "Apellido Materno",
                 maxlength: "50"
               },
-              domProps: { value: _vm.alumno.apellido_m },
+              domProps: { value: _vm.alumno.apellido_materno },
               on: {
                 input: function($event) {
                   if ($event.target.composing) {
                     return
                   }
-                  _vm.$set(_vm.alumno, "apellido_m", $event.target.value)
+                  _vm.$set(_vm.alumno, "apellido_materno", $event.target.value)
                 }
               }
             }),

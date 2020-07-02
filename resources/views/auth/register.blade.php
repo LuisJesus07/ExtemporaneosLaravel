@@ -39,7 +39,7 @@
 
     <div class="register-box" id="app">
         <div class="login-logo">
-            <a href="{{ route('login') }}"><h1>Extemporáneos</h1></a>
+            <a href="{{ route('login') }}"><h1>Solicitud de exámenes extemporáneos</h1></a>
         </div>
 
         <!--Componente Registro de alumnos con vue-->

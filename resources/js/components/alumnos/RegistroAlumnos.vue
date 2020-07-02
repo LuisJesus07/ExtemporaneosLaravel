@@ -1,10 +1,10 @@
 <template>
     <div class="card">
         <div class="card-body register-card-body">
-            <p class="login-box-msg">Registrarme</p>
+            <h4 class="login-box-msg">Registrarme</h4>
             <form @submit.prevent="agregar()">
                 <div class="input-group mb-3">
-                    <input type="number" v-model="alumno.numControl" class="form-control" placeholder="Número de Control"  maxlength="10" autofocus>          
+                    <input type="number" v-model="alumno.num_control" class="form-control" placeholder="Número de Control"  maxlength="10" autofocus>          
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-tasks"></span>
@@ -20,7 +20,7 @@
                     </div>
                 </div>
                 <div class="input-group mb-3">
-                    <input type="text" v-model="alumno.apellido_p" class="form-control" placeholder="Apellido Paterno"  maxlength="50">
+                    <input type="text" v-model="alumno.apellido_paterno" class="form-control" placeholder="Apellido Paterno"  maxlength="50">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-user"></span>
@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 <div class="input-group mb-3">
-                    <input type="text" v-model="alumno.apellido_m" class="form-control" placeholder="Apellido Materno"  maxlength="50">
+                    <input type="text" v-model="alumno.apellido_materno" class="form-control" placeholder="Apellido Materno"  maxlength="50">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-user"></span>
@@ -81,10 +81,10 @@ export default {
     data(){
         return{
             alumno:{
-                numControl: '',
+                num_control: '',
                 nombre: '',
-                apellido_p: '',
-                apellido_m: '',
+                apellido_paterno: '',
+                apellido_materno: '',
                 email: '',
                 password: '',
                 study_plan_id: ''
@@ -95,17 +95,17 @@ export default {
     methods:{
         agregar(){
 
-            if(this.alumno.numControl === '' || this.alumno.nombre === '' || this.alumno.apellido_p === '' || this.alumno.apellido_m === '' || this.alumno.email === '' || this.alumno.password === '' || this.alumno.study_plan_id === ''){
+            if(this.alumno.num_control === '' || this.alumno.nombre === '' || this.alumno.apellido_paterno === '' || this.alumno.apellido_materno === '' || this.alumno.email === '' || this.alumno.password === '' || this.alumno.study_plan_id === ''){
                 alert("¡Completa todos los campos!")
                 return;
             }
 
             const alumnoNuevo = this.alumno//Se guarda el alumno nuevo 
             this.alumno = {//Se limpian los inputs
-                numControl: '',
+                num_control: '',
                 nombre: '',
-                apellido_p: '',
-                apellido_m: '',
+                apellido_paterno: '',
+                apellido_materno: '',
                 email: '',
                 password: '',
                 study_plan_id: ''
@@ -113,7 +113,25 @@ export default {
 
             axios.post('/registroUsuarios', alumnoNuevo)
                 .then((res) => {
-                    console.log(res.data);
+                    
+                    if(res.data === 'usuario creado'){
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'success',
+                            title: 'Registro realizado con éxito!',
+                            showConfirmButton: false,
+                            timer: 3000
+                        })
+                    }else{
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'error',
+                            title: 'Ocurrio un error!',
+                            showConfirmButton: false,
+                            timer: 3000
+                        })
+                    }
+                    
 
                 })
 
