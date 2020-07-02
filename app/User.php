@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Spatie\Permission\Models\Role;
 
 use Spatie\Permission\Traits\HasRoles;
 
@@ -48,6 +49,11 @@ class User extends Authenticatable
     public function exam_requests()
     {
         return $this->hasMany(ExamRequest::class);
+    }
+
+    public function role()
+    {
+        return $this->belongsTo('Spatie\Permission\Models\Role');
     }
 
 
