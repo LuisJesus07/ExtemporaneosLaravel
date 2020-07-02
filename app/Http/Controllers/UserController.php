@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Period;
 use App\Subject;
+use App\ExamRequest;
 use Auth;
 
 class UserController extends Controller
@@ -106,6 +107,48 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $solicitud_examen = ExamRequest::where('id',$id)->first();
+
+
+        //ver si la solicitud a eliminar esta aceptada o no
+        if($solicitud_examen->status == true){
+
+            //eliminar la solicitud
+            $solicitud_examen->delete();
+
+            //obtener las solicitudes del alumno
+            $all_solicitudes = ExamRequest::where('user_id', Auth::user()->id)->get();
+
+            //aceptar la solicitud mas cercana
+            $all_solicitudes[1]->status = true;
+
+
+            if($all_solicitudes[1]->save()){
+
+                return response()->json([
+                    'message' => "Solicitud eliminada correctamente",
+                    'code' => 2,
+                    'data' => null
+                ], 200);
+
+            }
+
+
+        }else{
+
+            //eliminar la solicitud
+            if($solicitud_examen->delete()){
+
+                return response()->json([
+                    'message' => "Solicitud eliminada  correctamente",
+                    'code' => 2,
+                    'data' => null
+                ], 200);
+
+            }
+
+        }
+
+
     }
 }

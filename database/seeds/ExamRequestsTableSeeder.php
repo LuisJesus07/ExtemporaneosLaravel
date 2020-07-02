@@ -17,5 +17,32 @@ class ExamRequestsTableSeeder extends Seeder
         $examRequest->subject_id = 3;
         $examRequest->period_id = 1;
         $examRequest->save();
+
+        $examRequest = new ExamRequest();
+        $examRequest->user_id = 2;
+        $examRequest->subject_id = 5;
+        $examRequest->period_id = 1;
+        $examRequest->save();
+
+        $examRequest = new ExamRequest();
+        $examRequest->user_id = 2;
+        $examRequest->subject_id = 7;
+        $examRequest->period_id = 1;
+        $examRequest->status = false;
+        $examRequest->save();
+
+        $examRequest = new ExamRequest();
+        $examRequest->user_id = 2;
+        $examRequest->subject_id = 9;
+        $examRequest->period_id = 1;
+        $examRequest->status = false;
+        $examRequest->save();
+
+        $examRequest = new ExamRequest();
+        $examRequest->user_id = 2;
+        $examRequest->subject_id = 15;
+        $examRequest->period_id = 1;
+        $examRequest->status = false;
+        $examRequest->save();
     }
 }

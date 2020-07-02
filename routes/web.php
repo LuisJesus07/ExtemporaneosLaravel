@@ -48,5 +48,7 @@ Route::group(['middleware' => ['role:Alumno']], function () {
 	Route::get('/solicitudes', 'UserController@mis_solicitudes');
 	//get materias
 	Route::get('/get_materias/{semester_id}', 'UserController@get_materias');
+	//eliminar solicitud
+	Route::get('/delete_solicitud/{id}', 'UserController@destroy');
 });
 
