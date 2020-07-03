@@ -8,10 +8,10 @@
                 <b>Seleccione su semestre, una materia y de clic en el botón enviar para mandar su solicitud.</b>
                 <div class="row mt-3">
                     <div class="col-md-12">
-                        <form> 
+                        <form @submit.prevent="insertSolicitud()"> 
                             <div class="card card-body">
                                 <label for="" class="text-secondary mt-3">Semestre:</label>
-                                <select @change="getMaterias()" v-model="solicitud.semester_id" class="form-control shadow-sm" required id="semester_id">
+                                <select @change="getMaterias()" v-model="solicitud.semester_id" class="form-control shadow-sm" required>
                                     <option value="" disabled selected>Seleccione el Semestre...</option>
                                     <option value="1">1ero</option>
                                     <option value="2">2do</option>
@@ -25,8 +25,7 @@
                                     <option value="10">10mo</option>
                                 </select>
                                 <label for="" class="text-secondary mt-3">Materia:</label>
-                                <select class="form-control shadow-sm" required>
-                                    
+                                <select v-model="solicitud.idMateria" class="form-control shadow-sm" required>
                                     <option v-for="(materia, index) in materias" :key="index" :value="materia.id">
                                         {{materia.nombre}}</option>
                                 </select>
@@ -36,8 +35,7 @@
                                 <img src="app_assets/img/alerta.png" width="25">
                                 A partir de la tercera solicitud serán sometidas a revisión para su autorización.
                             </div>
-                            <!--<input type="submit" name="" class="btn btn-primary btn-block" value="Enviar">-->
-                            <button class="btn btn-success float-right">Enviar</button>
+                            <button type="submit" class="btn btn-success float-right">Enviar</button>
                         </form> 
                     </div>
                 </div>
@@ -51,7 +49,9 @@ export default {
     data(){
         return{
             materias: [],
-            solicitud:{idMateria:'', semester_id:''},
+            solicitud:{idMateria:'' , semester_id:''},
+        
+            
         }
     },
     created(){
@@ -69,6 +69,32 @@ export default {
                     console.log(err)
                 });
 
+        },
+        insertSolicitud(){
+            console.log(this.solicitud.idMateria)
+            axios.post(`/create_solicitud/${this.solicitud.idMateria}`)
+                .then(function(response) {
+                    console.log(response.data);
+                    Swal.fire({
+                        position: 'center',
+                        icon: 'success',
+                        title: 'Solicitud realizada con éxito!',
+                        showConfirmButton: false,
+                        timer: 3000
+                    })
+                    //console.log(select_materias)
+                    //this.select_materias.selectedIndex = 0
+                })
+                .catch(function(error) {
+                    console.log(error.data);
+                     Swal.fire({
+                        position: 'center',
+                        icon: 'error',
+                        title: 'Error en la solicitud!',
+                        showConfirmButton: false,
+                        timer: 3000
+                    })
+                });
         }
     }
 }

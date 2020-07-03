@@ -14,3 +14,6 @@
 
 <!-- Google Font: Source Sans Pro -->
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+<!--SweetAlert CDN-->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>

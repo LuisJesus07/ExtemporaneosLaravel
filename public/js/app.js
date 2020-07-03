@@ -2132,8 +2132,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2153,6 +2151,29 @@ __webpack_require__.r(__webpack_exports__);
         _this.materias = response.data; //console.log(this.materias)
       })["catch"](function (err) {
         console.log(err);
+      });
+    },
+    insertSolicitud: function insertSolicitud() {
+      console.log(this.solicitud.idMateria);
+      axios.post("/create_solicitud/".concat(this.solicitud.idMateria)).then(function (response) {
+        console.log(response.data);
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'Solicitud realizada con éxito!',
+          showConfirmButton: false,
+          timer: 3000
+        }); //console.log(select_materias)
+        //this.select_materias.selectedIndex = 0
+      })["catch"](function (error) {
+        console.log(error.data);
+        Swal.fire({
+          position: 'center',
+          icon: 'error',
+          title: 'Error en la solicitud!',
+          showConfirmButton: false,
+          timer: 3000
+        });
       });
     }
   }
@@ -38126,30 +38147,112 @@ var render = function() {
         _vm._v(" "),
         _c("div", { staticClass: "row mt-3" }, [
           _c("div", { staticClass: "col-md-12" }, [
-            _c("form", [
-              _c("div", { staticClass: "card card-body" }, [
-                _c(
-                  "label",
-                  { staticClass: "text-secondary mt-3", attrs: { for: "" } },
-                  [_vm._v("Semestre:")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "select",
-                  {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.solicitud.semester_id,
-                        expression: "solicitud.semester_id"
+            _c(
+              "form",
+              {
+                on: {
+                  submit: function($event) {
+                    $event.preventDefault()
+                    return _vm.insertSolicitud()
+                  }
+                }
+              },
+              [
+                _c("div", { staticClass: "card card-body" }, [
+                  _c(
+                    "label",
+                    { staticClass: "text-secondary mt-3", attrs: { for: "" } },
+                    [_vm._v("Semestre:")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "select",
+                    {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.solicitud.semester_id,
+                          expression: "solicitud.semester_id"
+                        }
+                      ],
+                      staticClass: "form-control shadow-sm",
+                      attrs: { required: "" },
+                      on: {
+                        change: [
+                          function($event) {
+                            var $$selectedVal = Array.prototype.filter
+                              .call($event.target.options, function(o) {
+                                return o.selected
+                              })
+                              .map(function(o) {
+                                var val = "_value" in o ? o._value : o.value
+                                return val
+                              })
+                            _vm.$set(
+                              _vm.solicitud,
+                              "semester_id",
+                              $event.target.multiple
+                                ? $$selectedVal
+                                : $$selectedVal[0]
+                            )
+                          },
+                          function($event) {
+                            return _vm.getMaterias()
+                          }
+                        ]
                       }
-                    ],
-                    staticClass: "form-control shadow-sm",
-                    attrs: { required: "", id: "semester_id" },
-                    on: {
-                      change: [
-                        function($event) {
+                    },
+                    [
+                      _c(
+                        "option",
+                        { attrs: { value: "", disabled: "", selected: "" } },
+                        [_vm._v("Seleccione el Semestre...")]
+                      ),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "1" } }, [_vm._v("1ero")]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "2" } }, [_vm._v("2do")]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "3" } }, [_vm._v("3ero")]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "4" } }, [_vm._v("4to")]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "5" } }, [_vm._v("5to")]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "6" } }, [_vm._v("6to")]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "7" } }, [_vm._v("7mo")]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "8" } }, [_vm._v("8vo")]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "9" } }, [_vm._v("9no")]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "10" } }, [_vm._v("10mo")])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "label",
+                    { staticClass: "text-secondary mt-3", attrs: { for: "" } },
+                    [_vm._v("Materia:")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "select",
+                    {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.solicitud.idMateria,
+                          expression: "solicitud.idMateria"
+                        }
+                      ],
+                      staticClass: "form-control shadow-sm",
+                      attrs: { required: "" },
+                      on: {
+                        change: function($event) {
                           var $$selectedVal = Array.prototype.filter
                             .call($event.target.options, function(o) {
                               return o.selected
@@ -38160,81 +38263,42 @@ var render = function() {
                             })
                           _vm.$set(
                             _vm.solicitud,
-                            "semester_id",
+                            "idMateria",
                             $event.target.multiple
                               ? $$selectedVal
                               : $$selectedVal[0]
                           )
-                        },
-                        function($event) {
-                          return _vm.getMaterias()
                         }
-                      ]
-                    }
-                  },
-                  [
-                    _c(
-                      "option",
-                      { attrs: { value: "", disabled: "", selected: "" } },
-                      [_vm._v("Seleccione el Semestre...")]
-                    ),
-                    _vm._v(" "),
-                    _c("option", { attrs: { value: "1" } }, [_vm._v("1ero")]),
-                    _vm._v(" "),
-                    _c("option", { attrs: { value: "2" } }, [_vm._v("2do")]),
-                    _vm._v(" "),
-                    _c("option", { attrs: { value: "3" } }, [_vm._v("3ero")]),
-                    _vm._v(" "),
-                    _c("option", { attrs: { value: "4" } }, [_vm._v("4to")]),
-                    _vm._v(" "),
-                    _c("option", { attrs: { value: "5" } }, [_vm._v("5to")]),
-                    _vm._v(" "),
-                    _c("option", { attrs: { value: "6" } }, [_vm._v("6to")]),
-                    _vm._v(" "),
-                    _c("option", { attrs: { value: "7" } }, [_vm._v("7mo")]),
-                    _vm._v(" "),
-                    _c("option", { attrs: { value: "8" } }, [_vm._v("8vo")]),
-                    _vm._v(" "),
-                    _c("option", { attrs: { value: "9" } }, [_vm._v("9no")]),
-                    _vm._v(" "),
-                    _c("option", { attrs: { value: "10" } }, [_vm._v("10mo")])
-                  ]
-                ),
+                      }
+                    },
+                    _vm._l(_vm.materias, function(materia, index) {
+                      return _c(
+                        "option",
+                        { key: index, domProps: { value: materia.id } },
+                        [
+                          _vm._v(
+                            "\n                                    " +
+                              _vm._s(materia.nombre)
+                          )
+                        ]
+                      )
+                    }),
+                    0
+                  )
+                ]),
+                _vm._v(" "),
+                _vm._m(1),
                 _vm._v(" "),
                 _c(
-                  "label",
-                  { staticClass: "text-secondary mt-3", attrs: { for: "" } },
-                  [_vm._v("Materia:")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "select",
+                  "button",
                   {
-                    staticClass: "form-control shadow-sm",
-                    attrs: { required: "" }
+                    staticClass: "btn btn-success float-right",
+                    attrs: { type: "submit" }
                   },
-                  _vm._l(_vm.materias, function(materia, index) {
-                    return _c(
-                      "option",
-                      { key: index, domProps: { value: materia.id } },
-                      [
-                        _vm._v(
-                          "\n                                    " +
-                            _vm._s(materia.nombre)
-                        )
-                      ]
-                    )
-                  }),
-                  0
+                  [_vm._v("Enviar")]
                 )
-              ]),
-              _vm._v(" "),
-              _vm._m(1),
-              _vm._v(" "),
-              _c("button", { staticClass: "btn btn-success float-right" }, [
-                _vm._v("Enviar")
-              ])
-            ])
+              ]
+            )
           ])
         ])
       ])

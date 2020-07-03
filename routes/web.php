@@ -10,7 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('auth.login');
 });
@@ -23,11 +22,7 @@ Route::post('/registroUsuarios', 'UserController@store')->name('registroUsuarios
 
 Auth::routes();
 
-
-
-Route::get('/users', 'UserController@index');
-Route::get('/create_solicitud/{subject_id}', 'UserController@create_solicitud');
-
+//Grupo de rutas protegidas con el rol de ADMIN:
 Route::group(['middleware' => ['role:Administrador']], function () {
 
 	//Ruta del menu del admin
@@ -45,6 +40,7 @@ Route::group(['middleware' => ['role:Administrador']], function () {
 
 });
 
+//Grupo de rutas protegidas con el rol de ALUMNO:
 Route::group(['middleware' => ['role:Alumno']], function () {
 
     Route::get('/menu_alumno', function(){
@@ -53,11 +49,14 @@ Route::group(['middleware' => ['role:Alumno']], function () {
 	Route::get('/solicitar_examen', function(){
 		return view('alumno.solicitar_examen');
 	});
-	//rutas modulo propiedades
+
+	//Ruta que crea la solicitud del examen:
+	Route::post('/create_solicitud/{subject_id}', 'UserController@create_solicitud');
+	//Ruta para ver las solicitudes del usuario logueado:
 	Route::get('/solicitudes', 'UserController@mis_solicitudes');
-	//get materias
+	//Ruta para obtener las materias del usuario logueado por semestre:
 	Route::get('/get_materias/{semester_id}', 'UserController@get_materias');
-	//eliminar solicitud
+	//Ruta para eliminar una solicitud:
 	Route::get('/delete_solicitud/{id}', 'UserController@destroy');
 });
 
