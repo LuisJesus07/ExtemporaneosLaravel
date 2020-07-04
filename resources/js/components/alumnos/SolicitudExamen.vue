@@ -11,7 +11,7 @@
                         <form @submit.prevent="insertSolicitud()"> 
                             <div class="card card-body">
                                 <label for="" class="text-secondary mt-3">Semestre:</label>
-                                <select @change="getMaterias()" v-model="solicitud.semester_id" class="form-control shadow-sm" required>
+                                <select @change="getMaterias()" v-model="semester_id" class="form-control shadow-sm" required id="select_semester">
                                     <option value="" disabled selected>Seleccione el Semestre...</option>
                                     <option value="1">1ero</option>
                                     <option value="2">2do</option>
@@ -25,7 +25,7 @@
                                     <option value="10">10mo</option>
                                 </select>
                                 <label for="" class="text-secondary mt-3">Materia:</label>
-                                <select v-model="solicitud.idMateria" class="form-control shadow-sm" required>
+                                <select v-model="idMateria" class="form-control shadow-sm" required id="select_materias">
                                     <option v-for="(materia, index) in materias" :key="index" :value="materia.id">
                                         {{materia.nombre}}</option>
                                 </select>
@@ -49,48 +49,48 @@ export default {
     data(){
         return{
             materias: [],
-            solicitud:{idMateria:'' , semester_id:''},
-        
-            
+            idMateria:'',
+            semester_id:''
         }
-    },
-    created(){
-        
     },
     methods:{
         getMaterias(){
             
-            axios.get(`/get_materias/${this.solicitud.semester_id}`)
+            axios.get(`/get_materias/${this.semester_id}`)
                 .then((response) => {
                     this.materias = response.data;
                     //console.log(this.materias)
                 })
-                .catch(err => {
-                    console.log(err)
+                .catch((error) => {
+                    console.log(error)
                 });
 
         },
         insertSolicitud(){
-            console.log(this.solicitud.idMateria)
-            axios.post(`/create_solicitud/${this.solicitud.idMateria}`)
-                .then(function(response) {
+
+            axios.get(`/create_solicitud/${this.idMateria}`)
+                .then((response) => {
+
                     console.log(response.data);
+                
                     Swal.fire({
                         position: 'center',
                         icon: 'success',
-                        title: 'Solicitud realizada con éxito!',
+                        title: '¡Solicitud realizada con éxito!',
                         showConfirmButton: false,
                         timer: 3000
                     })
-                    //console.log(select_materias)
-                    //this.select_materias.selectedIndex = 0
+                    
+                    this.semester_id = ''//Limpiamos el v-model del id semestre
+                    this.idMateria = ''//Limpiamos el v-model del id materia
+                
                 })
-                .catch(function(error) {
-                    console.log(error.data);
+                .catch((error) => {
+                    //console.log(error.data);
                      Swal.fire({
                         position: 'center',
                         icon: 'error',
-                        title: 'Error en la solicitud!',
+                        title: '¡Error en la solicitud!',
                         showConfirmButton: false,
                         timer: 3000
                     })

@@ -2136,41 +2136,41 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       materias: [],
-      solicitud: {
-        idMateria: '',
-        semester_id: ''
-      }
+      idMateria: '',
+      semester_id: ''
     };
   },
-  created: function created() {},
   methods: {
     getMaterias: function getMaterias() {
       var _this = this;
 
-      axios.get("/get_materias/".concat(this.solicitud.semester_id)).then(function (response) {
+      axios.get("/get_materias/".concat(this.semester_id)).then(function (response) {
         _this.materias = response.data; //console.log(this.materias)
-      })["catch"](function (err) {
-        console.log(err);
+      })["catch"](function (error) {
+        console.log(error);
       });
     },
     insertSolicitud: function insertSolicitud() {
-      console.log(this.solicitud.idMateria);
-      axios.post("/create_solicitud/".concat(this.solicitud.idMateria)).then(function (response) {
+      var _this2 = this;
+
+      axios.get("/create_solicitud/".concat(this.idMateria)).then(function (response) {
         console.log(response.data);
         Swal.fire({
           position: 'center',
           icon: 'success',
-          title: 'Solicitud realizada con éxito!',
+          title: '¡Solicitud realizada con éxito!',
           showConfirmButton: false,
           timer: 3000
-        }); //console.log(select_materias)
-        //this.select_materias.selectedIndex = 0
+        });
+        _this2.semester_id = ''; //Limpiamos el v-model del id semestre
+
+        _this2.idMateria = ''; //Limpiamos el v-model del id materia
       })["catch"](function (error) {
-        console.log(error.data);
+        //console.log(error.data);
         Swal.fire({
           position: 'center',
           icon: 'error',
-          title: 'Error en la solicitud!',
+          title: '¡Error en la solicitud!',
           showConfirmButton: false,
           timer: 3000
         });
@@ -38172,12 +38172,12 @@ var render = function() {
                         {
                           name: "model",
                           rawName: "v-model",
-                          value: _vm.solicitud.semester_id,
-                          expression: "solicitud.semester_id"
+                          value: _vm.semester_id,
+                          expression: "semester_id"
                         }
                       ],
                       staticClass: "form-control shadow-sm",
-                      attrs: { required: "" },
+                      attrs: { required: "", id: "select_semester" },
                       on: {
                         change: [
                           function($event) {
@@ -38189,13 +38189,9 @@ var render = function() {
                                 var val = "_value" in o ? o._value : o.value
                                 return val
                               })
-                            _vm.$set(
-                              _vm.solicitud,
-                              "semester_id",
-                              $event.target.multiple
-                                ? $$selectedVal
-                                : $$selectedVal[0]
-                            )
+                            _vm.semester_id = $event.target.multiple
+                              ? $$selectedVal
+                              : $$selectedVal[0]
                           },
                           function($event) {
                             return _vm.getMaterias()
@@ -38245,12 +38241,12 @@ var render = function() {
                         {
                           name: "model",
                           rawName: "v-model",
-                          value: _vm.solicitud.idMateria,
-                          expression: "solicitud.idMateria"
+                          value: _vm.idMateria,
+                          expression: "idMateria"
                         }
                       ],
                       staticClass: "form-control shadow-sm",
-                      attrs: { required: "" },
+                      attrs: { required: "", id: "select_materias" },
                       on: {
                         change: function($event) {
                           var $$selectedVal = Array.prototype.filter
@@ -38261,13 +38257,9 @@ var render = function() {
                               var val = "_value" in o ? o._value : o.value
                               return val
                             })
-                          _vm.$set(
-                            _vm.solicitud,
-                            "idMateria",
-                            $event.target.multiple
-                              ? $$selectedVal
-                              : $$selectedVal[0]
-                          )
+                          _vm.idMateria = $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
                         }
                       }
                     },
