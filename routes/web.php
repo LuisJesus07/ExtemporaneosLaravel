@@ -51,7 +51,7 @@ Route::group(['middleware' => ['role:Alumno']], function () {
 	});
 
 	//Ruta que crea la solicitud del examen:
-	Route::post('/create_solicitud/{subject_id}', 'UserController@create_solicitud');
+	Route::get('/create_solicitud/{subject_id}', 'UserController@create_solicitud');
 	//Ruta para ver las solicitudes del usuario logueado:
 	Route::get('/solicitudes', 'UserController@mis_solicitudes');
 	//Ruta para obtener las materias del usuario logueado por semestre:

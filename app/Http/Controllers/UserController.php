@@ -46,22 +46,29 @@ class UserController extends Controller
         $period = Period::where('status',true)->first();
 
 
-        if(count($user->subjects) >= 2){
+        if(count($user->exam_requests) >= 2){
             $status = false;
         }else{
             $status = true;
         }
 
         //crear solicitud
-        $user->subjects()->attach($subject_id,
-            [
-                'period_id' => $period->id, 
-                'status' => $status,
-                'created_at' => date('Y-m-d H:m:s'),
-                'updated_at' => date('Y-m-d H:m:s')
-            ]);
+        $examRequest = ExamRequest::create([
+            'user_id' => $user->id,
+            'subject_id' => $subject_id,
+            'period_id' => $period->id, 
+            'status' => $status,
+            'created_at' => date('Y-m-d H:m:s'),
+            'updated_at' => date('Y-m-d H:m:s')
+        ]);
 
-        return "Examen agregado";
+        if($examRequest){
+            return "Examen agregado";
+        }
+
+        return "error";
+
+        
 
     }
 
