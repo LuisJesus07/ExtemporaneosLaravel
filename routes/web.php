@@ -49,6 +49,9 @@ Route::group(['middleware' => ['role:Alumno']], function () {
 	Route::get('/solicitar_examen', function(){
 		return view('alumno.solicitar_examen');
 	});
+	Route::get('/consultar_examen', function(){
+		return view('alumno.consultar_examen');
+	});
 
 	//Ruta que crea la solicitud del examen:
 	Route::get('/create_solicitud/{subject_id}', 'UserController@create_solicitud');

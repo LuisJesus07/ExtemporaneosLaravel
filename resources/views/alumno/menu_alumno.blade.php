@@ -21,7 +21,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Mis Exámenes</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn mx-auto mt-3 btn-primary btn-lg">Ver</a>
+                    <a href="{{'/consultar_examen'}}" class="btn mx-auto mt-3 btn-primary btn-lg">Ver</a>
                 </div>
             </div>
         </div>
