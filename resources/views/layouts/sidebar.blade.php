@@ -1,11 +1,21 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
+    @if(Auth::user()->role->name === 'Alumno')
     <a href="{{'/menu_alumno'}}" class="brand-link">
       <img src="{{asset('app_assets/dist/img/logoUabcsDasc.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
       <span class="brand-text font-weight-light">Extemporáneos</span>
     </a>
+    @endif
+
+    @if(Auth::user()->role->name === 'Administrador')
+    <a href="{{'/home'}}" class="brand-link">
+      <img src="{{asset('app_assets/dist/img/logoUabcsDasc.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">Extemporáneos</span>
+    </a>
+    @endif
 
     <!-- Sidebar -->
     <div class="sidebar">
@@ -15,7 +25,7 @@
           <img src="{{asset('app_assets/dist/img/userIcon.jpg')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="/user" class="d-block">
+          <a href="#" class="d-block">
           @auth
             {{ Auth::user()->nombre }}
           @endauth
@@ -24,6 +34,7 @@
       </div>
 
       <!-- Sidebar Menu -->
+      @if(Auth::user()->role->name === 'Alumno')
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
@@ -46,6 +57,31 @@
             </li>
         </ul>
       </nav>
+      @endif
+      @if(Auth::user()->role->name === 'Administrador')
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+            <li class="nav-item">
+              <a href="{{'/filtrado_busqueda'}}" class="nav-link {{ (request()->is('cities*')) ? 'active' : '' }}">
+                <i class="fa fa-clipboard fa-fw"></i>
+                <p>
+                  Ver Solicitudes
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{'/aceptar_solicitudes'}}" class="nav-link {{ (request()->is('cities*')) ? 'active' : '' }}">
+                <i class="fa fa-clipboard fa-fw"></i>
+                <p>
+                  Aceptar Solicitudes
+                </p>
+              </a>
+            </li>
+        </ul>
+      </nav>
+      @endif
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->
