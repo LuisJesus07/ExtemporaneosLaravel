@@ -50,6 +50,8 @@ Route::group(['middleware' => ['role:Administrador']], function () {
 	Route::get('/solicitudes/materia/{subject}','AdminController@solicitudes_by_materia');
 	Route::get('/solicitudes/pendientes','AdminController@solicitudes_no_aceptadas');
 	Route::get('/solicitudes/aceptar/{id}','AdminController@aceptar_examen');
+	Route::get('/materias_plan/{plan_id}','AdminController@get_materias_by_plan');
+
 
 });
 

@@ -8,6 +8,7 @@ use App\Degree;
 use App\Subject;
 use App\Period;
 use App\ExamRequest;
+use App\StudyPlan;
 use Auth;
 
 class AdminController extends Controller
@@ -26,6 +27,14 @@ class AdminController extends Controller
         }else{
             //return reditect()->back()->with('error','no tiene permisos');
         }
+    }
+
+    public function get_materias_by_plan($plan_id)
+    {
+        $subjects = Subject::where('study_plan_id',$plan_id)
+                    ->get();
+
+        return $subjects;
     }
 
     public function solicitudes_by_carrera($degree)
