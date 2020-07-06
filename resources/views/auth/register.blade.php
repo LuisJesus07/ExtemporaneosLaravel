@@ -19,6 +19,8 @@
   <!--SweetAlert CDN-->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
+  <link rel="icon" type="image/vnd.microsoft.icon" href="{{asset('app_assets/img/favicon.ico')}}">
+
   <style type="text/css">
     @import url("https://fonts.googleapis.com/css?family=Akronim");
     

@@ -27,6 +27,19 @@ Route::group(['middleware' => ['role:Administrador']], function () {
 
 	//Ruta del menu del admin
 	Route::get('/home', 'HomeController@index')->name('home');
+	//Ruta del filtrado de busquedas
+	Route::get('/filtrado_busqueda', function(){
+		return view('admin.filtrado_busqueda');
+	});
+	//Ruta de aceptar solicitudes pendientes
+	Route::get('/aceptar_solicitudes', function(){
+		return view('admin.aceptar_solicitudes');
+	});
+	//Ruta de configuraciones
+	Route::get('/configuraciones', function(){
+		return view('admin.configuraciones');
+	});
+	
     
 	//rutas modulo propiedades
 	Route::get('/menu_admin', 'AdminController@index');
