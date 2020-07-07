@@ -50,7 +50,7 @@ class AdminController extends Controller
            }])->get();
 
 
-        return $solicitudes;
+        return view('admin.solicitudes',compact('solicitudes'));
 
     }
 
@@ -69,7 +69,7 @@ class AdminController extends Controller
            }])->get();
 
 
-        return $solicitudes;
+        return view('admin.solicitudes',compact('solicitudes'));
 
     }
 
@@ -85,7 +85,7 @@ class AdminController extends Controller
                     $q->with('user.study_plan.degree');
                 }])->get();
 
-        return $solicitudes;
+        return view('admin.solicitudes',compact('solicitudes'));
     }
 
 
