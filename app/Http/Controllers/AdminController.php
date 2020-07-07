@@ -39,6 +39,7 @@ class AdminController extends Controller
 
     public function solicitudes_by_carrera($degree)
     {
+        $title = "carrera";
 
         $solicitudes = Period::where('status',true)
            ->with(['exam_requests' => function($q) use($degree){
@@ -47,10 +48,10 @@ class AdminController extends Controller
                 $q->withAndWhereHas('user.study_plan.degree', function($q)use($degree){
                     $q->where('slug',$degree);
                 });
-           }])->get();
+           }])->first();
 
 
-        return view('admin.solicitudes',compact('solicitudes'));
+        return view('admin.solicitudes',compact('solicitudes','title'));
         //return $solicitudes;
 
     }
@@ -58,6 +59,7 @@ class AdminController extends Controller
 
     public function solicitudes_by_plan($plan)
     {
+        $title = "plan";
 
         $solicitudes = Period::where('status',true)
            ->with(['exam_requests' => function($q) use($plan){
@@ -67,15 +69,16 @@ class AdminController extends Controller
                     $q->where('slug',$plan);
                     $q->with('degree');
                 });
-           }])->get();
+           }])->first();
 
 
-        return view('admin.solicitudes',compact('solicitudes'));
+        return view('admin.solicitudes',compact('solicitudes','title'));
 
     }
 
     public function solicitudes_by_materia($subject)
     {
+        $title = "materia";
 
         $solicitudes = Period::where('status',true)
                 ->with(['exam_requests' => function($q) use($subject){
@@ -84,9 +87,9 @@ class AdminController extends Controller
                         $q->where('slug',$subject);
                     });
                     $q->with('user.study_plan.degree');
-                }])->get();
+                }])->first();
 
-        return view('admin.solicitudes',compact('solicitudes'));
+        return view('admin.solicitudes',compact('solicitudes','title'));
     }
 
 

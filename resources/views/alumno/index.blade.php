@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     @include('layouts.head')
+    @section('page_title','Hola')
     @yield('head')
 </head>
 <body class="hold-transition sidebar-mini">
