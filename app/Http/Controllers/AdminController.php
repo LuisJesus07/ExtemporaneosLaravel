@@ -51,6 +51,7 @@ class AdminController extends Controller
 
 
         return view('admin.solicitudes',compact('solicitudes'));
+        //return $solicitudes;
 
     }
 
