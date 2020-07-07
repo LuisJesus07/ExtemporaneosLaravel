@@ -2,6 +2,12 @@
 
 @section('content')
 
-    <h1>Aceptar solicitudes</h1>
+<div class="col" id="app">
+	<aceptar-solicitudes></aceptar-solicitudes>
+</div>
 
+@endsection
+
+@section('scripts')
+<script src="{{asset('js/app.js')}}"></script>
 @endsection

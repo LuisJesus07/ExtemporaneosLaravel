@@ -100,9 +100,10 @@ class AdminController extends Controller
                     $q->where('status',false);
                     $q->with('subject');
                     $q->with('user.study_plan.degree');
-                }])->get();
+                }])->first();
 
         return $solicitudes;
+        //return view('admin.aceptar_solicitudes', compact('solicitudes'));
 
     }
 
