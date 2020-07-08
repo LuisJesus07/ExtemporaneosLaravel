@@ -4,6 +4,11 @@
 	Examenes por {{$title}} {{$solicitudes->nombre}}
 @endsection
 
+@section('head')
+<!--Estilos css personalizados-->
+<link rel="stylesheet" href="{{asset('css/style.css')}}">
+@endsection
+
 @section('content')
 
 <div class="col">
@@ -47,4 +52,15 @@
 	</div>
 </div>
 
+@endsection
+
+@section('scripts')
+<script type="text/javascript" src="{{asset('app_assets/plugins/buttons/jquery-3.3.1.js')}}"></script>
+<script type="text/javascript" src="{{asset('app_assets/plugins/buttons/jquery.dataTables.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('app_assets/plugins/buttons/dataTables.buttons.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('app_assets/plugins/buttons/jszip.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('app_assets/plugins/buttons/vfs_fonts.js')}}"></script>
+<script type="text/javascript" src="{{asset('app_assets/plugins/buttons/buttons.print.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('app_assets/plugins/buttons/buttons.html5.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('app_assets/plugins/generarExcel.js')}}"></script>
 @endsection
