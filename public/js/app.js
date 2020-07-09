@@ -2368,6 +2368,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -39562,6 +39563,12 @@ var render = function() {
                 }
               },
               [
+                _c(
+                  "option",
+                  { attrs: { value: "", disabled: "", selected: "" } },
+                  [_vm._v("Plan de estudio")]
+                ),
+                _vm._v(" "),
                 _c("option", { attrs: { value: "1" } }, [
                   _vm._v("Comunicación 2000")
                 ]),

@@ -4,96 +4,58 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="{{asset('app_assets/plugins/fontawesome-free/css/all.min.css')}}">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <title>Solicitud de exámenes extemporáneos</title>
+        <link rel="stylesheet" href="{{asset('app_assets/dist/css/adminlte.min.css')}}">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
+        <link rel="icon" type="image/vnd.microsoft.icon" href="{{asset('app_assets/img/favicon.ico')}}">
+
+        <style type="text/css">
+            
+            body{
+                background-image: url('{{asset('app_assets/dist/img/uabcs-2.jpg')}}')!important;
+                background-size: cover!important;
             }
 
-            .full-height {
-                height: 100vh;
+            body h1{
+                font-family: 'Open Sans', sans-serif;
+                font-weight: bold;
+                color: #FFF;
             }
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
+            body h2{
+                font-size: 1.7em;
+                margin-bottom: 1em;
+                color: #f8e500;
             }
 
-            .position-ref {
-                position: relative;
+            body p{
+                line-height: 26px;
+                margin-bottom: 3em;
+                color: #fff;
             }
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
+            i.separar {
+                padding-right: 15px;
+                color: #fff;
             }
         </style>
+       
     </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
+    <body class="row m-0 bg-primary justify-content-center align-items-center vh-100">
+      
+     <div class="container">
+     
+        <h1>DEPARTAMENTO ACADÉMICO DE CIENCIAS SOCIALES Y JURÍDICAS</h1>
+        <h2>SOLICITUD DE EXÁMENES EXTEMPORÁNEOS</h2>
+        <p>Regístrate en la plataforma para realizar tus solicitudes de exámenes extemporáneos, toma en cuenta que por reglamento se tiene derecho a dos exámenes por período, a partir de la tercera solicitud serán sujetas a aprobación.</p>
+        <a href="{{'/login'}}" class="btn btn-outline-secondary"><i class="fas fa-sign-in-alt separar"></i></i>Ingresar</a>
+        <a href="{{'/registro'}}" class="btn btn-outline-secondary"><i class="fa fa-user-plus separar" aria-hidden="true"></i>
+        Registrarme</a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
+     </div>
+  
     </body>
 </html>

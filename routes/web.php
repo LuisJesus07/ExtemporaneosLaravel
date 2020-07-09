@@ -10,13 +10,20 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
+
+Route::get('/', function(){
+	return view('welcome');
+});
+
+Route::get('/login', function () {
     return view('auth.login');
 });
 
 Route::get('/registro', function(){
 	return view('auth.register');
 });
+
+
 
 Route::post('/registroUsuarios', 'UserController@store')->name('registroUsuarios');
 

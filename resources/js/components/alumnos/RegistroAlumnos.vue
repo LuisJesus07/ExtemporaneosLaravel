@@ -53,6 +53,7 @@
                 </div>
                 <div class="input-group mb-3">
                     <select class="form-control" v-model="alumno.study_plan_id">
+                            <option value="" disabled selected>Plan de estudio</option>
                             <option value="1">Comunicación 2000</option>
                             <option value="2">Comunicación 2010</option>
                             <option value="3">Derecho 1993</option>
