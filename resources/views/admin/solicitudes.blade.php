@@ -17,7 +17,7 @@
 			<h2 class="display-5 text-white">Exámenes por {{$title}}</h2>
 		</div>
 		<!--<div class="img-cargando">
-			<img src="../../public/img/cargando.gif">
+			<img src="{{asset('app_assets/img/cargando.gif')}}">
 		</div>-->
 		<div class="card-body body-examenes">
 			<table class="table table-hover shadow p-3 mb-5 bg-white rounded table-bordered mt-2" id="tabla">

@@ -57,7 +57,6 @@
             </div>
 
             <section class="content">
-            <h1 class="h3 text-center">Exámenes Extemporáneos</h1>
 
               <div class="card card-solid">
                 <div class="card-body pb-0">

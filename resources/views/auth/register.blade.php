@@ -37,13 +37,10 @@
   </style>
 </head>
 
-<body class="hold-transition login-page">
+<body class="row m-0 justify-content-center align-items-center vh-100">
 
     <div class="register-box" id="app">
-        <div class="login-logo">
-            <a href="{{ route('login') }}"><h1>Solicitud de exámenes extemporáneos</h1></a>
-        </div>
-
+        
         <!--Componente Registro de alumnos con vue-->
         <registro-alumnos />
         

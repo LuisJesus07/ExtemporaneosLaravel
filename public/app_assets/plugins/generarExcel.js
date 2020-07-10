@@ -1,7 +1,7 @@
 $(document).ready(function() {
-	$('.img-cargando').fadeOut(200, aparecerTabla);
+	$('.img-cargando').fadeOut(500, aparecerTabla);
 	function aparecerTabla(){
-		$('.body-examenes').fadeIn(200);
+		$('.body-examenes').fadeIn(500);
 	}
 
     $('#tabla').DataTable( {

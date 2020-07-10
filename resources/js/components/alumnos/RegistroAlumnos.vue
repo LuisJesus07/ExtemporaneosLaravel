@@ -96,8 +96,14 @@ export default {
     methods:{
         agregar(){
 
-            if(this.alumno.num_control === '' || this.alumno.nombre === '' || this.alumno.apellido_paterno === '' || this.alumno.apellido_materno === '' || this.alumno.email === '' || this.alumno.password === '' || this.alumno.study_plan_id === ''){
-                alert("¡Completa todos los campos!")
+            if(this.alumno.num_control.trim() === '' || this.alumno.nombre.trim() === '' || this.alumno.apellido_paterno.trim() === '' || this.alumno.apellido_materno.trim() === '' || this.alumno.email.trim() === '' || this.alumno.password.trim() === '' || this.alumno.study_plan_id.trim() === ''){
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: '¡Complete todos los campos!',
+                    showConfirmButton: false,
+                    timer: 3000
+                })
                 return;
             }
 
@@ -117,7 +123,7 @@ export default {
                     
                     if(res.data === 'usuario creado'){
                         Swal.fire({
-                            position: 'top-end',
+                            position: 'center',
                             icon: 'success',
                             title: 'Registro realizado con éxito!',
                             showConfirmButton: false,
@@ -125,7 +131,7 @@ export default {
                         })
                     }else{
                         Swal.fire({
-                            position: 'top-end',
+                            position: 'center',
                             icon: 'error',
                             title: 'Ocurrio un error!',
                             showConfirmButton: false,

@@ -1,4 +1,4 @@
-@extends('alumno.index')
+@extends('layouts.app')
 
 @section('content')
 <div class="col" id="app">
