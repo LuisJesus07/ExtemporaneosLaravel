@@ -45,30 +45,41 @@ class UserController extends Controller
         $user = User::where('id',Auth::user()->id)->first();
         $period = Period::where('status',true)->first();
 
+        if($period){
 
-        if(count($user->exam_requests) >= 2){
-            $status = false;
-        }else{
-            $status = true;
+            $today = date('Y-m-d H:i:s');
+
+            if($today >= $period->fecha_inicio && $today <= $period->fecha_fin){
+
+                if(count($user->exam_requests) >= 2){
+                    $status = false;
+                }else{
+                    $status = true;
+                }
+
+                //crear solicitud
+                $examRequest = ExamRequest::create([
+                    'user_id' => $user->id,
+                    'subject_id' => $subject_id,
+                    'period_id' => $period->id, 
+                    'status' => $status,
+                    'created_at' => date('Y-m-d H:m:s'),
+                    'updated_at' => date('Y-m-d H:m:s')
+                ]);
+
+                if($examRequest){
+                    return "Examen agregado";
+                }
+
+                return "error";
+
+            }
+
+            return "no se puede realizar una solicitud fuera de tiempo";
+
         }
 
-        //crear solicitud
-        $examRequest = ExamRequest::create([
-            'user_id' => $user->id,
-            'subject_id' => $subject_id,
-            'period_id' => $period->id, 
-            'status' => $status,
-            'created_at' => date('Y-m-d H:m:s'),
-            'updated_at' => date('Y-m-d H:m:s')
-        ]);
-
-        if($examRequest){
-            return "Examen agregado";
-        }
-
-        return "error";
-
-        
+        return "no hay periodo disponible actualmente";  
 
     }
 
