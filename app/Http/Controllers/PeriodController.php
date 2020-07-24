@@ -23,10 +23,8 @@ class PeriodController extends Controller
             if($last_active_period->status == true){
                 $last_active_period->status = false;
             }
-            
-        }
 
-    	
+        }
 
     	//crear el nuevo periodo
     	$period = Period::create($request->all());
