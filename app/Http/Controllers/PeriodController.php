@@ -18,10 +18,15 @@ class PeriodController extends Controller
     						  ->orderBy('created_at','DESC')
     						  ->first();
 
-    	//deshabilitar el ultimo periodo
-    	if($last_active_period->status == true){
-    		$last_active_period->status = false;
-    	}
+        if($last_active_period){
+            //deshabilitar el ultimo periodo
+            if($last_active_period->status == true){
+                $last_active_period->status = false;
+            }
+            
+        }
+
+    	
 
     	//crear el nuevo periodo
     	$period = Period::create($request->all());
