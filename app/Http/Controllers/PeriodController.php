@@ -13,7 +13,7 @@ class PeriodController extends Controller
 
     public function store(Request $request)
     {
-    	//obetner el ultimo periodo
+    	//obtener el ultimo periodo
     	$last_active_period = Period::where('status',true)
     						  ->orderBy('created_at','DESC')
     						  ->first();
@@ -21,7 +21,8 @@ class PeriodController extends Controller
         if($last_active_period){
             //deshabilitar el ultimo periodo
             if($last_active_period->status == true){
-                $last_active_period->status = false;
+				$last_active_period->status = false;
+				$last_active_period->save();
             }
 
         }
@@ -30,10 +31,10 @@ class PeriodController extends Controller
     	$period = Period::create($request->all());
 
     	if($period){
-    		return redirect()->back()->with('success','ok');
+    		return "Periodo agregado";
     	}
 
-    	return redirect()->back()->with('error','No permitido');
+    	return "Error";
     }
 
     public function show($id)

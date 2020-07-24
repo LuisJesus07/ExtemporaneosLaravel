@@ -2031,6 +2031,93 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/admin/CrearPeriodo.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/admin/CrearPeriodo.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      nombre: '',
+      fecha_inicio: '',
+      fecha_fin: ''
+    };
+  },
+  methods: {
+    crearPeriodo: function crearPeriodo() {
+      var _this = this;
+
+      axios.post('/periodo_create', {
+        nombre: this.nombre,
+        fecha_inicio: this.fecha_inicio,
+        fecha_fin: this.fecha_fin
+      }).then(function (res) {
+        _this.nombre = '', _this.fecha_inicio = '', _this.fecha_fin = '';
+
+        if (res.data === 'Periodo agregado') {
+          Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: '¡Período agregado con éxito!',
+            showConfirmButton: false,
+            timer: 3000
+          });
+        } else {
+          Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: 'Ocurrio un error!',
+            showConfirmButton: false,
+            timer: 3000
+          });
+        }
+      })["catch"](function (err) {
+        console.log(err.data);
+      });
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/admin/FiltradoPorCarrera.vue?vue&type=script&lang=js&":
 /*!***********************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/admin/FiltradoPorCarrera.vue?vue&type=script&lang=js& ***!
@@ -38881,6 +38968,181 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/admin/CrearPeriodo.vue?vue&type=template&id=b3e1fd9c&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/admin/CrearPeriodo.vue?vue&type=template&id=b3e1fd9c& ***!
+  \*********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-12" }, [
+        _c("div", { staticClass: "card", staticStyle: { width: "100%" } }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c(
+              "form",
+              {
+                on: {
+                  submit: function($event) {
+                    $event.preventDefault()
+                    return _vm.crearPeriodo()
+                  }
+                }
+              },
+              [
+                _c("div", { staticClass: "input-group mb-3" }, [
+                  _c("label", { staticClass: "mr-2", attrs: { for: "" } }, [
+                    _vm._v("Nombre del Período:")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.nombre,
+                        expression: "nombre"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      placeholder: "Nombre del período",
+                      autofocus: "",
+                      required: ""
+                    },
+                    domProps: { value: _vm.nombre },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.nombre = $event.target.value
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "input-group mb-3" }, [
+                  _c("label", { staticClass: "mr-2", attrs: { for: "" } }, [
+                    _vm._v("Fecha de inicio:")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.fecha_inicio,
+                        expression: "fecha_inicio"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "date",
+                      placeholder: "Fecha de inicio",
+                      required: ""
+                    },
+                    domProps: { value: _vm.fecha_inicio },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.fecha_inicio = $event.target.value
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "input-group mb-3" }, [
+                  _c("label", { staticClass: "mr-2", attrs: { for: "" } }, [
+                    _vm._v("Fecha de fin:")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.fecha_fin,
+                        expression: "fecha_fin"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "date",
+                      placeholder: "Fecha Final",
+                      required: ""
+                    },
+                    domProps: { value: _vm.fecha_fin },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.fecha_fin = $event.target.value
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-success float-right",
+                    attrs: { type: "submit" }
+                  },
+                  [
+                    _vm._v(
+                      "\r\n                            Agregar\r\n                        "
+                    )
+                  ]
+                )
+              ]
+            )
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "card-header text-center",
+        staticStyle: { "background-color": "#132644" }
+      },
+      [
+        _c("h2", { staticClass: "display-5 text-white" }, [
+          _vm._v("Agregar nuevo período")
+        ])
+      ]
+    )
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/admin/FiltradoPorCarrera.vue?vue&type=template&id=9debca9a&":
 /*!***************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/admin/FiltradoPorCarrera.vue?vue&type=template&id=9debca9a& ***!
@@ -39303,7 +39565,7 @@ var staticRenderFns = [
         staticStyle: { "background-color": "#132644" }
       },
       [
-        _c("h3", { staticClass: "card-title h3 font-weight-bold" }, [
+        _c("h2", { staticClass: "display-5 font-weight-bold" }, [
           _vm._v("Mis Exámenes")
         ])
       ]
@@ -52097,6 +52359,7 @@ Vue.component('filtrar-carrera', __webpack_require__(/*! ./components/admin/Filt
 Vue.component('filtrar-plan', __webpack_require__(/*! ./components/admin/FiltradoPorPlan.vue */ "./resources/js/components/admin/FiltradoPorPlan.vue")["default"]);
 Vue.component('filtrar-materia', __webpack_require__(/*! ./components/admin/FiltradoPorMateria.vue */ "./resources/js/components/admin/FiltradoPorMateria.vue")["default"]);
 Vue.component('aceptar-solicitudes', __webpack_require__(/*! ./components/admin/AceptarSolicitudes.vue */ "./resources/js/components/admin/AceptarSolicitudes.vue")["default"]);
+Vue.component('crear-periodo', __webpack_require__(/*! ./components/admin/CrearPeriodo.vue */ "./resources/js/components/admin/CrearPeriodo.vue")["default"]);
 var app = new Vue({
   el: '#app'
 });
@@ -52281,6 +52544,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AceptarSolicitudes_vue_vue_type_template_id_3c2c5fb6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AceptarSolicitudes_vue_vue_type_template_id_3c2c5fb6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/admin/CrearPeriodo.vue":
+/*!********************************************************!*\
+  !*** ./resources/js/components/admin/CrearPeriodo.vue ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CrearPeriodo_vue_vue_type_template_id_b3e1fd9c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CrearPeriodo.vue?vue&type=template&id=b3e1fd9c& */ "./resources/js/components/admin/CrearPeriodo.vue?vue&type=template&id=b3e1fd9c&");
+/* harmony import */ var _CrearPeriodo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CrearPeriodo.vue?vue&type=script&lang=js& */ "./resources/js/components/admin/CrearPeriodo.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _CrearPeriodo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CrearPeriodo_vue_vue_type_template_id_b3e1fd9c___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CrearPeriodo_vue_vue_type_template_id_b3e1fd9c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/admin/CrearPeriodo.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/admin/CrearPeriodo.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/admin/CrearPeriodo.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CrearPeriodo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./CrearPeriodo.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/admin/CrearPeriodo.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CrearPeriodo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/admin/CrearPeriodo.vue?vue&type=template&id=b3e1fd9c&":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/components/admin/CrearPeriodo.vue?vue&type=template&id=b3e1fd9c& ***!
+  \***************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CrearPeriodo_vue_vue_type_template_id_b3e1fd9c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./CrearPeriodo.vue?vue&type=template&id=b3e1fd9c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/admin/CrearPeriodo.vue?vue&type=template&id=b3e1fd9c&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CrearPeriodo_vue_vue_type_template_id_b3e1fd9c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CrearPeriodo_vue_vue_type_template_id_b3e1fd9c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

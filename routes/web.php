@@ -27,6 +27,7 @@ Route::get('/registro', function(){
 
 Route::post('/registroUsuarios', 'UserController@store')->name('registroUsuarios');
 
+
 Auth::routes();
 
 //Grupo de rutas protegidas con el rol de ADMIN:
@@ -46,6 +47,10 @@ Route::group(['middleware' => ['role:Administrador']], function () {
 	Route::get('/configuraciones', function(){
 		return view('admin.configuraciones');
 	});
+	//Ruta de crear nuevo período
+	Route::get('/crear_periodo', function(){
+		return view('admin.crear_periodo');
+	});
 	
     
 	//rutas modulo propiedades
@@ -59,6 +64,10 @@ Route::group(['middleware' => ['role:Administrador']], function () {
 	Route::get('/solicitudes/aceptar/{id}','AdminController@aceptar_examen');
 	Route::get('/materias_plan/{plan_id}','AdminController@get_materias_by_plan');
 
+	//Ruta para Crear un nuevo periodo:
+	Route::post('/periodo_create', 'PeriodController@store');
+
+	
 
 });
 

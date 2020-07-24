@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="card-header text-center text-white" style="background-color: #132644;">
-            <h3 class="card-title h3 font-weight-bold">Mis Exámenes</h3>
+            <h2 class="display-5 font-weight-bold">Mis Exámenes</h2>
         </div>
         <div class="card-body table-responsive p-0">
             <table class="table table-hover rounded table-bordered">
