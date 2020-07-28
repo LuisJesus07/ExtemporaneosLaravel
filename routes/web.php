@@ -67,6 +67,12 @@ Route::group(['middleware' => ['role:Administrador']], function () {
 	//Ruta para Crear un nuevo periodo:
 	Route::post('/periodo_create', 'PeriodController@store');
 
+	//Ruta para consultar el estado del periodo:
+	Route::get('/get_estado_periodo', 'PeriodController@getEstadoPeriodo');
+
+	//Ruta para desactivar un periodo:
+	Route::get('/periodo_off', 'PeriodController@desactivar_periodo');
+
 	
 
 });

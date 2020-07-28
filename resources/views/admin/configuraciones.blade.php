@@ -6,27 +6,24 @@
         
     <div class="row">
         <div class="col-md-6">
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 28rem;">
                 <div class="card-header text-center" style="background-color: #132644;">
                     <h2 class="display-5 text-white">Agregar nuevo período</h2>
                 </div>
                 <div class="card-body">
-                    <a href="{{'/crear_periodo'}}" class="btn mx-auto mt-3 btn-primary btn-lg">Agregar</a>
+                    <a href="{{'/crear_periodo'}}" class="btn btn-primary float-right">Agregar</a>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-6">
-            <div class="card" style="width: 18rem;">
-                <div class="card-header text-center" style="background-color: #132644;">
-                    <h2 class="display-5 text-white">Ver Períodos</h2>
-                </div>
-                <div class="card-body">
-                    <a href="{{'/#'}}" class="btn mx-auto mt-3 btn-primary btn-lg">Agregar</a>
-                </div>
-            </div>
+        <div class="col-md-6" id="app">
+            <desactivar-periodo />
         </div>
     </div>
 </div>
 
+@endsection
+
+@section('scripts')
+<script src="{{asset('js/app.js')}}"></script>
 @endsection

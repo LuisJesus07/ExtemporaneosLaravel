@@ -14,6 +14,7 @@ Vue.component('filtrar-plan', require('./components/admin/FiltradoPorPlan.vue').
 Vue.component('filtrar-materia', require('./components/admin/FiltradoPorMateria.vue').default);
 Vue.component('aceptar-solicitudes', require('./components/admin/AceptarSolicitudes.vue').default);
 Vue.component('crear-periodo', require('./components/admin/CrearPeriodo.vue').default);
+Vue.component('desactivar-periodo', require('./components/admin/DesactivarPeriodo.vue').default);
 
 
 

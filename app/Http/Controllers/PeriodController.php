@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Period;
+
 class PeriodController extends Controller
 {
     public function index()
@@ -42,14 +43,33 @@ class PeriodController extends Controller
     	$period = Period::where('id',$id)->first();
 
     	return $period;
-    }
+	}
+	
+	public function getEstadoPeriodo(){
 
-    public function desactivar_periodo($id)
+		$period = Period::orderBy('created_at','DESC')->first();//Obtengo el ultimo periodo registrado
+
+		if($period->status == 1){
+			return "activo";
+		}else{
+			return "inactivo";
+		}
+	}
+
+    public function desactivar_periodo()
     {
-    	$period = Period::where('id',$id)->first();
+		$period = Period::orderBy('created_at','DESC')->first();//Obtengo el ultimo periodo registrado
 
-    	$period->status = false;
+    	if($period->status == true){
+			$period->status = false;
+			$period->save();
+			return "periodo desactivado";
+		}else{
+			$period->status = true;
+			$period->save();
+			return "periodo activado";
+		}
 
-    	return $period;
+    	
     }
 }
