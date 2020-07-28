@@ -82,10 +82,10 @@ Route::group(['middleware' => ['role:Alumno']], function () {
 
     Route::get('/menu_alumno', function(){
 		return view('alumno.menu_alumno');
-	});
+	})->name('menu_alumno');
 	Route::get('/solicitar_examen', function(){
 		return view('alumno.solicitar_examen');
-	});
+	})->name('solicitar_examen');
 	Route::get('/consultar_examen', function(){
 		return view('alumno.consultar_examen');
 	});
@@ -98,5 +98,8 @@ Route::group(['middleware' => ['role:Alumno']], function () {
 	Route::get('/get_materias/{semester_id}', 'UserController@get_materias');
 	//Ruta para eliminar una solicitud:
 	Route::get('/delete_solicitud/{id}', 'UserController@destroy');
+
+	//Ruta para consultar el estado del periodo:
+	Route::get('/get_estado_periodo_alumno', 'PeriodController@getEstadoPeriodo');
 });
 

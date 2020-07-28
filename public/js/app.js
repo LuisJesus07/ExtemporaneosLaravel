@@ -2650,6 +2650,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
+  created: function created() {
+    this.verificarPeriodo();
+  },
   data: function data() {
     return {
       materias: [],
@@ -2691,6 +2694,28 @@ __webpack_require__.r(__webpack_exports__);
           showConfirmButton: false,
           timer: 3000
         });
+      });
+    },
+    verificarPeriodo: function verificarPeriodo() {
+      axios.get('/get_estado_periodo_alumno').then(function (response) {
+        var estadoPeriodo = response.data;
+
+        if (estadoPeriodo === 'inactivo') {
+          Swal.fire({
+            title: "Período inactivo",
+            text: "¡El período de solicitudes se encuentra inactivo!",
+            icon: "warning",
+            showCancelButton: false,
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: "Aceptar"
+          }).then(function () {
+            location.href = 'menu_alumno';
+          });
+        } else {//Si el período esta activo cargamos las materias
+          //this.getMaterias()
+        }
+      })["catch"](function (err) {
+        console.log(err);
       });
     }
   }

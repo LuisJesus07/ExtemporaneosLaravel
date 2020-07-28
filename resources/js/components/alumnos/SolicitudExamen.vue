@@ -46,6 +46,9 @@
 
 <script>
 export default {
+    created(){
+        this.verificarPeriodo()
+    },
     data(){
         return{
             materias: [],
@@ -95,6 +98,34 @@ export default {
                         timer: 3000
                     })
                 });
+        },
+        verificarPeriodo(){
+
+            axios.get('/get_estado_periodo_alumno')
+                .then((response) => {
+                    let estadoPeriodo = response.data
+
+                    if(estadoPeriodo === 'inactivo'){
+
+                        Swal.fire({
+                            title: "Período inactivo",
+                            text: "¡El período de solicitudes se encuentra inactivo!",
+                            icon: "warning",
+                            showCancelButton: false,
+                            confirmButtonColor: '#3085d6',
+                            confirmButtonText: "Aceptar",
+              
+					    }).then(() => {
+                            location.href = 'menu_alumno'
+                        })
+                        
+                    }else{//Si el período esta activo cargamos las materias
+                        //this.getMaterias()
+                    }
+                })
+                .catch((err) =>{
+                    console.log(err)
+                })
         }
     }
 }
