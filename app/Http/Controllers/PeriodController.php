@@ -38,9 +38,9 @@ class PeriodController extends Controller
     	return "Error";
     }
 
-    public function show($id)
+    public function show_period_active()
     {
-    	$period = Period::where('id',$id)->first();
+		$period = Period::orderBy('created_at','DESC')->first();//Obtengo el ultimo periodo registrado
 
     	return $period;
 	}

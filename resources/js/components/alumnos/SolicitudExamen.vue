@@ -4,7 +4,7 @@
             <h2 class="display-5 font-weight-bold">Solicitar Examen</h2>
         </div>
         <div class="card-body">
-            <div class="container-fluid mt-4">
+            <div class="container-fluid">
                 <b>Seleccione su semestre, una materia y de clic en el botón enviar para mandar su solicitud.</b>
                 <div class="row mt-3">
                     <div class="col-md-12">

@@ -73,6 +73,9 @@ Route::group(['middleware' => ['role:Administrador']], function () {
 	//Ruta para desactivar un periodo:
 	Route::get('/periodo_off', 'PeriodController@desactivar_periodo');
 
+	//Ruta para consultar el periodo activo:
+	Route::get('/show_period_active', 'PeriodController@show_period_active');
+
 	
 
 });
