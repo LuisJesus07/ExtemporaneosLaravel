@@ -2073,6 +2073,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -39221,7 +39225,9 @@ var render = function() {
                 )
               ]
             )
-          ])
+          ]),
+          _vm._v(" "),
+          _vm._m(1)
         ])
       ])
     ])
@@ -39242,6 +39248,21 @@ var staticRenderFns = [
         _c("h2", { staticClass: "display-5 text-white" }, [
           _vm._v("Agregar nuevo período")
         ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "alert alert-warning mt-3", attrs: { role: "alert" } },
+      [
+        _c("img", { attrs: { src: "app_assets/img/alerta.png", width: "25" } }),
+        _vm._v(
+          "\r\n                    Al agregar un nuevo periodo se eliminará la información del periodo pasado. Agregue uno nuevo una vez que toda la información del periodo actual haya sido capturada.\r\n                "
+        )
       ]
     )
   }

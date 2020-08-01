@@ -32,8 +32,12 @@ class UserController extends Controller
 
     public function mis_solicitudes()
     {
+        //obetener periodo mas reciente
+        $period = Period::orderBy('created_at','DESC')->first();
+
         $solicitudes = User::where('id', Auth::user()->id)
-                       ->with(['exam_requests' => function($q){
+                       ->with(['exam_requests' => function($q) use($period){
+                            $q->where('period_id',$period->id);
                             $q->with('subject', 'period');
                        }])->get();
 
@@ -42,14 +46,22 @@ class UserController extends Controller
 
     public function create_solicitud($subject_id)
     {
-        $user = User::where('id',Auth::user()->id)->first();
-        $period = Period::where('status',true)->first();
+        //obetener periodo mas reciente
+        $period = Period::orderBy('created_at','DESC')->first();
+
+        //obetener usuario con las solicitudes del periodo mas reciente
+        $user = User::where('id', Auth::user()->id)
+                       ->with(['exam_requests' => function($q) use($period){
+                            $q->where('period_id',$period->id);
+                       }])->first();
+
+        $period = Period::orderBy('created_at','DESC')->first();
 
         if($period){
 
             $today = date('Y-m-d H:i:s');
 
-            if($today >= $period->fecha_inicio && $today <= $period->fecha_fin){
+            if($today >= $period->fecha_inicio && $today <= $period->fecha_fin." 23:59:59"){
 
                 if(count($user->exam_requests) >= 2){
                     $status = false;
@@ -75,7 +87,7 @@ class UserController extends Controller
 
             }
 
-            return "no se puede realizar una solicitud fuera de tiempo";
+            return "solicitud fuera de tiempo";
 
         }
 

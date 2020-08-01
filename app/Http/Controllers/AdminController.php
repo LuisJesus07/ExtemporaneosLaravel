@@ -41,7 +41,10 @@ class AdminController extends Controller
     {
         $title = "carrera";
 
-        $solicitudes = Period::where('status',true)
+        //obetener periodo mas reciente
+        $period = Period::orderBy('created_at','DESC')->first();
+
+        $solicitudes = Period::where('id',$period->id)
            ->with(['exam_requests' => function($q) use($degree){
                 $q->where('status',true);
                 $q->with('subject');
@@ -60,8 +63,10 @@ class AdminController extends Controller
     public function solicitudes_by_plan($plan)
     {
         $title = "plan";
+        //obetener periodo mas reciente
+        $period = Period::orderBy('created_at','DESC')->first();
 
-        $solicitudes = Period::where('status',true)
+        $solicitudes = Period::where('id',$period->id)
            ->with(['exam_requests' => function($q) use($plan){
                 $q->where('status',true);
                 $q->with('subject');
@@ -79,8 +84,10 @@ class AdminController extends Controller
     public function solicitudes_by_materia($subject)
     {
         $title = "materia";
+        //obetener periodo mas reciente
+        $period = Period::orderBy('created_at','DESC')->first();
 
-        $solicitudes = Period::where('status',true)
+        $solicitudes = Period::where('id',$period->id)
                 ->with(['exam_requests' => function($q) use($subject){
                     $q->where('status',true);
                     $q->withAndWhereHas('subject', function($q) use($subject){
@@ -95,7 +102,10 @@ class AdminController extends Controller
 
     public function solicitudes_no_aceptadas()
     {
-        $solicitudes = Period::where('status',true)
+        //obetener periodo mas reciente
+        $period = Period::orderBy('created_at','DESC')->first();
+
+        $solicitudes = Period::where('id',$period->id)
                 ->with(['exam_requests' => function($q){
                     $q->where('status',false);
                     $q->with('subject');

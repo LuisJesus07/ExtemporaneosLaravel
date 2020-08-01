@@ -1,7 +1,10 @@
 @extends('layouts.app')
 
 @section('page_title')
-	Examenes por {{$title}} {{$solicitudes->nombre}}
+	Examenes por {{$title}} 
+	@if(isset($solicitudes->nombre))
+		{{$solicitudes->nombre}}
+	@endif
 @endsection
 
 @section('head')

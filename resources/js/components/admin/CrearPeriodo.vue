@@ -25,6 +25,10 @@
                         </button>
                     </form>
                 </div>
+                <div class="alert alert-warning mt-3" role="alert">
+                    <img src="app_assets/img/alerta.png" width="25">
+                    Al agregar un nuevo periodo se eliminará la información del periodo pasado. Agregue uno nuevo una vez que toda la información del periodo actual haya sido capturada.
+                </div>
             </div>
         </div>
     </div>

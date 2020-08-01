@@ -15,8 +15,7 @@ class PeriodController extends Controller
     public function store(Request $request)
     {
     	//obtener el ultimo periodo
-    	$last_active_period = Period::where('status',true)
-    						  ->orderBy('created_at','DESC')
+    	$last_active_period = Period::orderBy('created_at','DESC')
     						  ->first();
 
         if($last_active_period){
@@ -49,7 +48,9 @@ class PeriodController extends Controller
 
 		$period = Period::orderBy('created_at','DESC')->first();//Obtengo el ultimo periodo registrado
 
-		if($period->status == 1){
+        $today = date('Y-m-d H:i:s');
+
+		if($today >= $period->fecha_inicio && $today <= $period->fecha_fin &&$period->status == 1){
 			return "activo";
 		}else{
 			return "inactivo";
