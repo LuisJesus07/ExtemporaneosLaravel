@@ -2077,6 +2077,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2183,7 +2185,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this2 = this;
 
       axios.get('/periodo_off').then(function (response) {
-        Swal.fire('¡Activado!', 'El periodo de solicitudes se encuentra activo.', 'success');
+        Swal.fire('¡Activado!', 'El período de solicitudes se encuentra activo.', 'success');
 
         _this2.verificarPeriodo();
       })["catch"](function (err) {
@@ -2194,7 +2196,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this3 = this;
 
       axios.get('/periodo_off').then(function (response) {
-        Swal.fire('¡Desactivado!', 'El periodo de solicitudes se encuentra inactivo.', 'success');
+        Swal.fire('¡Desactivado!', 'El período de solicitudes se encuentra inactivo.', 'success');
 
         _this3.verificarPeriodo();
       })["catch"](function (err) {
@@ -39211,6 +39213,8 @@ var render = function() {
                   })
                 ]),
                 _vm._v(" "),
+                _vm._m(1),
+                _vm._v(" "),
                 _c(
                   "button",
                   {
@@ -39225,9 +39229,7 @@ var render = function() {
                 )
               ]
             )
-          ]),
-          _vm._v(" "),
-          _vm._m(1)
+          ])
         ])
       ])
     ])
@@ -39261,7 +39263,7 @@ var staticRenderFns = [
       [
         _c("img", { attrs: { src: "app_assets/img/alerta.png", width: "25" } }),
         _vm._v(
-          "\r\n                    Al agregar un nuevo periodo se eliminará la información del periodo pasado. Agregue uno nuevo una vez que toda la información del periodo actual haya sido capturada.\r\n                "
+          "\r\n                            Al agregar un nuevo periodo se eliminará la información del periodo pasado.\r\n                            Agregue uno nuevo una vez que toda la información del periodo actual haya sido capturada.\r\n                        "
         )
       ]
     )

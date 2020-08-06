@@ -20,15 +20,17 @@
                             <label class="mr-2" for="">Fecha de fin:</label>
                             <input type="date" v-model="fecha_fin" class="form-control" placeholder="Fecha Final" required>
                         </div>
+                        <div class="alert alert-warning mt-3" role="alert">
+                            <img src="app_assets/img/alerta.png" width="25">
+                            Al agregar un nuevo periodo se eliminará la información del periodo pasado.
+                            Agregue uno nuevo una vez que toda la información del periodo actual haya sido capturada.
+                        </div>
                         <button type="submit" class="btn btn-success float-right">
                             Agregar
                         </button>
                     </form>
                 </div>
-                <div class="alert alert-warning mt-3" role="alert">
-                    <img src="app_assets/img/alerta.png" width="25">
-                    Al agregar un nuevo periodo se eliminará la información del periodo pasado. Agregue uno nuevo una vez que toda la información del periodo actual haya sido capturada.
-                </div>
+                
             </div>
         </div>
     </div>

@@ -55,7 +55,7 @@ export default {
                 .then((response) => {
                     Swal.fire(
                         '¡Activado!',
-                        'El periodo de solicitudes se encuentra activo.',
+                        'El período de solicitudes se encuentra activo.',
                         'success'
                     )
                     this.verificarPeriodo()
@@ -70,7 +70,7 @@ export default {
                 .then((response) => {
                     Swal.fire(
                         '¡Desactivado!',
-                        'El periodo de solicitudes se encuentra inactivo.',
+                        'El período de solicitudes se encuentra inactivo.',
                         'success'
                     )
                     this.verificarPeriodo()
