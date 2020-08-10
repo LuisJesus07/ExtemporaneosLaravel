@@ -115,13 +115,24 @@ class UserController extends Controller
     {
         $request['password'] = bcrypt($request['password']);
 
-        if($user = User::create($request->all())){
+        try {
 
-            $user->assignRole(2);
+            $user = User::create($request->all());
 
-            return "usuario creado";
+            if($user){
+                //asignar role
+                $user->assignRole(2);
 
+                return "Usuario creado";
+            }
+            
+        } catch (\Illuminate\Database\QueryException $e) {
+            
+            return $e->errorInfo[2];
+            
         }
+
+        
 
         return "error en el servidor";
 
