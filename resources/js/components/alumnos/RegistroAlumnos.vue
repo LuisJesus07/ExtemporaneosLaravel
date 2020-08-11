@@ -3,6 +3,7 @@
         <div class="card-body register-card-body">
             <h4 class="login-box-msg">Registrarme</h4>
             <form @submit.prevent="agregar()">
+                <div class="error" role="alert" v-for="(error, index) in errors" :key="index" v-bind:class="{exito:success==true}">{{error}}</div>
                 <div class="input-group mb-3">
                     <input type="number" v-model="alumno.num_control" class="form-control" placeholder="Número de Control"  maxlength="10" autofocus>          
                     <div class="input-group-append">
@@ -89,7 +90,9 @@ export default {
                 email: '',
                 password: '',
                 study_plan_id: ''
-            }
+            },
+            errors:[],//Arreglo para guardar los errores
+            success:false//Variable para cambiar el alert
 
         }
     },
@@ -97,39 +100,35 @@ export default {
         agregar(){
 
             if(this.alumno.num_control.trim() === '' || this.alumno.nombre.trim() === '' || this.alumno.apellido_paterno.trim() === '' || this.alumno.apellido_materno.trim() === '' || this.alumno.email.trim() === '' || this.alumno.password.trim() === '' || this.alumno.study_plan_id.trim() === ''){
-                Swal.fire({
-                    position: 'center',
-                    icon: 'error',
-                    title: '¡Complete todos los campos!',
-                    showConfirmButton: false,
-                    timer: 3000
-                })
+                this.errors = []
+                this.errors.push("Complete todos los campos.")
+                this.success = false//Si esta en false se muestra el div en rojo
+                
                 return;
             }
 
             const alumnoNuevo = this.alumno//Se guarda el alumno nuevo 
-            this.alumno = {//Se limpian los inputs
-                num_control: '',
-                nombre: '',
-                apellido_paterno: '',
-                apellido_materno: '',
-                email: '',
-                password: '',
-                study_plan_id: ''
-            }
-
+            
             axios.post('/registroUsuarios', alumnoNuevo)
                 .then((res) => {
                     
-                    if(res.data === 'usuario creado'){
-                        Swal.fire({
-                            position: 'center',
-                            icon: 'success',
-                            title: 'Registro realizado con éxito!',
-                            showConfirmButton: false,
-                            timer: 3000
-                        })
-                    }else{
+                    console.log(res.data)
+                    if(res.data === 'Usuario creado'){
+                        
+                        this.errors = []
+                        this.errors.push("¡Registro realizado con éxito!")
+                        this.success = true//Si esta true se muestra el alert verde
+
+                        this.alumno = {//Se limpian los inputs
+                            num_control: '',
+                            nombre: '',
+                            apellido_paterno: '',
+                            apellido_materno: '',
+                            email: '',
+                            password: '',
+                            study_plan_id: ''
+                        }
+                    }/*else{
                         Swal.fire({
                             position: 'center',
                             icon: 'error',
@@ -137,7 +136,7 @@ export default {
                             showConfirmButton: false,
                             timer: 3000
                         })
-                    }
+                    }*/
                     
 
                 })
@@ -148,3 +147,35 @@ export default {
     
 }
 </script>
+
+<style>
+
+.error{
+	margin:auto;
+	text-align: center;
+	width: 100%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	color: #a94442;
+	background-color: #f2dede;
+	border-radius: 4px;
+	border: 1px solid #a94442;
+}
+
+.exito{
+    margin:auto;
+	text-align: center;
+	width: 100%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	border-radius: 4px;
+	background-color: #dff0d8;
+	border: 1px solid #008100;
+	color: #3c763d;
+}
+
+</style>
