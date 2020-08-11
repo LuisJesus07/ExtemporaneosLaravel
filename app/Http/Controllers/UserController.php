@@ -8,6 +8,7 @@ use App\Period;
 use App\Subject;
 use App\ExamRequest;
 use Auth;
+use Validator;
 
 class UserController extends Controller
 {
@@ -115,7 +116,20 @@ class UserController extends Controller
     {
         $request['password'] = bcrypt($request['password']);
 
-        try {
+        //validar 
+        $validator = Validator::make($request->all(), [
+            'num_control' => 'unique:users|max:10',
+            'email' => 'email|unique:users',
+        ],
+        [
+            'num_control.unique' => 'El numero de control ya esta registrado.',
+            'num_control.max' => 'El numero de control no puede superar los 10 digitos.',
+            'email.unique' => 'El correo ya esta registrado.',
+        ]);
+
+
+        //si la validacion pasa se hace el registro
+        if ($validator->passes()) {
 
             $user = User::create($request->all());
 
@@ -125,16 +139,13 @@ class UserController extends Controller
 
                 return "Usuario creado";
             }
-            
-        } catch (\Illuminate\Database\QueryException $e) {
-            
-            return $e->errorInfo[2];
-            
         }
 
-        
+        //retornar errores
+        return response()->json([
+                'errors'=> $validator->errors()->all()
+            ]);
 
-        return "error en el servidor";
 
     }
 

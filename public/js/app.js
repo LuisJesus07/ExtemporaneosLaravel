@@ -2586,23 +2586,47 @@ __webpack_require__.r(__webpack_exports__);
         study_plan_id: ''
       };
       axios.post('/registroUsuarios', alumnoNuevo).then(function (res) {
-        if (res.data === 'usuario creado') {
-          Swal.fire({
-            position: 'center',
-            icon: 'success',
-            title: 'Registro realizado con éxito!',
-            showConfirmButton: false,
-            timer: 3000
-          });
-        } else {
-          Swal.fire({
-            position: 'center',
-            icon: 'error',
-            title: 'Ocurrio un error!',
-            showConfirmButton: false,
-            timer: 3000
-          });
+        console.log(res.data);
+
+        switch (res.data) {
+          case 'usuario creado':
+            Swal.fire({
+              position: 'center',
+              icon: 'success',
+              title: 'Registro realizado con éxito!',
+              showConfirmButton: false,
+              timer: 3000
+            });
+            break;
+
+          case "duplicate entry 'Luis@gmail.com' for key 'users_email_unique'":
+            Swal.fire({
+              position: 'center',
+              icon: 'error',
+              title: 'Correo ya registrado',
+              showConfirmButton: false,
+              timer: 3000
+            });
+            break;
         }
+        /*if(res.data === 'usuario creado'){
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Registro realizado con éxito!',
+                showConfirmButton: false,
+                timer: 3000
+            })
+        }else{
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Ocurrio un error!',
+                showConfirmButton: false,
+                timer: 3000
+            })
+        }*/
+
       });
     }
   }
