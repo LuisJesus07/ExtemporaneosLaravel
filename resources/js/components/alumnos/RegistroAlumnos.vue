@@ -1,6 +1,7 @@
 <template>
     <div class="card">
         <div class="card-body register-card-body">
+            <img src="iconos/load.gif" class="loading" ref="loading"></img>
             <h4 class="login-box-msg">Registrarme</h4>
             <form @submit.prevent="agregar()">
                 <div class="error" role="alert" v-for="(error, index) in errors" :key="index" v-bind:class="{exito:success==true}">{{error}}</div>
@@ -92,7 +93,7 @@ export default {
                 study_plan_id: ''
             },
             errors:[],//Arreglo para guardar los errores
-            success:false//Variable para cambiar el alert
+            success:false//Variable para cambiar el alert,
 
         }
     },
@@ -107,6 +108,10 @@ export default {
                 return;
             }
 
+            //aparecer carga
+            const _this = this
+            this.$refs.loading.style.display = 'block'
+
             const alumnoNuevo = this.alumno//Se guarda el alumno nuevo 
             
             axios.post('/registroUsuarios', alumnoNuevo)
@@ -119,6 +124,9 @@ export default {
                         this.errors.push("¡Registro realizado con éxito!")
                         this.success = true//Si esta true se muestra el alert verde
 
+                        //redirect al home
+                        window.location.href = "http://127.0.0.1:8000/menu_alumno";
+
                         this.alumno = {//Se limpian los inputs
                             num_control: '',
                             nombre: '',
@@ -128,18 +136,31 @@ export default {
                             password: '',
                             study_plan_id: ''
                         }
-                    }/*else{
-                        Swal.fire({
-                            position: 'center',
-                            icon: 'error',
-                            title: 'Ocurrio un error!',
-                            showConfirmButton: false,
-                            timer: 3000
-                        })
-                    }*/
+
+                         
+                    }
+
+                    //si el reponse trae el array de errores, mostrarlos
+                    if(res.data.errors !== undefined ){
+
+                        //limpiar el array de errores
+                        this.errors = []
+
+                        //poner los errores en el array errors
+                        for (var i = 0; i < res.data.errors.length ; i++) {
+                           this.errors.push(res.data.errors[i])
+                        }
+                    }
                     
 
                 })
+                .catch(err => {
+                    console.log(err)
+                })
+                .then(function() {
+                    //desaparecer carga
+                    _this.$refs.loading.style.display = 'none'
+                });
 
 
         }
@@ -149,6 +170,12 @@ export default {
 </script>
 
 <style>
+
+.loading{
+    float: left;
+    display: none;
+    width: 30px;
+}
 
 .error{
 	margin:auto;

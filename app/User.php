@@ -56,5 +56,9 @@ class User extends Authenticatable
         return $this->belongsTo('Spatie\Permission\Models\Role');
     }
 
+    public function getAuthPassword() {
+        return $this->password;
+    }
+
 
 }

@@ -113,7 +113,10 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+    {   
+        //guardar la password en texto plano para el login
+        $pass_login = $request['password'] ;
+        //encriptar password para guardarla
         $request['password'] = bcrypt($request['password']);
 
         //validar 
@@ -137,7 +140,17 @@ class UserController extends Controller
                 //asignar role
                 $user->assignRole(2);
 
-                return "Usuario creado";
+                $login = Auth::attempt(array(
+                            'email' => $request->email,
+                            'password' => $pass_login,
+                        ));
+
+                //logear usuario
+                if($login){
+                    return "Usuario creado";
+                }
+
+                return "Error";
             }
         }
 

@@ -2547,6 +2547,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2561,13 +2562,13 @@ __webpack_require__.r(__webpack_exports__);
       },
       errors: [],
       //Arreglo para guardar los errores
-      success: false //Variable para cambiar el alert
+      success: false //Variable para cambiar el alert,
 
     };
   },
   methods: {
     agregar: function agregar() {
-      var _this = this;
+      var _this2 = this;
 
       if (this.alumno.num_control.trim() === '' || this.alumno.nombre.trim() === '' || this.alumno.apellido_paterno.trim() === '' || this.alumno.apellido_materno.trim() === '' || this.alumno.email.trim() === '' || this.alumno.password.trim() === '' || this.alumno.study_plan_id.trim() === '') {
         this.errors = [];
@@ -2575,21 +2576,27 @@ __webpack_require__.r(__webpack_exports__);
         this.success = false; //Si esta en false se muestra el div en rojo
 
         return;
-      }
+      } //aparecer carga
 
+
+      var _this = this;
+
+      this.$refs.loading.style.display = 'block';
       var alumnoNuevo = this.alumno; //Se guarda el alumno nuevo 
 
       axios.post('/registroUsuarios', alumnoNuevo).then(function (res) {
         console.log(res.data);
 
         if (res.data === 'Usuario creado') {
-          _this.errors = [];
+          _this2.errors = [];
 
-          _this.errors.push("¡Registro realizado con éxito!");
+          _this2.errors.push("¡Registro realizado con éxito!");
 
-          _this.success = true; //Si esta true se muestra el alert verde
+          _this2.success = true; //Si esta true se muestra el alert verde
+          //redirect al home
 
-          _this.alumno = {
+          window.location.href = "http://127.0.0.1:8000/menu_alumno";
+          _this2.alumno = {
             //Se limpian los inputs
             num_control: '',
             nombre: '',
@@ -2599,17 +2606,22 @@ __webpack_require__.r(__webpack_exports__);
             password: '',
             study_plan_id: ''
           };
-        }
-        /*else{
-           Swal.fire({
-               position: 'center',
-               icon: 'error',
-               title: 'Ocurrio un error!',
-               showConfirmButton: false,
-               timer: 3000
-           })
-        }*/
+        } //si el reponse trae el array de errores, mostrarlos
 
+
+        if (res.data.errors !== undefined) {
+          //limpiar el array de errores
+          _this2.errors = []; //poner los errores en el array errors
+
+          for (var i = 0; i < res.data.errors.length; i++) {
+            _this2.errors.push(res.data.errors[i]);
+          }
+        }
+      })["catch"](function (err) {
+        console.log(err);
+      }).then(function () {
+        //desaparecer carga
+        _this.$refs.loading.style.display = 'none';
       });
     }
   }
@@ -7207,7 +7219,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.error{\r\n\tmargin:auto;\r\n\ttext-align: center;\r\n\twidth: 100%;\r\n\tmargin-top: 2%;\r\n\tmargin-bottom: 2%;\r\n\tpadding-top: 1%;\r\n\tpadding-bottom: 1%;\r\n\tcolor: #a94442;\r\n\tbackground-color: #f2dede;\r\n\tborder-radius: 4px;\r\n\tborder: 1px solid #a94442;\n}\n.exito{\r\n    margin:auto;\r\n\ttext-align: center;\r\n\twidth: 100%;\r\n\tmargin-top: 2%;\r\n\tmargin-bottom: 2%;\r\n\tpadding-top: 1%;\r\n\tpadding-bottom: 1%;\r\n\tborder-radius: 4px;\r\n\tbackground-color: #dff0d8;\r\n\tborder: 1px solid #008100;\r\n\tcolor: #3c763d;\n}\r\n\r\n", ""]);
+exports.push([module.i, "\n.loading{\r\n    float: left;\r\n    display: none;\r\n    width: 30px;\n}\n.error{\r\n\tmargin:auto;\r\n\ttext-align: center;\r\n\twidth: 100%;\r\n\tmargin-top: 2%;\r\n\tmargin-bottom: 2%;\r\n\tpadding-top: 1%;\r\n\tpadding-bottom: 1%;\r\n\tcolor: #a94442;\r\n\tbackground-color: #f2dede;\r\n\tborder-radius: 4px;\r\n\tborder: 1px solid #a94442;\n}\n.exito{\r\n    margin:auto;\r\n\ttext-align: center;\r\n\twidth: 100%;\r\n\tmargin-top: 2%;\r\n\tmargin-bottom: 2%;\r\n\tpadding-top: 1%;\r\n\tpadding-bottom: 1%;\r\n\tborder-radius: 4px;\r\n\tbackground-color: #dff0d8;\r\n\tborder: 1px solid #008100;\r\n\tcolor: #3c763d;\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -39895,6 +39907,12 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "card" }, [
     _c("div", { staticClass: "card-body register-card-body" }, [
+      _c("img", {
+        ref: "loading",
+        staticClass: "loading",
+        attrs: { src: "iconos/load.gif" }
+      }),
+      _vm._v(" "),
       _c("h4", { staticClass: "login-box-msg" }, [_vm._v("Registrarme")]),
       _vm._v(" "),
       _c(
