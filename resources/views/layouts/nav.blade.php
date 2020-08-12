@@ -1,5 +1,5 @@
 <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-dark navbar-dark-gray">
+  <nav class="main-header navbar navbar-expand navbar-dark-primary navbar-dark-primary">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
 
@@ -21,7 +21,7 @@
 
       @if(Auth::user()->role->name === 'Administrador')
         <li class="nav-item d-none d-sm-inline-block">
-          <a href="{{'/home'}}" class="nav-link"><i class="fa fa-home"></i> Inicio</a>
+          <a href="{{'/menu_admin'}}" class="nav-link"><i class="fa fa-home"></i> Inicio</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
           <a href="{{'/filtrado_busqueda'}}" class="nav-link"><i class="fa fa-clipboard fa-fw"></i> Ver Solicitudes</a>
@@ -36,34 +36,14 @@
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
-
       <li class="nav-item dropdown user-menu">
-        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-          <img src="{{asset('app_assets/dist/img/userIcon.jpg')}}" class="user-image img-circle elevation-2" alt="User Image">
-          <span class="d-none d-md-inline">
-            @auth
-              {{Auth::user()->name}}
-            @endauth
-          </span>
-        </a>
-        <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <!-- User image -->
-          <li class="user-header bg-secondary">
-            <img src="{{asset('app_assets/dist/img/userIcon.jpg')}}" class="img-circle elevation-2" alt="User Image">
-
-            <p>
-              @auth
-                {{Auth::user()->email}}
-              @endauth
-            </p>
-          </li>
-          
+        <ul class="navbar-nav ml-auto">
           <!-- Menu Footer-->
-          <li class="user-footer bg-info">
-            <a class="btn btn-default btn-flat float-right" href="{{ route('logout') }}"
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('logout') }}"
                onclick="event.preventDefault();
                              document.getElementById('logout-form').submit();">
-                {{ __('Salir') }}
+                <i class="fas fa-sign-out-alt"></i> {{ __('Cerrar Sesión') }}
             </a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 @csrf
@@ -71,7 +51,6 @@
           </li>
         </ul>
       </li>
-      
     </ul>
   </nav>
   <!-- /.navbar -->
