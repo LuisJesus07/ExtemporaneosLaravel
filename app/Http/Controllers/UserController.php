@@ -19,15 +19,17 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::where('status',true)
-                ->where('role_id',2)
-                ->with(['subjects' => function($q){
-                    $q->with('study_plan');
-                    $q->with('semester');
-                }])
-                ->get();
+        //obetener periodo mas reciente
+        $period = Period::orderBy('created_at','DESC')->first();
 
-        return $users;
+        //obetener cantidad de examenes del alumno en periodo actual
+        $total_examenes = User::where('id', Auth::user()->id)
+                       ->withCount(['exam_requests as solicitudes' => function($q) use($period){
+                            $q->where('period_id',$period->id);
+                       }])->first();
+
+
+        return view('alumno.menu_alumno',compact('total_examenes'));
     }
 
 
@@ -40,6 +42,7 @@ class UserController extends Controller
                        ->with(['exam_requests' => function($q) use($period){
                             $q->where('period_id',$period->id);
                             $q->with('subject', 'period');
+                            $q->orderBy('status', 'DESC');
                        }])->get();
 
         return $solicitudes;

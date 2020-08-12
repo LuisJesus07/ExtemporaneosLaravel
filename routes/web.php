@@ -83,9 +83,7 @@ Route::group(['middleware' => ['role:Administrador']], function () {
 //Grupo de rutas protegidas con el rol de ALUMNO:
 Route::group(['middleware' => ['role:Alumno']], function () {
 
-    Route::get('/menu_alumno', function(){
-		return view('alumno.menu_alumno');
-	})->name('menu_alumno');
+    Route::get('/menu_alumno', 'UserController@index')->name('menu_alumno');
 	Route::get('/solicitar_examen', function(){
 		return view('alumno.solicitar_examen');
 	})->name('solicitar_examen');
