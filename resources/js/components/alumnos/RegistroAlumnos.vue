@@ -1,10 +1,10 @@
 <template>
     <div class="card">
         <div class="card-body register-card-body">
-            <img src="iconos/load.gif" class="loading" ref="loading"></img>
-            <h4 class="login-box-msg">Registrarme</h4>
+            <img src="iconos/load.gif" class="loading" ref="loading">
+            <h4 class="login-box-msg font-weight-bold">Registrarme</h4>
             <form @submit.prevent="agregar()">
-                <div class="error" role="alert" v-for="(error, index) in errors" :key="index" v-bind:class="{exito:success==true}">{{error}}</div>
+                <div class="error font-weight-bold" role="alert" v-for="(error, index) in errors" :key="index" v-bind:class="{exito:success==true}">{{error}}</div>
                 <div class="input-group mb-3">
                     <input type="number" v-model="alumno.num_control" class="form-control" placeholder="Número de Control"  maxlength="10" autofocus>          
                     <div class="input-group-append">
@@ -70,7 +70,7 @@
                         </div>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-success btn btn-block">
+                <button type="submit" class="btn btn-success btn btn-block font-weight-bold">
                     Registrarme
                 </button>
             </form>

@@ -39913,7 +39913,9 @@ var render = function() {
         attrs: { src: "iconos/load.gif" }
       }),
       _vm._v(" "),
-      _c("h4", { staticClass: "login-box-msg" }, [_vm._v("Registrarme")]),
+      _c("h4", { staticClass: "login-box-msg font-weight-bold" }, [
+        _vm._v("Registrarme")
+      ]),
       _vm._v(" "),
       _c(
         "form",
@@ -39931,7 +39933,7 @@ var render = function() {
               "div",
               {
                 key: index,
-                staticClass: "error",
+                staticClass: "error font-weight-bold",
                 class: { exito: _vm.success == true },
                 attrs: { role: "alert" }
               },
@@ -40190,7 +40192,7 @@ var render = function() {
           _c(
             "button",
             {
-              staticClass: "btn btn-success btn btn-block",
+              staticClass: "btn btn-success btn btn-block font-weight-bold",
               attrs: { type: "submit" }
             },
             [_vm._v("\n                Registrarme\n            ")]

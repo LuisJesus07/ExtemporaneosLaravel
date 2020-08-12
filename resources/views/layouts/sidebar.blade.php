@@ -3,7 +3,7 @@
     <!-- Brand Logo -->
     @if(Auth::user()->role->name === 'Alumno')
     <a href="{{'/menu_alumno'}}" class="brand-link">
-      <img src="{{asset('app_assets/dist/img/logoUabcsDasc.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+      <img src="{{asset('app_assets/dist/img/uabcs.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
       <span class="brand-text font-weight-light">Extemporáneos</span>
     </a>
@@ -11,7 +11,7 @@
 
     @if(Auth::user()->role->name === 'Administrador')
     <a href="{{'/home'}}" class="brand-link">
-      <img src="{{asset('app_assets/dist/img/logoUabcsDasc.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+      <img src="{{asset('app_assets/dist/img/uabcs.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
       <span class="brand-text font-weight-light">Extemporáneos</span>
     </a>

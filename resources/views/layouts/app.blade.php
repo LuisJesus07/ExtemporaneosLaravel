@@ -58,15 +58,20 @@
 
             <section class="content">
 
+              @if(Auth::user()->role->name === 'Alumno')
+                <h1 class="display-5 mb-3 text-center font-weight-bold">Exámenes Extemporáneos</h1>
+              @endif
+              @if(Auth::user()->role->name === 'Administrador')
+                <h1 class="display-5 mb-3 text-center font-weight-bold">Panel Administrativo</h1>
+              @endif
               <div class="card card-solid">
                 <div class="card-body pb-0">
                   @yield('content')
                 </div> 
               </div>
-              
+
             </section>
 
-            
         </div>
         
     </div>

@@ -46,7 +46,7 @@
         <div class="card">
 
             <div class="card-body login-card-body">
-              <p class="login-box-msg">Inicia sesión con tu cuenta</p>
+              <p class="login-box-msg font-weight-bold">Inicia sesión con tu cuenta</p>
 
               <form method="POST" action="{{ route('login') }}">
                 @csrf
@@ -86,7 +86,7 @@
                   </div>
                   <!-- /.col -->
                   <div class="col-4">
-                    <button type="submit" class="btn btn-primary btn-block">
+                    <button type="submit" class="btn btn-primary btn-block font-weight-bold">
                         {{ __('Entrar') }}
                     </button>
                   </div>
