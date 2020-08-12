@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="{{asset('app_assets/plugins/fontawesome-free/css/all.min.css')}}">
 
 <!-- Theme style -->
-<link rel="stylesheet" href="{{asset('app_assets/dist/css/adminlte.min.css')}}">
+<link rel="stylesheet" href="{{asset('app_assets/dist/css/adminlte.css')}}">
 
 <link href="{{asset('css/app.css')}}" rel="stylesheet">
 

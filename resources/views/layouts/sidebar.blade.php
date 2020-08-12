@@ -1,5 +1,5 @@
 <!-- Main Sidebar Container -->
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
+<aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #132644;">
     <!-- Brand Logo -->
     @if(Auth::user()->role->name === 'Alumno')
     <a href="{{'/menu_alumno'}}" class="brand-link">

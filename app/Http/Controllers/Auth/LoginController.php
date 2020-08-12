@@ -32,7 +32,7 @@ class LoginController extends Controller
 
         switch ($role) {
             case 'Administrador':
-                    return '/home';
+                    return '/menu_admin';
                 break;
 
             case 'Alumno':

@@ -22,7 +22,18 @@ class AdminController extends Controller
     {
         if(Auth::user()->hasPermissionTo('Visualizar')){
 
-    
+            //obetener periodo mas reciente
+            $period = Period::orderBy('created_at','DESC')->first();
+
+            //obetenr solicitudes del periodo actual
+            $solicitudes = Period::where('id',$period->id)
+                ->withCount('exam_requests as all')
+                ->withCount(['exam_requests as pendientes' => function($q){
+                    $q->where('status',false);
+                }])->first();
+
+
+            return view('admin.menu',compact('period','solicitudes'));
 
         }else{
             //return reditect()->back()->with('error','no tiene permisos');
