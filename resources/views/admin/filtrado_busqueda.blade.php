@@ -5,7 +5,7 @@
     
     <div class="col text-center">
         <div class="card-header text-center text-white" style="background-color: #132644;">
-            <h3 class="display-5">Filtrar Búsqueda</h3>
+            <h2 class="display-5 text-white">Filtrar Búsqueda</h2>
         </div>
         <div class="row principal mx-auto mt-5">
 

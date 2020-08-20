@@ -2,9 +2,9 @@
     <div class="col-md-4">
         <div class="card">
             <div class="card-body">
-                <h3>Por Materia</h3>
+                <h3 class="font-weight-bold">Por Materia</h3>
                 <form>
-                    <label class="display-5">Plan:</label>
+                    <label>Plan: </label>
                     <select class="form-control" @change="getMaterias()" v-model="planId">
                         <option value="1">Comunicación 2000</option>
                         <option value="2">Comunicación 2010</option>

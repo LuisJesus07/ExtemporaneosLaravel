@@ -4,7 +4,7 @@
             <h2 class="display-5 text-white">Período de solicitudes</h2>
         </div>
         <div class="card-body">
-            <p>Cuando el período este activo, los alumnos podrán realizar las solicitudes de exámenes, en caso de no estarlo, las solicitudes no serán registradas.</p>
+            <p class="font-weight-bold">Cuando el período este activo, los alumnos podrán realizar las solicitudes de exámenes, en caso de no estarlo, las solicitudes no serán registradas.</p>
             <div>
                 <h4 class="alert alert-info font-weight-bold">Período Actual: {{nombrePeriodo}}</h4>
             </div>

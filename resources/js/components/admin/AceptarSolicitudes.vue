@@ -10,15 +10,15 @@
 			<table class="table table-hover rounded table-bordered">
 				<thead class="thead-light">
 					<tr>
-						<th class="text-secondary">Número de control</th>
-						<th class="text-secondary">Nombre</th>
-						<th class="text-secondary">Apellido Paterno</th>
-						<th class="text-secondary">Apellido Materno</th>
-						<th class="text-secondary">Plan</th>
-						<th class="text-secondary">Carrera</th>
-						<th class="text-secondary">Materia</th>
-                        <th class="text-secondary">Estado</th>
-                        <th class="text-secondary">Aceptar</th>
+						<th class="font-weight-bold">Número de control</th>
+						<th class="font-weight-bold">Nombre</th>
+						<th class="font-weight-bold">Apellido Paterno</th>
+						<th class="font-weight-bold">Apellido Materno</th>
+						<th class="font-weight-bold">Plan</th>
+						<th class="font-weight-bold">Carrera</th>
+						<th class="font-weight-bold">Materia</th>
+                        <th class="font-weight-bold">Estado</th>
+                        <th class="font-weight-bold">Aceptar</th>
 					</tr> 
 				</thead>
 				<tbody>
@@ -30,7 +30,7 @@
 						<td>{{solicitud.user.study_plan.nombre}}</td>
 						<td>{{solicitud.user.study_plan.degree.nombre}}</td>
 						<td>{{solicitud.subject.nombre}}</td>
-                        <td>Espera</td>	
+                        <td class="text-danger font-weight-bold">Espera</td>	
                         <td>
                             <button class="btn btn-success btn-sm" @click.prevent="aceptarSolicitud(solicitud.id,index)">Aceptar</button>
                         </td>

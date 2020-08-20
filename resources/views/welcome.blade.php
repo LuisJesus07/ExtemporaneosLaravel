@@ -28,6 +28,7 @@
             body h2{
                 font-size: 1.7em;
                 font-family: 'Arial', sans-serif;
+                font-weight: bold;
                 margin-bottom: 1em;
                 color: #f8e500;
             }
@@ -71,7 +72,7 @@
      
         <h1>DEPARTAMENTO ACADÉMICO DE CIENCIAS SOCIALES Y JURÍDICAS</h1>
         <h2>SOLICITUD DE EXÁMENES EXTEMPORÁNEOS</h2>
-        <p class="font-weight-bold">Regístrate en la plataforma para realizar tus solicitudes de exámenes extemporáneos, toma en cuenta que por reglamento se tiene derecho a dos exámenes por período, a partir de la tercera solicitud serán sujetas a aprobación.</p>
+        <p class="">Regístrate en la plataforma para realizar tus solicitudes de exámenes extemporáneos, toma en cuenta que por reglamento se tiene derecho a dos exámenes por período, a partir de la tercera solicitud serán sujetas a aprobación.</p>
         <a href="{{'/login'}}" class="bt-home"><i class="fas fa-sign-in-alt separar"></i></i>Ingresar</a>
         <a href="{{'/registro'}}" class="bt-home"><i class="fa fa-user-plus separar" aria-hidden="true"></i>
         Registrarme</a>

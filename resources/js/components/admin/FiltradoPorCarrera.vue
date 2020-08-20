@@ -3,7 +3,7 @@
 <div class="col-md-4">
     <div class="card">
         <div class="card-body">
-            <h3>Por Carrera</h3>
+            <h3 class="font-weight-bold">Por Carrera</h3>
             <form>
 
                 <select class="form-control" v-model="carrera">

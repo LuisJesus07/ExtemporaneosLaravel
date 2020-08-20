@@ -7,9 +7,9 @@
             <table class="table table-hover rounded table-bordered">
                 <thead class="thead-light">
                 <tr>
-                    <th class="text-secondary">Materia</th>
-                    <th class="text-secondary">Estado</th>
-                    <th class="text-secondary">Eliminar</th>
+                    <th class="font-weight-bold">Materia</th>
+                    <th class="font-weight-bold">Estado</th>
+                    <th class="font-weight-bold">Eliminar</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -18,7 +18,7 @@
                         <td v-if="solicitud.status==1">Aceptado</td>
                         <td v-else>Espera</td>
                         <td><button class="btn btn-danger btn-sm" @click.prevent="deleteSolicitud(solicitud.id,index)" 
-                        >Eliminar</button></td>
+                        ><i class="fas fa-trash-alt"></i></button></td>
                     </tr>
                 </tbody>
             </table>

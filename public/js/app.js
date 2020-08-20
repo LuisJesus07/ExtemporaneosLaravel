@@ -39069,7 +39069,9 @@ var render = function() {
               _vm._v(" "),
               _c("td", [_vm._v(_vm._s(solicitud.subject.nombre))]),
               _vm._v(" "),
-              _c("td", [_vm._v("Espera")]),
+              _c("td", { staticClass: "text-danger font-weight-bold" }, [
+                _vm._v("Espera")
+              ]),
               _vm._v(" "),
               _c("td", [
                 _c(
@@ -39118,29 +39120,29 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("thead", { staticClass: "thead-light" }, [
       _c("tr", [
-        _c("th", { staticClass: "text-secondary" }, [
+        _c("th", { staticClass: "font-weight-bold" }, [
           _vm._v("Número de control")
         ]),
         _vm._v(" "),
-        _c("th", { staticClass: "text-secondary" }, [_vm._v("Nombre")]),
+        _c("th", { staticClass: "font-weight-bold" }, [_vm._v("Nombre")]),
         _vm._v(" "),
-        _c("th", { staticClass: "text-secondary" }, [
+        _c("th", { staticClass: "font-weight-bold" }, [
           _vm._v("Apellido Paterno")
         ]),
         _vm._v(" "),
-        _c("th", { staticClass: "text-secondary" }, [
+        _c("th", { staticClass: "font-weight-bold" }, [
           _vm._v("Apellido Materno")
         ]),
         _vm._v(" "),
-        _c("th", { staticClass: "text-secondary" }, [_vm._v("Plan")]),
+        _c("th", { staticClass: "font-weight-bold" }, [_vm._v("Plan")]),
         _vm._v(" "),
-        _c("th", { staticClass: "text-secondary" }, [_vm._v("Carrera")]),
+        _c("th", { staticClass: "font-weight-bold" }, [_vm._v("Carrera")]),
         _vm._v(" "),
-        _c("th", { staticClass: "text-secondary" }, [_vm._v("Materia")]),
+        _c("th", { staticClass: "font-weight-bold" }, [_vm._v("Materia")]),
         _vm._v(" "),
-        _c("th", { staticClass: "text-secondary" }, [_vm._v("Estado")]),
+        _c("th", { staticClass: "font-weight-bold" }, [_vm._v("Estado")]),
         _vm._v(" "),
-        _c("th", { staticClass: "text-secondary" }, [_vm._v("Aceptar")])
+        _c("th", { staticClass: "font-weight-bold" }, [_vm._v("Aceptar")])
       ])
     ])
   }
@@ -39362,7 +39364,7 @@ var render = function() {
     _vm._m(0),
     _vm._v(" "),
     _c("div", { staticClass: "card-body" }, [
-      _c("p", [
+      _c("p", { staticClass: "font-weight-bold" }, [
         _vm._v(
           "Cuando el período este activo, los alumnos podrán realizar las solicitudes de exámenes, en caso de no estarlo, las solicitudes no serán registradas."
         )
@@ -39459,7 +39461,7 @@ var render = function() {
   return _c("div", { staticClass: "col-md-4" }, [
     _c("div", { staticClass: "card" }, [
       _c("div", { staticClass: "card-body" }, [
-        _c("h3", [_vm._v("Por Carrera")]),
+        _c("h3", { staticClass: "font-weight-bold" }, [_vm._v("Por Carrera")]),
         _vm._v(" "),
         _c("form", [
           _c(
@@ -39559,10 +39561,10 @@ var render = function() {
   return _c("div", { staticClass: "col-md-4" }, [
     _c("div", { staticClass: "card" }, [
       _c("div", { staticClass: "card-body" }, [
-        _c("h3", [_vm._v("Por Materia")]),
+        _c("h3", { staticClass: "font-weight-bold" }, [_vm._v("Por Materia")]),
         _vm._v(" "),
         _c("form", [
-          _c("label", { staticClass: "display-5" }, [_vm._v("Plan:")]),
+          _c("label", [_vm._v("Plan: ")]),
           _vm._v(" "),
           _c(
             "select",
@@ -39704,7 +39706,7 @@ var render = function() {
   return _c("div", { staticClass: "col-md-4" }, [
     _c("div", { staticClass: "card" }, [
       _c("div", { staticClass: "card-body" }, [
-        _c("h3", [_vm._v("Por Plan")]),
+        _c("h3", { staticClass: "font-weight-bold" }, [_vm._v("Por Plan")]),
         _vm._v(" "),
         _c("form", [
           _c(
@@ -39839,7 +39841,7 @@ var render = function() {
                         }
                       }
                     },
-                    [_vm._v("Eliminar")]
+                    [_c("i", { staticClass: "fas fa-trash-alt" })]
                   )
                 ])
               ]
@@ -39875,11 +39877,11 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("thead", { staticClass: "thead-light" }, [
       _c("tr", [
-        _c("th", { staticClass: "text-secondary" }, [_vm._v("Materia")]),
+        _c("th", { staticClass: "font-weight-bold" }, [_vm._v("Materia")]),
         _vm._v(" "),
-        _c("th", { staticClass: "text-secondary" }, [_vm._v("Estado")]),
+        _c("th", { staticClass: "font-weight-bold" }, [_vm._v("Estado")]),
         _vm._v(" "),
-        _c("th", { staticClass: "text-secondary" }, [_vm._v("Eliminar")])
+        _c("th", { staticClass: "font-weight-bold" }, [_vm._v("Eliminar")])
       ])
     ])
   }
