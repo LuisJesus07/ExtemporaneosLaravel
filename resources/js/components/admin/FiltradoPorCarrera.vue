@@ -7,10 +7,9 @@
             <form>
 
                 <select class="form-control" v-model="carrera">
-                    <option value="licenciatura_en_comunicacion">Licenciatura en Comunicación</option>
-                    <option value="licenciatura_en_derecho">Licenciatura en Derecho</option>
-                    <option value="licenciatura_en_criminologia">Licenciatura en Criminología</option>
-                    <option value="licenciatura_en_CP_y_AP">Licenciatura en Ciencias Políticas y Administración Pública</option>
+                    <option v-for="(carrera, index) in carreras" :key="index" v-bind:value="carrera.value">
+                        {{ carrera.nombre }}
+                    </option>
                 </select><br>
 
                 <button class="btn btn-success" @click.prevent="click()">Buscar</button>
@@ -25,7 +24,14 @@
 export default {
     data(){
         return{
-            carrera:''
+            carrera:'licenciatura_en_comunicacion',
+            carreras:[
+                {nombre:"Licenciatura en Comunicación", value:"licenciatura_en_comunicacion"},
+                {nombre:"Licenciatura en Derecho", value:"licenciatura_en_derecho"},
+                {nombre:"Derecho 2012", value:"derecho_2012"},
+                {nombre:"Licenciatura en Criminología", value:"licenciatura_en_criminologia"},
+                {nombre:"Licenciatura en Ciencias Políticas y Administración Pública", value:"licenciatura_en_CP_y_AP"}
+            ]
         }
     },
     methods:{

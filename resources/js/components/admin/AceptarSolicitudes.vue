@@ -32,7 +32,7 @@
 						<td>{{solicitud.subject.nombre}}</td>
                         <td class="text-danger font-weight-bold">Espera</td>	
                         <td>
-                            <button class="btn btn-success btn-sm" @click.prevent="aceptarSolicitud(solicitud.id,index)">Aceptar</button>
+                            <button class="btn btn-success" @click.prevent="aceptarSolicitud(solicitud.id,index)">Aceptar</button>
                         </td>
 					</tr>
 				</tbody>

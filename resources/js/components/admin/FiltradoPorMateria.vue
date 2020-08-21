@@ -5,18 +5,16 @@
                 <h3 class="font-weight-bold">Por Materia</h3>
                 <form>
                     <label>Plan: </label>
-                    <select class="form-control" @change="getMaterias()" v-model="planId">
-                        <option value="1">Comunicación 2000</option>
-                        <option value="2">Comunicación 2010</option>
-                        <option value="3">Derecho 1993</option>
-                        <option value="4">Derecho 2012</option>
-                        <option value="5">Criminología 2018</option>
-                        <option value="6">CP y AP 1978</option>
-                        <option value="7">CP y AP 1995</option>
+                    <select class="form-control" @change="getMaterias()" v-model="selectPlanId">
+                        <option value="" disabled selected>Seleccione un plan...</option>
+                        <option v-for="(plan, index) in planes" :key="index" v-bind:value="plan.value">
+                            {{ plan.nombre }}
+                        </option>
                     </select>
 
                     <label>Materia: </label>
-                    <select class="form-control" v-model="materia" >
+                    <select class="form-control" v-model="selectMateria" id="selectMateria">
+                        <option value="" disabled selected>Seleccione una materia...</option>
                         <option v-for="(materia, index) in materias" :key="index" :value="materia.slug">
                             {{materia.nombre}}</option>
                     </select><br>
@@ -32,17 +30,32 @@
 export default {
     data(){
         return{
-            planId: 0,
-            materia:'',
-            materias: []
+            selectPlanId:'',
+            selectMateria:'',
+            materias: [],
+            planes:[
+                {nombre:"Comunicación 2000", value:"1"},
+                {nombre:"Comunicación 2010", value:"2"},
+                {nombre:"Derecho 1993", value:"3"},
+                {nombre:"Derecho 2012", value:"4"},
+                {nombre:"Criminología 2018", value:"5"},
+                {nombre:"CP Y AP 1978", value:"6"},
+                {nombre:"CP Y AP 1995", value:"7"}
+            ]
         }
+    },
+    mounted(){
+        document.getElementById('selectMateria').disabled=true;//Habilito el select al cargar la pagina como apagado
     },
     methods:{
         getMaterias(){
-            axios.get(`/materias_plan/${this.planId}`)
+            this.selectMateria = ''
+            document.getElementById('selectMateria').disabled=true;//Habilito el select al cargar la pagina como apagado
+
+            axios.get(`/materias_plan/${this.selectPlanId}`)
                 .then((response) => {
                     this.materias = response.data;
-                    //console.log(this.materias)
+                    document.getElementById('selectMateria').disabled=false;//Habilito el select a activo cuando obtengo la data
                     
                 })
                 .catch((error) => {
@@ -50,9 +63,9 @@ export default {
                 });
         },
         click(){
-            window.location.href = "/solicitudes/materia/"+this.materia
-            this.planId = ''
-            this.materia = ''
+            window.location.href = "/solicitudes/materia/"+this.selectMateria
+            this.selectPlanId = ''
+            this.selectMateria = ''
 
         }
     }

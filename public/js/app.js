@@ -2239,11 +2239,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      carrera: ''
+      carrera: 'licenciatura_en_comunicacion',
+      carreras: [{
+        nombre: "Licenciatura en Comunicación",
+        value: "licenciatura_en_comunicacion"
+      }, {
+        nombre: "Licenciatura en Derecho",
+        value: "licenciatura_en_derecho"
+      }, {
+        nombre: "Derecho 2012",
+        value: "derecho_2012"
+      }, {
+        nombre: "Licenciatura en Criminología",
+        value: "licenciatura_en_criminologia"
+      }, {
+        nombre: "Licenciatura en Ciencias Políticas y Administración Pública",
+        value: "licenciatura_en_CP_y_AP"
+      }]
     };
   },
   methods: {
@@ -2294,30 +2309,57 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      planId: 0,
-      materia: '',
-      materias: []
+      selectPlanId: '',
+      selectMateria: '',
+      materias: [],
+      planes: [{
+        nombre: "Comunicación 2000",
+        value: "1"
+      }, {
+        nombre: "Comunicación 2010",
+        value: "2"
+      }, {
+        nombre: "Derecho 1993",
+        value: "3"
+      }, {
+        nombre: "Derecho 2012",
+        value: "4"
+      }, {
+        nombre: "Criminología 2018",
+        value: "5"
+      }, {
+        nombre: "CP Y AP 1978",
+        value: "6"
+      }, {
+        nombre: "CP Y AP 1995",
+        value: "7"
+      }]
     };
+  },
+  mounted: function mounted() {
+    document.getElementById('selectMateria').disabled = true; //Habilito el select al cargar la pagina como apagado
   },
   methods: {
     getMaterias: function getMaterias() {
       var _this = this;
 
-      axios.get("/materias_plan/".concat(this.planId)).then(function (response) {
-        _this.materias = response.data; //console.log(this.materias)
+      this.selectMateria = '';
+      document.getElementById('selectMateria').disabled = true; //Habilito el select al cargar la pagina como apagado
+
+      axios.get("/materias_plan/".concat(this.selectPlanId)).then(function (response) {
+        _this.materias = response.data;
+        document.getElementById('selectMateria').disabled = false; //Habilito el select a activo cuando obtengo la data
       })["catch"](function (error) {
         console.log(error);
       });
     },
     click: function click() {
-      window.location.href = "/solicitudes/materia/" + this.materia;
-      this.planId = '';
-      this.materia = '';
+      window.location.href = "/solicitudes/materia/" + this.selectMateria;
+      this.selectPlanId = '';
+      this.selectMateria = '';
     }
   }
 });
@@ -2353,13 +2395,32 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      plan: ''
+      plan: 'comunicacion_2000',
+      planes: [{
+        nombre: "Comunicación 2000",
+        value: "comunicacion_2000"
+      }, {
+        nombre: "Comunicación 2010",
+        value: "comunicacion_2010"
+      }, {
+        nombre: "Derecho 1993",
+        value: "derecho_1993"
+      }, {
+        nombre: "Derecho 2012",
+        value: "derecho_2012"
+      }, {
+        nombre: "Criminología 2018",
+        value: "criminologia_2018"
+      }, {
+        nombre: "CP Y AP 1978",
+        value: "CP_y_AP_1978"
+      }, {
+        nombre: "CP Y AP 1995",
+        value: "CP_y_AP_1995"
+      }]
     };
   },
   methods: {
@@ -39077,7 +39138,7 @@ var render = function() {
                 _c(
                   "button",
                   {
-                    staticClass: "btn btn-success btn-sm",
+                    staticClass: "btn btn-success",
                     on: {
                       click: function($event) {
                         $event.preventDefault()
@@ -39492,29 +39553,20 @@ var render = function() {
                 }
               }
             },
-            [
-              _c(
+            _vm._l(_vm.carreras, function(carrera, index) {
+              return _c(
                 "option",
-                { attrs: { value: "licenciatura_en_comunicacion" } },
-                [_vm._v("Licenciatura en Comunicación")]
-              ),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "licenciatura_en_derecho" } }, [
-                _vm._v("Licenciatura en Derecho")
-              ]),
-              _vm._v(" "),
-              _c(
-                "option",
-                { attrs: { value: "licenciatura_en_criminologia" } },
-                [_vm._v("Licenciatura en Criminología")]
-              ),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "licenciatura_en_CP_y_AP" } }, [
-                _vm._v(
-                  "Licenciatura en Ciencias Políticas y Administración Pública"
-                )
-              ])
-            ]
+                { key: index, domProps: { value: carrera.value } },
+                [
+                  _vm._v(
+                    "\r\n                        " +
+                      _vm._s(carrera.nombre) +
+                      "\r\n                    "
+                  )
+                ]
+              )
+            }),
+            0
           ),
           _c("br"),
           _vm._v(" "),
@@ -39573,8 +39625,8 @@ var render = function() {
                 {
                   name: "model",
                   rawName: "v-model",
-                  value: _vm.planId,
-                  expression: "planId"
+                  value: _vm.selectPlanId,
+                  expression: "selectPlanId"
                 }
               ],
               staticClass: "form-control",
@@ -39589,7 +39641,7 @@ var render = function() {
                         var val = "_value" in o ? o._value : o.value
                         return val
                       })
-                    _vm.planId = $event.target.multiple
+                    _vm.selectPlanId = $event.target.multiple
                       ? $$selectedVal
                       : $$selectedVal[0]
                   },
@@ -39600,26 +39652,27 @@ var render = function() {
               }
             },
             [
-              _c("option", { attrs: { value: "1" } }, [
-                _vm._v("Comunicación 2000")
-              ]),
+              _c(
+                "option",
+                { attrs: { value: "", disabled: "", selected: "" } },
+                [_vm._v("Seleccione un plan...")]
+              ),
               _vm._v(" "),
-              _c("option", { attrs: { value: "2" } }, [
-                _vm._v("Comunicación 2010")
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "3" } }, [_vm._v("Derecho 1993")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "4" } }, [_vm._v("Derecho 2012")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "5" } }, [
-                _vm._v("Criminología 2018")
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "6" } }, [_vm._v("CP y AP 1978")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "7" } }, [_vm._v("CP y AP 1995")])
-            ]
+              _vm._l(_vm.planes, function(plan, index) {
+                return _c(
+                  "option",
+                  { key: index, domProps: { value: plan.value } },
+                  [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(plan.nombre) +
+                        "\n                    "
+                    )
+                  ]
+                )
+              })
+            ],
+            2
           ),
           _vm._v(" "),
           _c("label", [_vm._v("Materia: ")]),
@@ -39631,11 +39684,12 @@ var render = function() {
                 {
                   name: "model",
                   rawName: "v-model",
-                  value: _vm.materia,
-                  expression: "materia"
+                  value: _vm.selectMateria,
+                  expression: "selectMateria"
                 }
               ],
               staticClass: "form-control",
+              attrs: { id: "selectMateria" },
               on: {
                 change: function($event) {
                   var $$selectedVal = Array.prototype.filter
@@ -39646,20 +39700,32 @@ var render = function() {
                       var val = "_value" in o ? o._value : o.value
                       return val
                     })
-                  _vm.materia = $event.target.multiple
+                  _vm.selectMateria = $event.target.multiple
                     ? $$selectedVal
                     : $$selectedVal[0]
                 }
               }
             },
-            _vm._l(_vm.materias, function(materia, index) {
-              return _c(
+            [
+              _c(
                 "option",
-                { key: index, domProps: { value: materia.slug } },
-                [_vm._v("\n                        " + _vm._s(materia.nombre))]
-              )
-            }),
-            0
+                { attrs: { value: "", disabled: "", selected: "" } },
+                [_vm._v("Seleccione una materia...")]
+              ),
+              _vm._v(" "),
+              _vm._l(_vm.materias, function(materia, index) {
+                return _c(
+                  "option",
+                  { key: index, domProps: { value: materia.slug } },
+                  [
+                    _vm._v(
+                      "\n                        " + _vm._s(materia.nombre)
+                    )
+                  ]
+                )
+              })
+            ],
+            2
           ),
           _c("br"),
           _vm._v(" "),
@@ -39737,35 +39803,20 @@ var render = function() {
                 }
               }
             },
-            [
-              _c("option", { attrs: { value: "comunicacion_2000" } }, [
-                _vm._v("Comunicación 2000")
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "comunicacion_2010" } }, [
-                _vm._v("Comunicación 2010")
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "derecho_1993" } }, [
-                _vm._v("Derecho 1993")
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "derecho_2012" } }, [
-                _vm._v("Derecho 2012")
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "criminologia_2018" } }, [
-                _vm._v("Criminología 2018")
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "CP_y_AP_1978" } }, [
-                _vm._v("CP y AP 1978")
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "CP_y_AP_1995" } }, [
-                _vm._v("CP y AP 1995")
-              ])
-            ]
+            _vm._l(_vm.planes, function(plan, index) {
+              return _c(
+                "option",
+                { key: index, domProps: { value: plan.value } },
+                [
+                  _vm._v(
+                    "\n                        " +
+                      _vm._s(plan.nombre) +
+                      "\n                    "
+                  )
+                ]
+              )
+            }),
+            0
           ),
           _c("br"),
           _vm._v(" "),
