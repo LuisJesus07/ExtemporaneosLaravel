@@ -25,7 +25,8 @@
                                     <option value="10">10mo</option>
                                 </select>
                                 <label for="" class="text-secondary mt-3">Materia:</label>
-                                <select v-model="idMateria" class="form-control shadow-sm" required id="select_materias">
+                                <select v-model="idMateria" class="form-control shadow-sm" required id="selectMaterias">
+                                    <option value="" disabled selected>Seleccione una materia...</option>
                                     <option v-for="(materia, index) in materias" :key="index" :value="materia.id">
                                         {{materia.nombre}}</option>
                                 </select>
@@ -47,7 +48,7 @@
 <script>
 export default {
     created(){
-        this.verificarPeriodo()
+        this.verificarPeriodo() 
     },
     data(){
         return{
@@ -56,13 +57,18 @@ export default {
             semester_id:''
         }
     },
+    mounted(){
+        document.getElementById('selectMaterias').disabled = true//El select aparecera apagado al cargar la pagina
+    },
     methods:{
         getMaterias(){
             
+            this.idMateria = '' //Se reinicia el select de materias cuando cambia de semestre
+            document.getElementById('selectMaterias').disabled=true;//Habilito el select al cargar la pagina como apagado
             axios.get(`/get_materias/${this.semester_id}`)
                 .then((response) => {
                     this.materias = response.data;
-                    //console.log(this.materias)
+                    document.getElementById('selectMaterias').disabled=false;//Habilito el select a activo cuando obtengo la data
                 })
                 .catch((error) => {
                     console.log(error)

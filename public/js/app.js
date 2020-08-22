@@ -2745,6 +2745,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   created: function created() {
     this.verificarPeriodo();
@@ -2756,12 +2757,20 @@ __webpack_require__.r(__webpack_exports__);
       semester_id: ''
     };
   },
+  mounted: function mounted() {
+    document.getElementById('selectMaterias').disabled = true; //El select aparecera apagado al cargar la pagina
+  },
   methods: {
     getMaterias: function getMaterias() {
       var _this = this;
 
+      this.idMateria = ''; //Se reinicia el select de materias cuando cambia de semestre
+
+      document.getElementById('selectMaterias').disabled = true; //Habilito el select al cargar la pagina como apagado
+
       axios.get("/get_materias/".concat(this.semester_id)).then(function (response) {
-        _this.materias = response.data; //console.log(this.materias)
+        _this.materias = response.data;
+        document.getElementById('selectMaterias').disabled = false; //Habilito el select a activo cuando obtengo la data
       })["catch"](function (error) {
         console.log(error);
       });
@@ -40461,7 +40470,7 @@ var render = function() {
                         }
                       ],
                       staticClass: "form-control shadow-sm",
-                      attrs: { required: "", id: "select_materias" },
+                      attrs: { required: "", id: "selectMaterias" },
                       on: {
                         change: function($event) {
                           var $$selectedVal = Array.prototype.filter
@@ -40478,19 +40487,27 @@ var render = function() {
                         }
                       }
                     },
-                    _vm._l(_vm.materias, function(materia, index) {
-                      return _c(
+                    [
+                      _c(
                         "option",
-                        { key: index, domProps: { value: materia.id } },
-                        [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(materia.nombre)
-                          )
-                        ]
-                      )
-                    }),
-                    0
+                        { attrs: { value: "", disabled: "", selected: "" } },
+                        [_vm._v("Seleccione una materia...")]
+                      ),
+                      _vm._v(" "),
+                      _vm._l(_vm.materias, function(materia, index) {
+                        return _c(
+                          "option",
+                          { key: index, domProps: { value: materia.id } },
+                          [
+                            _vm._v(
+                              "\n                                    " +
+                                _vm._s(materia.nombre)
+                            )
+                          ]
+                        )
+                      })
+                    ],
+                    2
                   )
                 ]),
                 _vm._v(" "),
