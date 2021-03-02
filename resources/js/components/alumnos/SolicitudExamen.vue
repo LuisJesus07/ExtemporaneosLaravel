@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="card">
         <div class="card-header text-center text-white" style="background-color: #132644;">
             <h2 class="display-5 font-weight-bold">Solicitar Examen</h2>
         </div>

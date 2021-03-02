@@ -59,10 +59,10 @@
             <section class="content">
 
               @if(Auth::user()->role->name === 'Alumno')
-                <h1 class="display-5 mb-2 text-center font-weight-bold text-primary">Exámenes Extemporáneos</h1>
+                <h1 class="display-5 my-2 text-center font-weight-bold text-primary">Exámenes Extemporáneos</h1>
               @endif
               @if(Auth::user()->role->name === 'Administrador')
-                <h1 class="display-5 mb-2 text-center font-weight-bold text-primary">Panel Administrativo</h1>
+                <h1 class="display-5 my-2 text-center font-weight-bold text-primary">Panel Administrativo</h1>
               @endif
               <div class="card card-solid">
                 <div class="card-body pb-0">
