@@ -13,9 +13,9 @@ class PeriodsTableSeeder extends Seeder
     public function run()
     {
         $periodo = new Period();
-        $periodo->nombre = "2020-I";
-        $periodo->fecha_inicio = "2020-06-17 13:00:00";
-        $periodo->fecha_fin = "2020-06-20 13:00:00";
+        $periodo->nombre = "2021-I";
+        $periodo->fecha_inicio = "2021-02-08 13:00:00";
+        $periodo->fecha_fin = "2021-11-26 13:00:00";
         $periodo->status = true;
         $periodo->save();
     }
