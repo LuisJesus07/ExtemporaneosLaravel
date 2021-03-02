@@ -55,7 +55,7 @@
                 </div>
                 <div class="input-group mb-3">
                     <select class="form-control" v-model="alumno.study_plan_id">
-                            <option value="" disabled selected>Plan de estudio</option>
+                            <option value="" disabled selected>Plan de estudio:</option>
                             <option value="1">Comunicación 2000</option>
                             <option value="2">Comunicación 2010</option>
                             <option value="3">Derecho 1993</option>
@@ -70,9 +70,20 @@
                         </div>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-success btn btn-block font-weight-bold">
-                    Registrarme
-                </button>
+                <div class="row">
+                    <div class="col-5">
+                        <div class="mt-2">
+                            <a href="login" class="text-center">Iniciar Sesión</a>   
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-7">
+                        <button type="submit" class="btn btn-success btn-block font-weight-bold">
+                            Registrarme
+                        </button>                   
+                    </div>
+                    <!-- /.col -->
+                </div> 
             </form>
         </div>
         <!-- /.form-box -->
@@ -117,7 +128,7 @@ export default {
             axios.post('/registroUsuarios', alumnoNuevo)
                 .then((res) => {
                     
-                    console.log(res.data)
+                    //console.log(res.data)
                     if(res.data === 'Usuario creado'){
                         
                         this.errors = []

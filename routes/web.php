@@ -17,16 +17,13 @@ Route::get('/', function(){
 
 Route::get('/login', function () {
     return view('auth.login');
-});
+})->name('login');
 
 Route::get('/registro', function(){
 	return view('auth.register');
 });
 
-
-
 Route::post('/registroUsuarios', 'UserController@store')->name('registroUsuarios');
-
 
 Auth::routes();
 
@@ -34,7 +31,7 @@ Auth::routes();
 Route::group(['middleware' => ['role:Administrador']], function () {
 
 	//Ruta del menu del admin
-	Route::get('/home', 'HomeController@index')->name('home');
+	//Route::get('/home', 'HomeController@index')->name('home');
 	//Ruta del filtrado de busquedas
 	Route::get('/filtrado_busqueda', function(){
 		return view('admin.filtrado_busqueda');

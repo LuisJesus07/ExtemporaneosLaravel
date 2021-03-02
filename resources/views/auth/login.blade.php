@@ -11,8 +11,7 @@
   <link rel="stylesheet" href="{{asset('app_assets/plugins/fontawesome-free/css/all.min.css')}}">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- icheck bootstrap -->
-  <link rel="stylesheet" href="{{asset('app_assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
+ 
   <!-- Theme style -->
   <link rel="stylesheet" href="{{asset('app_assets/dist/css/adminlte.min.css')}}">
   <!-- Google Font: Source Sans Pro -->
@@ -21,6 +20,7 @@
   <link rel="icon" type="image/vnd.microsoft.icon" href="{{asset('app_assets/img/favicon.ico')}}">
 
   <style type="text/css">
+  
     @import url("https://fonts.googleapis.com/css?family=Akronim");
     
     body{
@@ -28,7 +28,7 @@
       background-size: cover!important;
     }
 
-    body h1{
+    body b{
       font-family: Akronim;
       color: white;
     }
@@ -40,13 +40,13 @@
     <div  class="login-box">
 
         <div class="login-logo">
-            <a href="{{ route('welcome') }}"><h1>Extemporáneos</h1></a>
+            <a href="{{ route('welcome') }}"><b>Extemporáneos</b></a>
         </div>
 
         <div class="card">
 
             <div class="card-body login-card-body">
-              <p class="login-box-msg font-weight-bold">Inicia sesión con tu cuenta</p>
+              <p class="login-box-msg font-weight-bold">Inicia sesión con tu cuenta.</p>
 
               <form method="POST" action="{{ route('login') }}">
                 @csrf
@@ -81,11 +81,13 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-8">
-                    
+                  <div class="col-7">
+                    <p class="mt-2">
+                      <a href="{{'/registro'}}" class="text-center">Registrate ahora</a>
+                    </p>
                   </div>
                   <!-- /.col -->
-                  <div class="col-4">
+                  <div class="col-5">
                     <button type="submit" class="btn btn-primary btn-block font-weight-bold">
                         {{ __('Entrar') }}
                     </button>
@@ -93,9 +95,12 @@
                   <!-- /.col -->
                 </div>
               </form>
-
-
-              
+              <div class="container">
+                <p class="mt-2 mb-0 text-center">
+                  <a href="{{'/password/reset'}}">¿Has olvidado tu contraseña?</a>
+                </p>
+              </div>
+          
             </div>
     
         </div>

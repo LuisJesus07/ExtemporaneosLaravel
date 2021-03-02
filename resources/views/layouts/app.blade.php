@@ -24,9 +24,9 @@
                   <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                       
-                      @if(session('success'))
+                      @if(session('status'))
                         <div class="alert alert-success alert-dismissible fade show" role="alert">
-                          <strong>Great</strong> Your process has finished successfully
+                          <strong>{{ session('status') }}</strong>
                           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>

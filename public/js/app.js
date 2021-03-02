@@ -2609,6 +2609,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2646,8 +2657,7 @@ __webpack_require__.r(__webpack_exports__);
       var alumnoNuevo = this.alumno; //Se guarda el alumno nuevo 
 
       axios.post('/registroUsuarios', alumnoNuevo).then(function (res) {
-        console.log(res.data);
-
+        //console.log(res.data)
         if (res.data === 'Usuario creado') {
           _this2.errors = [];
 
@@ -40215,7 +40225,7 @@ var render = function() {
                 _c(
                   "option",
                   { attrs: { value: "", disabled: "", selected: "" } },
-                  [_vm._v("Plan de estudio")]
+                  [_vm._v("Plan de estudio:")]
                 ),
                 _vm._v(" "),
                 _c("option", { attrs: { value: "1" } }, [
@@ -40251,14 +40261,7 @@ var render = function() {
             _vm._m(6)
           ]),
           _vm._v(" "),
-          _c(
-            "button",
-            {
-              staticClass: "btn btn-success btn btn-block font-weight-bold",
-              attrs: { type: "submit" }
-            },
-            [_vm._v("\n                Registrarme\n            ")]
-          )
+          _vm._m(7)
         ],
         2
       )
@@ -40333,6 +40336,35 @@ var staticRenderFns = [
     return _c("div", { staticClass: "input-group-append" }, [
       _c("div", { staticClass: "input-group-text" }, [
         _c("span", { staticClass: "fas fa-user-graduate" })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-5" }, [
+        _c("div", { staticClass: "mt-2" }, [
+          _c("a", { staticClass: "text-center", attrs: { href: "login" } }, [
+            _vm._v("Iniciar Sesión")
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-7" }, [
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-success btn-block font-weight-bold",
+            attrs: { type: "submit" }
+          },
+          [
+            _vm._v(
+              "\n                        Registrarme\n                    "
+            )
+          ]
+        )
       ])
     ])
   }
