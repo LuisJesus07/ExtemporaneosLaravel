@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+  Solicitud de exámenes extemporáneos
+@endsection
+
 @section('content')
 
 <div class="card mt-2" id="app">

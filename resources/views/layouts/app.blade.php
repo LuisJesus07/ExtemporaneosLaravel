@@ -19,7 +19,7 @@
               <div class="container-fluid">
                 <div class="row mb-2">
                   <div class="col-sm-6">
-                    <h1 class="m-0 text-dark">@yield('title')</h1>
+                    <h1 class="display-5 my-2 font-weight-bold text-primary">@yield('title')</h1>
                   </div><!-- /.col -->
                   <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
@@ -58,12 +58,7 @@
 
             <section class="content">
 
-              @if(Auth::user()->role->name === 'Alumno')
-                <h1 class="display-5 my-2 text-center font-weight-bold text-primary">Exámenes Extemporáneos</h1>
-              @endif
-              @if(Auth::user()->role->name === 'Administrador')
-                <h1 class="display-5 my-2 text-center font-weight-bold text-primary">Panel Administrativo</h1>
-              @endif
+              
               <div class="card card-solid">
                 <div class="card-body pb-0">
                   @yield('content')

@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+  Panel Administrativo
+@endsection
+
 @section('content')
 <div class="row" id="app">
     

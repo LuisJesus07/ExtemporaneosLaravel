@@ -4,6 +4,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 @endsection
 
+@section('title')
+  Panel Administrativo
+@endsection
+
 @section('content')
 
 <div class="container">
