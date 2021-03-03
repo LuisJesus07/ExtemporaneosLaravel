@@ -15,8 +15,8 @@
                     <h2 class="display-5 text-white">Agregar nuevo período</h2>
                 </div>
                 <div class="card-body">
-                    <p class="font-weight-bold">Agregue un nuevo período de solicitudes de exámenes extemporáneos. Fije la fecha de inicio y de fin del período de solicitudes.</p>
-                    <a href="{{'/crear_periodo'}}" class="btn btn-primary float-right">Agregar</a>
+                    <p class="p">Agregue un nuevo período de solicitudes de exámenes extemporáneos. Fije la fecha de inicio y de fin del período de solicitudes.</p>
+                    <a href="{{'/crear_periodo'}}" class="btn btn-primary float-right"><i class="fas fa-plus"></i> Agregar</a>
                 </div>
             </div>
         </div>

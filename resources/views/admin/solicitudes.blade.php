@@ -19,10 +19,10 @@
 		<div class="card-header text-center" style="background-color: #132644;">
 			<h2 class="display-5 text-white">Exámenes por {{$title}}</h2>
 		</div>
-		<!--<div class="img-cargando">
-			<img src="{{asset('app_assets/img/cargando.gif')}}">
-		</div>-->
 		<div class="card-body body-examenes">
+			<div class="img-cargando text-center">
+				<img src="{{asset('app_assets/img/cargando.gif')}}">
+			</div>
 			<table class="table table-hover shadow p-3 mb-5 bg-white rounded table-bordered mt-2" id="tabla">
 				<thead class="thead-light">
 					<tr>

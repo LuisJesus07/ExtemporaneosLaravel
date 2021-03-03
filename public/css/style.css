@@ -67,3 +67,8 @@
 .card-header{ 
     color: #ffffff;
 }
+
+.img-cargando img{
+    width: 5%;
+    height: auto;
+}

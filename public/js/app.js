@@ -39125,9 +39125,11 @@ var render = function() {
   return _c("div", { staticClass: "card" }, [
     _vm._m(0),
     _vm._v(" "),
-    _c("div", { staticClass: "card-body table-responsive p-0" }, [
+    _c("div", { staticClass: "card-body body-examenes table-responsive p-0" }, [
+      _vm._m(1),
+      _vm._v(" "),
       _c("table", { staticClass: "table table-hover rounded table-bordered" }, [
-        _vm._m(1),
+        _vm._m(2),
         _vm._v(" "),
         _c(
           "tbody",
@@ -39193,6 +39195,14 @@ var staticRenderFns = [
         ])
       ]
     )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "img-cargando text-center" }, [
+      _c("img", { attrs: { src: "app_assets/img/cargando.gif" } })
+    ])
   },
   function() {
     var _vm = this
@@ -39444,7 +39454,7 @@ var render = function() {
     _vm._m(0),
     _vm._v(" "),
     _c("div", { staticClass: "card-body" }, [
-      _c("p", { staticClass: "font-weight-bold" }, [
+      _c("p", { staticClass: "p" }, [
         _vm._v(
           "Cuando el período este activo, los alumnos podrán realizar las solicitudes de exámenes, en caso de no estarlo, las solicitudes no serán registradas."
         )
@@ -39473,7 +39483,7 @@ var render = function() {
                   }
                 }
               },
-              [_vm._v("Activar")]
+              [_c("i", { staticClass: "fas fa-check" }), _vm._v(" Activar")]
             )
           ])
         : _c("div", [
@@ -39492,7 +39502,7 @@ var render = function() {
                   }
                 }
               },
-              [_vm._v("Desactivar")]
+              [_c("i", { staticClass: "fas fa-times" }), _vm._v(" Desactivar")]
             )
           ])
     ])

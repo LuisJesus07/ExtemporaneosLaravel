@@ -3,10 +3,10 @@
 		<div class="card-header text-center" style="background-color: #132644;">
 			<h2 class="display-5 text-white">Solicitudes en espera</h2>
 		</div>
-		<!--<div class="img-cargando">
-			<img src="../../public/img/cargando.gif">
-		</div>-->
-		<div class="card-body table-responsive p-0">
+		<div class="card-body body-examenes table-responsive p-0">
+            <div class="img-cargando text-center">
+				<img src="app_assets/img/cargando.gif">
+			</div>
 			<table class="table table-hover rounded table-bordered">
 				<thead class="thead-light">
 					<tr>

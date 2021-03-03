@@ -4,17 +4,17 @@
             <h2 class="display-5 text-white">Período de solicitudes</h2>
         </div>
         <div class="card-body">
-            <p class="font-weight-bold">Cuando el período este activo, los alumnos podrán realizar las solicitudes de exámenes, en caso de no estarlo, las solicitudes no serán registradas.</p>
+            <p class="p">Cuando el período este activo, los alumnos podrán realizar las solicitudes de exámenes, en caso de no estarlo, las solicitudes no serán registradas.</p>
             <div>
                 <h4 class="alert alert-info font-weight-bold">Período Actual: {{nombrePeriodo}}</h4>
             </div>
             <div v-if="status == 'inactivo'">
                 <h4 class="alert alert-warning font-weight-bold">Estado Actual: Inactivo</h4>
-                <button class="btn btn-success float-right" @click.prevent="activarPeriodo()">Activar</button>
+                <button class="btn btn-success float-right" @click.prevent="activarPeriodo()"><i class="fas fa-check"></i> Activar</button>
             </div>
             <div v-else>
                 <h4 class="alert alert-success font-weight-bold">Estado Actual: Activo</h4>
-                <button class="btn btn-danger float-right" @click.prevent="desactivarPeriodo()">Desactivar</button>
+                <button class="btn btn-danger float-right" @click.prevent="desactivarPeriodo()"><i class="fas fa-times"></i> Desactivar</button>
             </div>
         </div>
     </div>
